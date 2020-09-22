@@ -1,11 +1,12 @@
 import Head from 'next/head'
 import styles from '../styles/Home.module.css'
 import Layout from '../components/Layout'
+import SubTitle from '../components/Subtitle'
 
 function Tutor() {
   return (
     <Layout>
-      <h2 className="text-orange-400">Tutoring</h2>
+      <SubTitle text="Tutoring" />
     </Layout>
   )
 }

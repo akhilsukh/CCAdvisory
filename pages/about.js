@@ -1,12 +1,13 @@
 import Head from 'next/head'
 import styles from '../styles/Home.module.css'
 import Layout from '../components/Layout'
+import SubTitle from '../components/Subtitle'
 
 function About() {
   return (
     <Layout>
-    <h2 className="text-orange-400">About</h2>
-  </Layout>
+      <SubTitle text="About" />
+    </Layout>
   )
 }
 
