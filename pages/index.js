@@ -35,8 +35,8 @@ function Home() {
   return (
     <Layout>
       <div className="grid grid-cols-4 gap-4">
-        <div className="bg-teal-900 p-2 rounded-lg col-span-4 xl:col-span-3 lg:col-span-3">
-            <a className="text-white">Box1</a>
+        <div className="bg-teal-900 p-4 rounded-lg col-span-4 xl:col-span-3 lg:col-span-3">
+          <h3 className="text-white m-2 text-center font-medium text-xl">Latest Headlines</h3>
         </div>
 
         <div className="flex-col space-y-2 col-span-4 xl:col-span-1 lg:col-span-1">
@@ -46,7 +46,7 @@ function Home() {
           <SideButton text="Button4" />
           <SideButton text="Button5" />
         </div>
-        
+
         <div className="bg-teal-900 p-4 rounded-lg col-span-4">
           <h3 className="text-white m-2 text-center font-medium text-xl">Latest Blog Posts</h3>
           <div className="flex flex-wrap justify-around">
