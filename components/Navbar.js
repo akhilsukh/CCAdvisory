@@ -14,9 +14,13 @@ function Navbar (){
     return (
     <header className="flex justify-between bg-teal-900 py-4 px-8 lg:px-16 xl:px-16">
             <div className="flex justify-between">
-                <Link href="/"><h4 className="text-gray-100 hover:text-white font-medium text-xl cursor-pointer">
-                        CCPlanner
-                        </h4></Link>
+                <Link href="/">
+                    <div className="text-gray-200 font-semibold text-xl cursor-pointer flex">
+                        <h4 className="text-orange-300 hover:text-white">C</h4>
+                        <h4 className="text-blue-300 hover:text-white">C</h4>
+                        <h4 className="text-red-300 hover:text-white">C</h4>
+                        <h4 className="font-light pl-1 hover:text-white">advisory</h4>
+                    </div></Link>
             </div>
 
             <label for="menu-toggle" className="cursor-pointer lg:hidden block">
