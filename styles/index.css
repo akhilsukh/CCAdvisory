@@ -9,7 +9,7 @@ body {
   margin: 0;
   font-family: -apple-system, 'Inter', BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
     Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
-    background-color: #e0e0e0;
+    background-color: #e6fffa;
 }
 
 a {
@@ -24,4 +24,8 @@ a {
 .card{
   background-color: white;
   width: fit-content;
+}
+
+#menu-toggle:checked + #menu {
+  display: block;
 }

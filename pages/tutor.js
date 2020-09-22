@@ -5,8 +5,8 @@ import Layout from '../components/Layout'
 function Tutor() {
   return (
     <Layout>
-    <h2 className="text-orange-400">Tutoring</h2>
-  </Layout>
+      <h2 className="text-orange-400">Tutoring</h2>
+    </Layout>
   )
 }
 
