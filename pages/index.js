@@ -5,7 +5,7 @@ import SubContainer from '../components/SubContainer'
 function SideButton(props) {
   return (
     <Link href="#">
-      <button className="bg-teal-900 hover:bg-teal-800 focus:bg-teal-800 rounded-lg py-4 px-2 w-full focus:outline-none">
+      <button className="bg-teal-900 hover:bg-teal-800 focus:bg-teal-800 rounded-lg py-4 px-6 w-full focus:outline-none">
         <a className="text-white font-medium">{props.text}</a>
       </button>
     </Link>
