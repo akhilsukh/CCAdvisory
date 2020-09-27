@@ -36,6 +36,12 @@ function Home() {
       <div className="grid grid-cols-4 gap-4">
         <div className="bg-teal-900 p-4 rounded-lg col-span-4 xl:col-span-3 lg:col-span-3">
           <h3 className="text-white m-2 text-center font-medium text-xl">Latest Headlines</h3>
+          <div className="flex flex-col mx-6">
+            <span className="headline flex flex-row"><p className="font-light">Sept 15th -&nbsp;</p><Link href="https://admission.universityofcalifornia.edu/admission-requirements/transfer-requirements/transfer-admission-guarantee-tag.html"><a target="_blank" className="headline-link hover:underline ">TAG Application</a></Link><p>&nbsp;deadline for Fall term is September 30th. Make sure to review it with your community college advisor or corresponding UC TAG Advisor.</p></span>
+            <span className="headline flex flex-row"><p className="font-light">Sept 14th -&nbsp;</p><Link href="https://admission.universityofcalifornia.edu/admission-requirements/transfer-requirements/transfer-admission-guarantee-tag.html"><a target="_blank" className="headline-link hover:underline ">TAG Application</a></Link><p>&nbsp;deadline for Fall term is September 30th. Make sure to review it with your community college advisor or corresponding UC TAG Advisor.</p></span>
+            <span className="headline flex flex-row"><p className="font-light">Sept 13th -&nbsp;</p><Link href="https://admission.universityofcalifornia.edu/admission-requirements/transfer-requirements/transfer-admission-guarantee-tag.html"><a target="_blank" className="headline-link hover:underline ">TAG Application</a></Link><p>&nbsp;deadline for Fall term is September 30th. Make sure to review it with your community college advisor or corresponding UC TAG Advisor.</p></span>
+            <span className="headline flex flex-row"><p className="font-light">Sept 12th -&nbsp;</p><Link href="https://admission.universityofcalifornia.edu/admission-requirements/transfer-requirements/transfer-admission-guarantee-tag.html"><a target="_blank" className="headline-link hover:underline ">TAG Application</a></Link><p>&nbsp;deadline for Fall term is September 30th. Make sure to review it with your community college advisor or corresponding UC TAG Advisor.</p></span>
+          </div>
         </div>
 
         <div className="flex-col space-y-2 col-span-4 xl:col-span-1 lg:col-span-1">
