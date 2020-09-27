@@ -21,7 +21,7 @@ function Tutor() {
       <div className="flex flex-col">
         <SubTitle text="CS Classes" />
         <SubContainer>
-          <div class="grid grid-cols-1 lg:grid-cols-2 xl:lg:grid-cols-2 gap-4 p-2">
+          <div class="grid grid-cols-1 lg:grid-cols-2 xl:lg:grid-cols-2 gap-x-2 gap-y-1 p-2">
             <ClassButton text="CIS 22A: C++ Programming I"/>
             <ClassButton text="CIS 22B: C++ Programming II"/>
             <ClassButton text="CIS 22C: Data Structures in C++"/>
@@ -36,7 +36,7 @@ function Tutor() {
 
         <SubTitle text="Math Classes" />
         <SubContainer>
-          <div class="grid grid-cols-1 lg:grid-cols-2 xl:lg:grid-cols-2 gap-4 p-2">
+        <div class="grid grid-cols-1 lg:grid-cols-2 xl:lg:grid-cols-2 gap-x-2 gap-y-1 p-2">
             <ClassButton text="MATH 1A: Differential Calculus"/>
             <ClassButton text="MATH 1B: Integral Calculus"/>
             <ClassButton text="MATH 1C: Multivariable Calculus I"/>
