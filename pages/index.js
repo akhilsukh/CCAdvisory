@@ -32,7 +32,7 @@ function BlogCard(props) {
 
 function Home() {
   return (
-    <Layout>
+    <Layout id="Home" index="0">
       <div className="grid grid-cols-4 gap-4">
         <div className="bg-teal-900 p-4 rounded-lg col-span-4 xl:col-span-3 lg:col-span-3">
           <h3 className="text-white m-2 text-center font-medium text-xl">Latest Headlines</h3>

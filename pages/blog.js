@@ -5,7 +5,7 @@ import SubTitle from '../components/Subtitle'
 
 function Transfer() {
   return (
-    <Layout>
+    <Layout id="Blog" index="1">
       <div className="flex flex-col">
         <SubTitle text="Blog" />
       

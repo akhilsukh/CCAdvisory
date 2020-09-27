@@ -22,7 +22,7 @@ function ProfileCard(props) {
 
 function About() {
   return (
-    <Layout>
+    <Layout id="About" index="4">
       <div className="flex flex-col">
         <SubTitle text="Founders" />
         <SubContainer>

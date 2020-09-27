@@ -17,7 +17,7 @@ function ClassButton(props){
 
 function Tutor() {
   return (
-    <Layout>
+    <Layout id="Tutoring" index="2">
       <div className="flex flex-col">
         <SubTitle text="CS Classes" />
         <SubContainer>
