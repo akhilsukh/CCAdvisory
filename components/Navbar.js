@@ -15,11 +15,13 @@ function Navbar (){
     <header className="flex justify-between bg-teal-900 py-4 px-8 lg:px-16 xl:px-16">
             <div className="flex justify-between">
                 <Link href="/">
-                    <div className="text-gray-200 font-semibold text-xl cursor-pointer flex">
-                        <h4 className="text-orange-300 hover:text-white">C</h4>
-                        <h4 className="text-blue-300 hover:text-white">C</h4>
-                        <h4 className="text-red-300 hover:text-white">C</h4>
-                        <h4 className="font-light pl-1 hover:text-white">advisory</h4>
+                    <div className="font-semibold text-xl cursor-pointer flex">
+                        <span className="hover:text-white flex hover:underline">
+                            <h4 className="text-orange-300">C</h4>
+                            <h4 className="text-blue-300 ">C</h4>
+                            <h4 className="text-red-300">C</h4>
+                            <h4 className="font-light pl-1 text-gray-300">advisory</h4>
+                        </span>
                     </div></Link>
             </div>
 
@@ -35,7 +37,7 @@ function Navbar (){
             <div class="hidden lg:flex lg:items-end lg:w-auto" id="menu">
                 <nav>
                 <ul class="lg:flex items-center justify-between text-base text-gray-700">
-                    <li><NavButton text="Transfer" target="/transfer"/></li>
+                    <li><NavButton text="Blog" target="/blog"/></li>
                     <li><NavButton text="Tutoring" target="/tutor"/></li>
                     <li><NavButton text="Q&A" target="/questions"/></li>
                     <li><NavButton text="About Us" target="/about"/></li>
