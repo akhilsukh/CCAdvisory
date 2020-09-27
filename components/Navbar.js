@@ -10,7 +10,7 @@ function NavButton (props) {
     )
 }
 
-function Navbar (){
+function Navbar (props){
     return (
     <header className="flex justify-between bg-teal-900 py-4 px-8 lg:px-16 xl:px-16">
             <div className="flex justify-between">
@@ -36,12 +36,12 @@ function Navbar (){
 
             <div class="hidden lg:flex lg:items-end lg:w-auto" id="menu">
                 <nav>
-                <ul class="lg:flex items-center justify-between text-base text-gray-700">
-                    <li><NavButton text="Blog" target="/blog"/></li>
-                    <li><NavButton text="Tutoring" target="/tutor"/></li>
-                    <li><NavButton text="Q&A" target="/questions"/></li>
-                    <li><NavButton text="About Us" target="/about"/></li>
-                </ul>
+                    <ul class="lg:flex items-center justify-between text-base text-gray-700">
+                        <li><NavButton text="Blog" target="/blog"/></li>
+                        <li><NavButton text="Tutoring" target="/tutor"/></li>
+                        <li><NavButton text="Q&A" target="/questions"/></li>
+                        <li><NavButton text="About Us" target="/about"/></li>
+                    </ul>
                 </nav>
             </div>
         </header>
