@@ -7,7 +7,7 @@ import SubContainer from '../components/SubContainer'
 function QA() {
   return (
     <Layout id="Q&A" index="3">
-      <div className="flex flex-col w-4/6">
+      <div className="flex flex-col lg:w-5/6 xl:w-5/6">
         <SubTitle text="Questions & Answers"/>
         <SubContainer>
           <p className="text-question">Justo est erat eos rebum duo stet at rebum diam kasd, elitr clita et et et, sit sed dolor magna.</p>
