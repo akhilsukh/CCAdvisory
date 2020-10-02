@@ -29,7 +29,7 @@ function About() {
           <div className="flex flex-wrap justify-around">
             <ProfileCard name="Akhil Sukhthankar" classes="CIS 22A/B/C" role="Co-Founder, Developer" image={require('../public/images/akh.jpg')}/>
             <ProfileCard name="Barr Avrahamov" classes="MATH 1A/B/C CIS 21JA" role="Co-Founder, Dev/Tutor?" image={require('../public/images/bar.jpg')}/>
-            <ProfileCard name="Chris Hoeft" classes="MATH 2A/B" role="Co-Founder, Blogger?"/>
+            <ProfileCard name="Chris Hoeft" classes="MATH 2A/B" role="Co-Founder, Blogger?" image={require('../public/images/chr.jpg')}/>
           </div>
         </SubContainer>
           <SubTitle text="Tutors"/>
