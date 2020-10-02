@@ -14,8 +14,8 @@ function SideButton(props) {
 function BlogCard(props) {
   return (
     <Link href="#">
-      <div className="hover:bg-teal-800 cursor-pointer rounded-lg flex-col p-4 mx-2 my-1 w-full md:w-56 lg:w-56 xl:w-56">
-        <img className="rounded-md bg-green-200 h-48 w-full md:w-48 lg:w-48 xl:w-48"></img>
+      <div className="hover:bg-teal-800 cursor-pointer rounded-lg flex-col p-4 mx-2 my-1 w-full md:w-64 lg:w-64 xl:w-64">
+        <img className="rounded-md bg-green-200 h-48 w-full md:w-56 lg:w-56 xl:w-56"></img>
         <h6 className="text-white font-medium mb-1 mt-2 truncate w-full">{props.title}</h6>
         <div className="flex justify-between">
           <p className="text-xs text-gray-400 w-auto inline-block">
@@ -34,13 +34,12 @@ function Home() {
   return (
     <Layout id="Home" index="0">
       <div className="grid grid-cols-4 gap-4">
-        <div className="bg-teal-900 p-4 rounded-lg col-span-4 xl:col-span-3 lg:col-span-3">
-          <h3 className="text-white m-2 text-center font-medium text-xl">Latest Headlines</h3>
+        <div className="bg-teal-900 p-5 rounded-lg col-span-4 xl:col-span-3 lg:col-span-3">
+          <h3 className="text-white text-center font-medium text-xl">Latest Headlines</h3>
           <div className="flex flex-col mx-6">
-            <span className="headline flex flex-row"><p className="font-light">Sept 15th -&nbsp;</p><Link href="https://admission.universityofcalifornia.edu/admission-requirements/transfer-requirements/transfer-admission-guarantee-tag.html"><a target="_blank" className="headline-link hover:underline ">TAG Application</a></Link><p>&nbsp;deadline for Fall term is September 30th. Make sure to review it with your community college advisor or corresponding UC TAG Advisor.</p></span>
-            <span className="headline flex flex-row"><p className="font-light">Sept 14th -&nbsp;</p><Link href="https://admission.universityofcalifornia.edu/admission-requirements/transfer-requirements/transfer-admission-guarantee-tag.html"><a target="_blank" className="headline-link hover:underline ">TAG Application</a></Link><p>&nbsp;deadline for Fall term is September 30th. Make sure to review it with your community college advisor or corresponding UC TAG Advisor.</p></span>
-            <span className="headline flex flex-row"><p className="font-light">Sept 13th -&nbsp;</p><Link href="https://admission.universityofcalifornia.edu/admission-requirements/transfer-requirements/transfer-admission-guarantee-tag.html"><a target="_blank" className="headline-link hover:underline ">TAG Application</a></Link><p>&nbsp;deadline for Fall term is September 30th. Make sure to review it with your community college advisor or corresponding UC TAG Advisor.</p></span>
-            <span className="headline flex flex-row"><p className="font-light">Sept 12th -&nbsp;</p><Link href="https://admission.universityofcalifornia.edu/admission-requirements/transfer-requirements/transfer-admission-guarantee-tag.html"><a target="_blank" className="headline-link hover:underline ">TAG Application</a></Link><p>&nbsp;deadline for Fall term is September 30th. Make sure to review it with your community college advisor or corresponding UC TAG Advisor.</p></span>
+            <span className="headline flex flex-row"><p><p className="font-thin text-lg">Sept 14th</p><Link href="https://admission.universityofcalifornia.edu/admission-requirements/transfer-requirements/transfer-admission-guarantee-tag.html"><a target="_blank" className="headline-link hover:underline font-medium">TAG Application</a></Link> deadline for Fall term is September 30th. Make sure to review it with your community college advisor or corresponding UC TAG Advisor. Make sure to review it with your community college advisor or corresponding UC TAG Advisor. Make sure to review it with your community college advisor or corresponding UC TAG Advisor.</p></span>
+            <span className="headline flex flex-row"><p><p className="font-thin text-lg">Sept 13th</p><Link href="https://admission.universityofcalifornia.edu/admission-requirements/transfer-requirements/transfer-admission-guarantee-tag.html"><a target="_blank" className="headline-link hover:underline font-medium">TAG Application</a></Link> deadline for Fall term is September 30th. Make sure to review it with your community college advisor or corresponding UC TAG Advisor.</p></span>
+            <span className="headline flex flex-row"><p><p className="font-thin text-lg">Sept 11th</p><Link href="https://admission.universityofcalifornia.edu/admission-requirements/transfer-requirements/transfer-admission-guarantee-tag.html"><a target="_blank" className="headline-link hover:underline font-medium">TAG Application</a></Link> deadline for Fall term is September 30th. Make sure to review it with your community college advisor or corresponding UC TAG Advisor.</p></span>
           </div>
         </div>
 
@@ -52,9 +51,9 @@ function Home() {
           <SideButton text="Button5" />
         </div>
 
-        <div className="bg-teal-900 p-4 rounded-lg col-span-4">
-          <h3 className="text-white m-2 text-center font-medium text-xl">Latest Blog Posts</h3>
-          <div className="flex flex-wrap justify-around">
+        <div className="bg-teal-900 p-5 rounded-lg col-span-4">
+          <h3 className="text-white text-center font-medium text-xl">Latest Blog Posts</h3>
+          <div className="flex flex-wrap justify-around items-stretch">
             <BlogCard
               title="BlogTitle1 BlogTitle1 BlogTitle1 BlogTitle1"
               date="January 1 2000"

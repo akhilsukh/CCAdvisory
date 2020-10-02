@@ -5,7 +5,7 @@ import SubContainer from '../components/SubContainer'
 
 function ProfileCard(props) {
   return (
-    <Link href="#">
+    <Link href="/profile">
       <div className="hover:bg-teal-800 text-center cursor-pointer rounded-lg flex-col p-4 mx-2 my-1 w-full md:w-56 lg:w-56 xl:w-56">
         <img className="rounded-full mx-auto bg-green-200 h-32 w-32 border border-r-1" src={props.image}></img>
         <h6 className="text-white text-lg font-medium mb-1 mt-2 truncate w-full">{props.name}</h6>

@@ -25,7 +25,7 @@ function Navbar (props){
                     </div></Link>
             </div>
 
-            <label for="menu-toggle" className="cursor-pointer lg:hidden block">
+            <label htmlFor="menu-toggle" className="cursor-pointer lg:hidden block">
                 <svg className="fill-current text-white w-6 h-6" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20">
                     <title>menu</title>
                     <path d="M0 3h20v2H0V3zm0 6h20v2H0V9zm0 6h20v2H0v-2z">
@@ -34,9 +34,9 @@ function Navbar (props){
             </label>
             <input className="hidden" type="checkbox" id="menu-toggle" />
 
-            <div class="hidden lg:flex lg:items-end lg:w-auto" id="menu">
+            <div className="hidden lg:flex lg:items-end lg:w-auto" id="menu">
                 <nav>
-                    <ul class="lg:flex items-center justify-between text-base text-gray-700">
+                    <ul className="lg:flex items-center justify-between text-base text-gray-700">
                         <li><NavButton text="Blog" target="/blog"/></li>
                         <li><NavButton text="Tutoring" target="/tutor"/></li>
                         <li><NavButton text="Q&A" target="/questions"/></li>
