@@ -19,8 +19,8 @@ function Tutor() {
   return (
     <Layout id="Tutoring" index="2">
       <div className="flex flex-col">
-        <SubTitle text="CS Classes" />
         <SubContainer>
+          <h3 className="text-white text-center mb-2 font-medium text-xl">CS Classes</h3>
           <div class="grid grid-cols-1 lg:grid-cols-2 xl:lg:grid-cols-2 gap-x-2 gap-y-1 p-2">
             <ClassButton text="CIS 22A: C++ Programming I"/>
             <ClassButton text="CIS 22B: C++ Programming II"/>
@@ -34,8 +34,8 @@ function Tutor() {
           </div>
         </SubContainer>
 
-        <SubTitle text="Math Classes" />
         <SubContainer>
+          <h3 className="text-white text-center mb-2 font-medium text-xl">Math Classes</h3>
         <div class="grid grid-cols-1 lg:grid-cols-2 xl:lg:grid-cols-2 gap-x-2 gap-y-1 p-2">
             <ClassButton text="MATH 1A: Differential Calculus"/>
             <ClassButton text="MATH 1B: Integral Calculus"/>

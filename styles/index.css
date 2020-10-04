@@ -38,9 +38,9 @@ a {
     @apply text-green-200 cursor-pointer;
   }
   .text-question {
-    @apply text-white font-semibold pt-2;
+    @apply text-gray-200 font-medium pt-2;
   }
   .text-answer {
-    @apply  text-white pb-2;
+    @apply  text-gray-200 font-light pb-2;
   }
 }
