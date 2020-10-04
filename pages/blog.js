@@ -1,7 +1,7 @@
 import Head from 'next/head'
 import styles from '../styles/Home.module.css'
 import Layout from '../components/Layout'
-import SubTitle from '../components/Subtitle'
+import SubContainer from '../components/SubContainer'
 import BlogCard from "../components/BlogCard";
 
 function Transfer() {
@@ -9,8 +9,7 @@ function Transfer() {
     <Layout id="Blog" index="1">
       <div className="flex flex-col">
 
-        {/* <SubTitle text="Community College Collection" /> */}
-        <div className="bg-teal-900 p-5 rounded-lg col-span-4 mt-4 mb-12">
+        <SubContainer>
           <h3 className="text-white text-center font-medium text-xl">Community College Collection</h3>
           <div className="flex flex-wrap justify-around items-stretch">
             <BlogCard
@@ -44,10 +43,9 @@ function Transfer() {
               wordcount="350"
             />
           </div>
-        </div>
+        </SubContainer>
         
-        {/* <SubTitle text="UC Transfer + Essay Collection" /> */}
-        <div className="bg-teal-900 p-5 rounded-lg col-span-4 mt-4 mb-12">
+        <SubContainer>
           <h3 className="text-white text-center font-medium text-xl">UC Transfer + Essay Collection</h3>
           <div className="flex flex-wrap justify-around items-stretch">
             <BlogCard
@@ -81,11 +79,9 @@ function Transfer() {
               wordcount="350"
             />
           </div>
-        </div>
+        </SubContainer>
 
-
-        {/* <SubTitle text="SAT/ACT + AP Collection" /> */}
-        <div className="bg-teal-900 p-5 rounded-lg col-span-4 mt-4 mb-12">
+        <SubContainer>
           <h3 className="text-white text-center font-medium text-xl">SAT/ACT + AP Collection</h3>
           <div className="flex flex-wrap justify-around items-stretch">
             <BlogCard
@@ -119,7 +115,7 @@ function Transfer() {
               wordcount="350"
             />
           </div>
-        </div>
+        </SubContainer>
       
       </div>
     </Layout>
