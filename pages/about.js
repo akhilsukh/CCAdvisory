@@ -27,14 +27,15 @@ function About() {
         <SubTitle text="Founders" />
         <SubContainer>
           <div className="flex flex-wrap justify-around">
-            <ProfileCard name="Akhil Sukhthankar" classes="CIS 22A/B/C" role="Co-Founder, Developer" image={require('../public/images/akh.jpg')}/>
-            <ProfileCard name="Barr Avrahamov" classes="MATH 1A/B/C CIS 21JA" role="Co-Founder, Dev/Tutor?" image={require('../public/images/bar.jpg')}/>
-            <ProfileCard name="Chris Hoeft" classes="MATH 2A/B" role="Co-Founder, Blogger?" image={require('../public/images/chr.jpg')}/>
+            <ProfileCard name="Akhil Sukhthankar" classes="CIS 22A/B/C" role="Founder, Developer" image={require('../public/images/akh.jpg')}/>
+            <ProfileCard name="Barr Avrahamov" classes="MATH 1A/B/C CIS 21JA" role="Co-Founder, Tutor" image={require('../public/images/bar.jpg')}/>
+            <ProfileCard name="Chris Hoeft" classes="MATH 2A/B" role="Content Manager, Tutor" image={require('../public/images/chr.jpg')}/>
           </div>
         </SubContainer>
           <SubTitle text="Tutors"/>
         <SubContainer>
-          <div className="flex flex-wrap justify-around">
+          <div className="grid grid-cols-1 xl:grid-cols-4 lg:grid-cols-2 md:grid-cols-2 gap-4 justify-items-center">
+            <ProfileCard name="Lorem Ipsum Dolor" classes="CIS 22A/B/C"/>
             <ProfileCard name="Lorem Ipsum Dolor" classes="CIS 22A/B/C"/>
             <ProfileCard name="Lorem Ipsum Dolor" classes="CIS 22A/B/C"/>
             <ProfileCard name="Lorem Ipsum Dolor" classes="CIS 22A/B/C"/>
