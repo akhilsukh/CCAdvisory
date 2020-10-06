@@ -41,7 +41,16 @@ function About() {
             <ProfileCard name="Lorem Ipsum Dolor" classes="CIS 22A/B/C"/>
             <ProfileCard name="Lorem Ipsum Dolor" classes="CIS 22A/B/C"/>
             <ProfileCard name="Lorem Ipsum Dolor" classes="CIS 22A/B/C"/>
+            <ProfileCard name="Lorem Ipsum Dolor" classes="CIS 22A/B/C"/>
+            <ProfileCard name="Lorem Ipsum Dolor" classes="CIS 22A/B/C"/>
+            <ProfileCard name="Lorem Ipsum Dolor" classes="CIS 22A/B/C"/>
+            <ProfileCard name="Lorem Ipsum Dolor" classes="CIS 22A/B/C"/>
           </div>
+        </SubContainer>
+
+        <SubContainer>
+          <h3 className="text-white text-center mb-2 font-medium text-xl" id="contact">Contact Us</h3>
+          
         </SubContainer>
       </div>
     </Layout>
