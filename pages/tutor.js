@@ -21,7 +21,7 @@ function Tutor() {
       <div className="flex flex-col">
         <SubContainer>
           <h3 className="text-white text-center mb-2 font-medium text-xl">CS Classes</h3>
-          <div class="grid grid-cols-1 lg:grid-cols-2 xl:lg:grid-cols-2 gap-x-2 gap-y-1 p-2">
+          <div class="grid grid-cols-1 lg:grid-cols-3 xl:grid-cols-3 gap-x-2 gap-y-1 p-2">
             <ClassButton text="CIS 22A: C++ Programming I"/>
             <ClassButton text="CIS 22B: C++ Programming II"/>
             <ClassButton text="CIS 22C: Data Structures in C++"/>
@@ -36,7 +36,7 @@ function Tutor() {
 
         <SubContainer>
           <h3 className="text-white text-center mb-2 font-medium text-xl">Math Classes</h3>
-        <div class="grid grid-cols-1 lg:grid-cols-2 xl:lg:grid-cols-2 gap-x-2 gap-y-1 p-2">
+          <div class="grid grid-cols-1 lg:grid-cols-3 xl:grid-cols-3 gap-x-2 gap-y-1 p-2">
             <ClassButton text="MATH 1A: Differential Calculus"/>
             <ClassButton text="MATH 1B: Integral Calculus"/>
             <ClassButton text="MATH 1C: Multivariable Calculus I"/>
@@ -45,6 +45,15 @@ function Tutor() {
             <ClassButton text="MATH 2B: Linear Algebra"/>
             <ClassButton text="MATH 10: Introductory Statistics"/>
             <ClassButton text="MATH 22: Discrete Mathematics"/>
+          </div>
+        </SubContainer>
+
+        <SubContainer>
+          <h3 className="text-white text-center mb-2 font-medium text-xl">Econ Classes</h3>
+          <div class="grid grid-cols-1 lg:grid-cols-3 xl:grid-cols-3 gap-x-2 gap-y-1 p-2">
+            <ClassButton text="AP Econ"/>
+            <ClassButton text="Intro to Microeconomics"/>
+            <ClassButton text="Intro to Macroeconomics"/>
           </div>
         </SubContainer>
       </div>
