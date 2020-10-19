@@ -11,15 +11,18 @@ function NavButton (props) {
 }
 
 function Navbar (props){
+    // var blog = document.getElementById('blog');
+    // if(props.index === "1") blog.classList.add("underline");
+
+
     return (
     <header className="flex justify-between bg-teal-900 py-4 px-8 lg:px-16 xl:px-16">
             <div className="flex justify-between">
                 <Link href="/">
                     <div className="font-semibold text-xl cursor-pointer flex">
                         <span className="hover:text-white flex hover:underline">
-                            <h4 className="text-orange-300">C</h4>
                             <h4 className="text-blue-300 ">C</h4>
-                            <h4 className="text-red-300">C</h4>
+                            <h4 className="text-orange-300">C</h4>
                             <h4 className="font-light pl-1 text-gray-300">advisory</h4>
                         </span>
                     </div></Link>
@@ -37,10 +40,10 @@ function Navbar (props){
             <div className="hidden lg:flex lg:items-end lg:w-auto" id="menu">
                 <nav>
                     <ul className="lg:flex items-center justify-between text-base text-gray-700">
-                        <li><NavButton text="Blog" target="/blog"/></li>
-                        <li><NavButton text="Tutoring" target="/tutor"/></li>
-                        <li><NavButton text="Q&A" target="/questions"/></li>
-                        <li><NavButton text="About Us" target="/about"/></li>
+                        <li><NavButton text="Blog" id="blog" target="/blog"/></li>
+                        <li><NavButton text="Tutoring" id="tutor" target="/tutor"/></li>
+                        <li><NavButton text="Q&A" id="question" target="/questions"/></li>
+                        <li><NavButton text="About Us" id="about" target="/about"/></li>
                     </ul>
                 </nav>
             </div>
