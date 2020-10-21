@@ -17,10 +17,10 @@ function Navbar (props){
 
     return (
     <header className="flex justify-between bg-teal-900 py-4 px-8 lg:px-16 xl:px-16">
-            <div className="flex justify-between">
+            <div className="flex justify-between y-1 px-2 mx-1 rounded-lg hover:bg-teal-800">
                 <Link href="/">
                     <div className="font-semibold text-xl cursor-pointer flex">
-                        <span className="hover:text-white flex hover:underline">
+                        <span className="  flex">
                             <h4 className="text-blue-300 ">C</h4>
                             <h4 className="text-orange-300">C</h4>
                             <h4 className="font-light pl-1 text-gray-300">advisory</h4>
@@ -41,7 +41,7 @@ function Navbar (props){
                 <nav>
                     <ul className="lg:flex items-center justify-between text-base text-gray-700">
                         <li><NavButton text="Blog" id="blog" target="/blog"/></li>
-                        <li><NavButton text="Tutoring" id="tutor" target="/tutor"/></li>
+                        <li><NavButton text="Tutoring" id="tutor" target="/course"/></li>
                         <li><NavButton text="Q&A" id="question" target="/questions"/></li>
                         <li><NavButton text="About Us" id="about" target="/about"/></li>
                     </ul>

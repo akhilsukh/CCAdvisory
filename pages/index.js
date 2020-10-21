@@ -26,7 +26,7 @@ function Home() {
         </div>
 
         <div className="flex-col space-y-2 col-span-4 xl:col-span-1 lg:col-span-1">
-          <SideButton text="Visit Assist for Course Equivalencies" link="https://assist.org/"/>
+          <SideButton text="Visit Assist for A-G Course Equivalencies" link="https://assist.org/"/>
           <SideButton text="Button2" link=""/>
           <SideButton text="Button3" link=""/>
           <SideButton text="UC Transfer Essay Prompts" link="https://admission.universityofcalifornia.edu/how-to-apply/applying-as-a-transfer/personal-insight-questions.html"/>
@@ -37,34 +37,46 @@ function Home() {
           <h3 className="text-white text-center font-medium text-xl">Latest Blog Posts</h3>
           <div className="flex flex-wrap justify-around items-stretch">
             <BlogCard
-              title="BlogTitle1 BlogTitle1 BlogTitle1 BlogTitle1"
-              date="January 1 2000"
-              wordcount="350"
+              title="CCA Basics: WebAssign"
+              date="October 20 2020"
+              wordcount="1"
+              post="./blog/test"
+              img={require("../public/blog/basics_webassign.png")}
             />
             <BlogCard
-              title="BlogTitle2"
-              date="January 1 2000"
-              wordcount="350"
+              title="Deep Dive: Middle College"
+              date="October 16 2020"
+              wordcount="2"
+              post="./blog/test.md"
+              img={require("../public/blog/dad_middlecollege.png")}
             />
             <BlogCard
-              title="BlogTitle3"
-              date="January 1 2000"
+              title="Do's & Dont's: UC Transfer Essay"
+              date="October 12 2020"
               wordcount="350"
+              post="./blog/test.md"
+              img={require("../public/blog/dad_uctransferessays.png")}
             />
             <BlogCard
-              title="BlogTitle4"
-              date="January 1 2000"
-              wordcount="350"
+              title="Deep Dive: IGETC vs CSU GE"
+              date="October 8 2020"
+              wordcount="3"
+              post="./blog/test.md"
+              img={require("../public/blog/dd_ges.png")}
             />
             <BlogCard
-              title="BlogTitle5"
-              date="January 1 2000"
+              title="CCA Basics: Assist.org"
+              date="October 4 2020"
               wordcount="350"
+              post="./blog/test.md"
+              img={require("../public/blog/basics_assist.png")}
             />
             <BlogCard
-              title="BlogTitle6"
-              date="January 1 2000"
+              title="Deep Dive: UC TAG"
+              date="November 31 2020"
               wordcount="350"
+              post="./blog/test"
+              img={require("../public/blog/dad_tag.png")}
             />
           </div>
         </div>
