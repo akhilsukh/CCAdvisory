@@ -16,7 +16,7 @@ function Navbar (props){
 
 
     return (
-    <header className="flex justify-between bg-teal-900 py-4 px-8 lg:px-16 xl:px-16 items-center">
+    <header className="flex justify-between bg-teal-900 py-3 px-8 lg:px-16 xl:px-16 items-center">
             <div className="flex justify-between p-1 mx-1 rounded-lg hover:bg-teal-800">
                 <Link href="/">
                     <div className="font-semibold text-xl cursor-pointer flex items-center">
