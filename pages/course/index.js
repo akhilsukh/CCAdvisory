@@ -1,5 +1,4 @@
 import Head from 'next/head'
-// import styles from '../styles/Home.module.css'
 import Link from "next/link";
 import Layout from '../../components/Layout'
 import SubContainer from '../../components/SubContainer'
@@ -17,10 +16,10 @@ function ClassButton(props){
 function Tutor() {
   return (
     <Layout id="Tutoring" index="2">
-      <div className="flex flex-col w-1/2">
+      <div className="flex flex-col lg:w-3/5 xl:w-3/5">
         <SubContainer>
           <h3 className="text-white text-center mb-2 font-medium text-xl">CS Classes</h3>
-          <div className="grid grid-cols-1 lg:grid-cols-3 xl:grid-cols-3 gap-x-2 gap-y-1 p-2">
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-3 gap-1 p-2">
             <ClassButton text="C++ Programming I"/>
             <ClassButton text="C++ Programming II"/>
             <ClassButton text="Data Structures in C++"/>
@@ -35,7 +34,7 @@ function Tutor() {
 
         <SubContainer>
           <h3 className="text-white text-center mb-2 font-medium text-xl">Math Classes</h3>
-          <div className="grid grid-cols-1 lg:grid-cols-3 xl:grid-cols-3 gap-x-2 gap-y-1 p-2">
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-3 gap-1 p-2">
             <ClassButton text="Differential Calculus"/>
             <ClassButton text="Integral Calculus"/>
             <ClassButton text="Multivariable Calculus I"/>
@@ -49,7 +48,7 @@ function Tutor() {
 
         <SubContainer>
           <h3 className="text-white text-center mb-2 font-medium text-xl">Econ Classes</h3>
-          <div className="grid grid-cols-1 lg:grid-cols-3 xl:grid-cols-3 gap-x-2 gap-y-1 p-2">
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-3 gap-1 p-2">
             <ClassButton text="AP Econ"/>
             <ClassButton text="Intro to Microeconomics"/>
             <ClassButton text="Intro to Macroeconomics"/>

@@ -11,7 +11,7 @@ function BlogView({ postData }) {
   
   return (
     <Layout>
-      <div className="flex flex-col lg:w-1/2 xl:w-1/2">
+      <div className="flex flex-col lg:w-3/5 xl:w-3/5">
         <SubContainer>
           <h3 className="text-white text-center font-medium text-xl">{pid}</h3>
 
