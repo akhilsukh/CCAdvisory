@@ -10,7 +10,7 @@ function Transfer() {
 
         <SubContainer>
           <h3 className="text-white text-center font-medium text-xl">CCA Basics Collection</h3>
-          <div className="grid gap-4 grid-cols-1 sm:grid-cols-2 md:grid-cols-4 lg:grid-cols-4 xl:grid-cols-4 justify-items-center">
+          <div className="grid gap-4 grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-3 xl:grid-cols-4 justify-items-center">
           <BlogCard
               title="CCA Basics: WebAssign"
               date="October 20 2020"
@@ -19,7 +19,7 @@ function Transfer() {
               img={require("../../public/blog/basics_webassign.png")}
             />
             <BlogCard
-              title="CCA Basics: WebAssign"
+              title="CCA Basics: Assist.org"
               date="October 20 2020"
               wordcount="1"
               post="./blog/test"
@@ -33,7 +33,7 @@ function Transfer() {
               img={require("../../public/blog/basics_webassign.png")}
             />
             <BlogCard
-              title="CCA Basics: WebAssign"
+              title="CCA Basics: Assist.org"
               date="October 20 2020"
               wordcount="1"
               post="./blog/test"
@@ -47,7 +47,7 @@ function Transfer() {
               img={require("../../public/blog/basics_webassign.png")}
             />
             <BlogCard
-              title="CCA Basics: WebAssign"
+              title="CCA Basics: Assist.org"
               date="October 20 2020"
               wordcount="1"
               post="./blog/test"
@@ -58,7 +58,7 @@ function Transfer() {
         
         <SubContainer>
           <h3 className="text-white text-center font-medium text-xl">Deep Dive Collection</h3>
-          <div className="grid gap-4 grid-cols-1 sm:grid-cols-2 md:grid-cols-4 lg:grid-cols-4 xl:grid-cols-4 justify-items-center">
+          <div className="grid gap-4 grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-3 xl:grid-cols-4 justify-items-center">
           <BlogCard
               title="Deep Dive: Middle College"
               date="October 16 2020"
@@ -106,7 +106,7 @@ function Transfer() {
 
         <SubContainer>
           <h3 className="text-white text-center font-medium text-xl">Do's & Dont's Collection</h3>
-          <div className="grid gap-4 grid-cols-1 sm:grid-cols-2 md:grid-cols-4 lg:grid-cols-4 xl:grid-cols-4 justify-items-center">
+          <div className="grid gap-4 grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-3 xl:grid-cols-4 justify-items-center">
           <BlogCard
               title="Do's & Dont's: UC Transfer Essay"
               date="October 12 2020"

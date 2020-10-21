@@ -24,7 +24,6 @@ function About() {
   return (
     <Layout id="About" index="4">
       <div className="flex flex-col lg:w-3/5 xl:w-3/5">
-
         <SubContainer>
           <h3 className="text-white text-center mb-2 font-medium text-xl">Founders</h3>
           <ul className="grid justify-items-center gap-2 grid-cols-1 sm:grid-cols-2 md:grid-cols-2 lg:grid-cols-2 xl:grid-cols-3">

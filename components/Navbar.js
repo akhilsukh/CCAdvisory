@@ -3,7 +3,7 @@ import Link from 'next/link'
 function NavButton (props) {
     return(
         <Link href={props.target}>
-            <button className="focus:outline-none hover:bg-teal-800 text-sm text-white py-1 px-2 mx-1 rounded-lg">
+            <button className="focus:outline-none hover:bg-teal-800 text-sm text-white p-2 mx-1 rounded-lg">
                 {props.text}
             </button>
         </Link>
@@ -16,13 +16,14 @@ function Navbar (props){
 
 
     return (
-    <header className="flex justify-between bg-teal-900 py-4 px-8 lg:px-16 xl:px-16">
-            <div className="flex justify-between y-1 px-2 mx-1 rounded-lg hover:bg-teal-800">
+    <header className="flex justify-between bg-teal-900 py-4 px-8 lg:px-16 xl:px-16 items-center">
+            <div className="flex justify-between p-1 mx-1 rounded-lg hover:bg-teal-800">
                 <Link href="/">
-                    <div className="font-semibold text-xl cursor-pointer flex">
-                        <span className="  flex">
-                            <h4 className="text-blue-300 ">C</h4>
-                            <h4 className="text-orange-300">C</h4>
+                    <div className="font-semibold text-xl cursor-pointer flex items-center">
+                        <img className="h-6 m-1 mx-1" src={require("../public/icon.png")}></img>
+                        <span className="flex mx-1">
+                            <h4 className="text-orange-300 ">C</h4>
+                            <h4 className="text-blue-300">C</h4>
                             <h4 className="font-light pl-1 text-gray-300">advisory</h4>
                         </span>
                     </div></Link>
