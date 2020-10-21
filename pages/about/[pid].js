@@ -1,7 +1,7 @@
 import Head from 'next/head'
-// import styles from '../styles/Home.module.css'
 import Layout from '../../components/Layout'
 import SubContainer from '../../components/SubContainer'
+import { useRouter } from 'next/router'
 
 function Profile(props) {
   const router = useRouter()
