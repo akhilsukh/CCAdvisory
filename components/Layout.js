@@ -8,7 +8,7 @@ function Layout (props) {
                 <title>{props.id} | CC Advisory</title>
             </Head>
             <Navbar index={props.index}/>
-            <div className="flex justify-center py-10 px-8 md:py-16 md:px-16 lg:py-16 lg:px-16 xl:py-16 xl:px-16">{props.children}</div>
+            <div className="flex justify-center p-8 md:p-10 lg:p-12 xl:p-16">{props.children}</div>
         </div>
     )
 }
