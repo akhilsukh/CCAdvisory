@@ -15,7 +15,7 @@ function SideButton(props) {
 function Home() {
   return (
     <Layout id="Home" index="0">
-      <div className="grid grid-cols-4 gap-2 flex-row-reverse mt-4 mb-12">
+      <div className="grid grid-cols-4 gap-4 flex-row-reverse mt-4 mb-12">
         <div className="bg-teal-900 p-5 rounded-lg col-span-4 xl:col-span-3 lg:col-span-3">
           <h3 className="subcontainer-text">Latest Headlines</h3>
           <div className="flex flex-col mx-6">
