@@ -15,9 +15,9 @@ function SideButton(props) {
 function Home() {
   return (
     <Layout id="Home" index="0">
-      <div className="grid grid-cols-4 gap-4 flex-row-reverse mt-4 mb-12">
+      <div className="grid grid-cols-4 gap-2 flex-row-reverse mt-4 mb-12">
         <div className="bg-teal-900 p-5 rounded-lg col-span-4 xl:col-span-3 lg:col-span-3">
-          <h3 className="text-white text-center font-medium text-xl">Latest Headlines</h3>
+          <h3 className="subcontainer-text">Latest Headlines</h3>
           <div className="flex flex-col mx-6">
             <span className="headline flex flex-row"><p><p className="font-thin text-lg">Sept 22nd</p>
               Deadline to drop classes without a 'W' at both De Anza and Foothill College is October 4th.
@@ -44,28 +44,28 @@ function Home() {
         </div>
 
         <div className="bg-teal-900 p-5 rounded-lg col-span-4">
-          <h3 className="text-white text-center font-medium text-xl">Latest Blog Posts</h3>
-          <div className="grid gap-4 grid-cols-1 sm:grid-cols-2 md:grid-cols-2 lg:grid-cols-4 xl:grid-cols-6 justify-items-center">
+          <h3 className="subcontainer-text">Latest Blog Posts</h3>
+          <div className="grid gap-2 grid-cols-1 sm:grid-cols-2 md:grid-cols-2 lg:grid-cols-4 xl:grid-cols-8 justify-items-center">
             <BlogCard
               title="CCA Basics: WebAssign"
               date="October 20 2020"
               wordcount="1"
               post="./blog/test"
-              img={require("../public/blog/basics_webassign.png")}
+              img={require("../public/blog/cca_webassign.png")}
             />
             <BlogCard
               title="Deep Dive: Middle College"
               date="October 16 2020"
               wordcount="2"
               post="./blog/test.md"
-              img={require("../public/blog/dad_middlecollege.png")}
+              img={require("../public/blog/dd_middlecollege.png")}
             />
             <BlogCard
               title="Do's & Dont's: UC Transfer Essay"
               date="October 12 2020"
               wordcount="350"
               post="./blog/test.md"
-              img={require("../public/blog/dad_uctransferessays.png")}
+              img={require("../public/blog/dad_uctransferessay.png")}
             />
             <BlogCard
               title="Deep Dive: IGETC vs CSU GE"
@@ -79,14 +79,14 @@ function Home() {
               date="October 4 2020"
               wordcount="350"
               post="./blog/test.md"
-              img={require("../public/blog/basics_assist.png")}
+              img={require("../public/blog/cca_assist.png")}
             />
             <BlogCard
               title="Deep Dive: UC TAG"
               date="November 31 2020"
               wordcount="350"
               post="./blog/test"
-              img={require("../public/blog/dad_tag.png")}
+              img={require("../public/blog/dd_uctag.png")}
             />
           </div>
         </div>

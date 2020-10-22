@@ -32,7 +32,7 @@ a {
 
 @layer components {
   .headline {
-    @apply text-white p-2;
+    @apply text-white py-2;
   }
   .headline-link {
     @apply text-green-200 cursor-pointer;
@@ -41,6 +41,9 @@ a {
     @apply text-gray-200 font-medium pt-2;
   }
   .text-answer {
-    @apply  text-gray-200 font-light pb-2;
+    @apply text-gray-200 font-light pb-2;
+  }
+  .subcontainer-text{
+    @apply text-white text-center font-medium text-2xl;
   }
 }

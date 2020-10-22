@@ -24,17 +24,15 @@ function About() {
   return (
     <Layout id="About" index="4">
       <div className="flex flex-col lg:w-3/5 xl:w-3/5">
-        <SubContainer>
-          <h3 className="text-white text-center mb-2 font-medium text-xl">Founders</h3>
+        <SubContainer title="Founders">
           <ul className="grid justify-items-center gap-2 grid-cols-1 sm:grid-cols-2 md:grid-cols-2 lg:grid-cols-2 xl:grid-cols-3">
             <ProfileCard name="Akhil Sukhthankar" classes="CIS 22A/B/C" role="Director, Developer" image={require('../../public/images/akh.jpg')}/>
-            <ProfileCard name="Barr Avrahamov" classes="MATH 1A/B/C CIS 22A/B/C" role="Director of Tutoring, Tutor" image={require('../../public/images/bar.jpg')}/>
-            <ProfileCard name="Chris Hoeft" classes="ECON" role="Director of Content, Tutor" image={require('../../public/images/chr.jpg')}/>
+            <ProfileCard name="Barr Avrahamov" classes="MATH 1A/B/C CIS 22A/B/C" role="Director of Tutoring" image={require('../../public/images/bar.jpg')}/>
+            <ProfileCard name="Chris Hoeft" classes="AP ECON" role="Director of Content" image={require('../../public/images/chr.jpg')}/>
           </ul>
         </SubContainer>
 
-        <SubContainer>
-          <h3 className="text-white text-center mb-2 font-medium text-xl">Tutors</h3>
+        <SubContainer title="Tutors">
           <ul className="grid justify-items-center gap-2 grid-cols-1 sm:grid-cols-2 md:grid-cols-2 lg:grid-cols-2 xl:grid-cols-4">
             <ProfileCard name="Lorem Ipsum Dolor" classes="CIS 22A/B/C"/>
             <ProfileCard name="Lorem Ipsum Dolor" classes="CIS 22A/B/C"/>
@@ -47,8 +45,7 @@ function About() {
           </ul>
         </SubContainer>
 
-        <SubContainer>
-          <h3 className="text-white text-center mb-2 font-medium text-xl" id="contact">Contact Us</h3>
+        <SubContainer title="Contact Us">
           
         </SubContainer>
       </div>
