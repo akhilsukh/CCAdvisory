@@ -10,10 +10,10 @@ function ProfileCard(props) {
     <li className="hover:bg-teal-800 text-center cursor-pointer rounded-lg flex-col p-4 mx-4 my-1 w-full">
       <Link href="/about/asd">
         <div>
-          <img className="rounded-full mx-auto bg-green-200 h-32 w-32 border border-r-1" src={image}></img>
-          <h6 className="text-gray-200 text-lg font-medium mb-1 mt-2 truncate w-full">{name}</h6>
+          <img className="rounded-full mx-auto bg-green-200 h-32 w-32 m-2 border border-r-1" src={image}></img>
+          <h6 className="text-white text-lg font-medium m-1 truncate w-full">{name}</h6>
           <p className="text-gray-200 w-full inline">{role}</p>
-          <p className="text-xs text-gray-400 w-full block">{classes}</p>
+          <p className="text-xs text-gray-400 mb-1 w-full block">{classes}</p>
         </div>
       </Link>
     </li>
@@ -34,8 +34,8 @@ function About() {
 
         <SubContainer title="Tutors">
           <ul className="grid justify-items-center gap-2 grid-cols-1 sm:grid-cols-2 md:grid-cols-2 lg:grid-cols-2 xl:grid-cols-4">
-            <ProfileCard name="Lorem Ipsum Dolor" classes="CIS 22A/B/C"/>
-            <ProfileCard name="Lorem Ipsum Dolor" classes="CIS 22A/B/C"/>
+            <ProfileCard name="Hassham Malik" classes="CIS" image={require('../../public/images/has.jpg')}/>
+            <ProfileCard name="Preethan Selva" classes="Business" image={require('../../public/images/pre.jpg')}/>
             <ProfileCard name="Lorem Ipsum Dolor" classes="CIS 22A/B/C"/>
             <ProfileCard name="Lorem Ipsum Dolor" classes="CIS 22A/B/C"/>
             <ProfileCard name="Lorem Ipsum Dolor" classes="CIS 22A/B/C"/>
