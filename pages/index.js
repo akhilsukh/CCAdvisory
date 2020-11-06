@@ -4,11 +4,13 @@ import BlogCard from "../components/BlogCard";
 
 function SideButton(props) {
   return (
-    <Link href={props.link} >
-      <button className="bg-teal-900 hover:bg-teal-800 hover:underline focus:bg-teal-800 rounded-lg py-4 px-6 w-full focus:outline-none">
-        <a className="text-white font-medium">{props.text}</a>
-      </button>
-    </Link>
+    <div>
+      <a href={props.link} target="_blank" rel="noreferrer">
+        <button className="bg-teal-900 hover:bg-teal-800 hover:underline rounded-lg py-4 px-6 w-full focus:outline-none">
+          <a className="text-white font-medium">{props.text}</a>
+        </button>
+      </a>
+    </div>
   );
 }
 
@@ -16,6 +18,12 @@ function Home() {
   return (
     <Layout id="Home" index="0">
       <div className="grid grid-cols-4 gap-4 flex-row-reverse mt-4 mb-12">
+
+      <div className="bg-teal-600 p-3 rounded-lg col-span-4 text-center text-white text-sm">
+          <span>Our website is undergoing some major changes as we transfer from our old platform. Sorry for any broken links or missing articles! 🧰</span>
+      </div>
+
+
         <div className="bg-teal-900 p-5 rounded-lg col-span-4 xl:col-span-3 lg:col-span-3">
           <h3 className="subcontainer-text">Latest Headlines</h3>
           <div className="flex flex-col mx-6">
@@ -36,11 +44,12 @@ function Home() {
         </div>
 
         <div className="flex-col space-y-2 col-span-4 xl:col-span-1 lg:col-span-1">
-          <SideButton text="Visit Assist for A-G Course Equivalencies" link="https://assist.org/"/>
-          <SideButton text="Button2" link=""/>
-          <SideButton text="Button3" link=""/>
-          <SideButton text="UC Transfer Essay Prompts" link="https://admission.universityofcalifornia.edu/how-to-apply/applying-as-a-transfer/personal-insight-questions.html"/>
-          <SideButton text="Have Questions? Contact Us" link="/about/#contact"/>
+          <SideButton text="Assist.org - Course Equivalencies 🔗" link="https://assist.org/"/>
+          <SideButton text="UC Application Portal 🔗" link="https://apply.universityofcalifornia.edu/"/>
+          <SideButton text="CommonApp Portal 🔗" link="https://www.commonapp.org/"/>
+          <SideButton text="Coalition Application Portal 🔗" link="https://www.mycoalition.org/"/>
+          <SideButton text="UC Transfer Essay Prompts 📑" link="https://admission.universityofcalifornia.edu/how-to-apply/applying-as-a-transfer/personal-insight-questions.html"/>
+          {/* <SideButton text="Have Questions? Contact Us 👋" link="/about/#contact"/> */}
         </div>
 
         <div className="bg-teal-900 p-5 rounded-lg col-span-4">
@@ -50,43 +59,57 @@ function Home() {
               title="CCA Basics: WebAssign"
               date="October 20 2020"
               wordcount="1"
-              post="./blog/test"
+              post="cca_webassign"
               img={require("../public/blog/cca_webassign.png")}
             />
             <BlogCard
               title="Deep Dive: Middle College"
               date="October 16 2020"
               wordcount="2"
-              post="./blog/test.md"
+              post="dd_middlecollege"
               img={require("../public/blog/dd_middlecollege.png")}
             />
             <BlogCard
               title="Do's & Dont's: UC Transfer Essay"
               date="October 12 2020"
               wordcount="350"
-              post="./blog/test.md"
+              post="dad_uctransferessay"
               img={require("../public/blog/dad_uctransferessay.png")}
             />
             <BlogCard
               title="Deep Dive: IGETC vs CSU GE"
               date="October 8 2020"
               wordcount="3"
-              post="./blog/test.md"
+              post="dd_ges"
               img={require("../public/blog/dd_ges.png")}
             />
             <BlogCard
               title="CCA Basics: Assist.org"
               date="October 4 2020"
               wordcount="350"
-              post="./blog/test.md"
+              post="cca_assist"
               img={require("../public/blog/cca_assist.png")}
             />
             <BlogCard
               title="Deep Dive: UC TAG"
               date="November 31 2020"
               wordcount="350"
-              post="./blog/test"
+              post="dd_uctag"
               img={require("../public/blog/dd_uctag.png")}
+            />
+            <BlogCard
+              title="CCA Spotlight: Data Sci. @ Cal"
+              date="November 27 2020"
+              wordcount="350"
+              post="ccv_dscal"
+              img={require("../public/blog/ccv_dscal.png")}
+            />
+            <BlogCard
+              title="CCA Spotlight: CS @ Davis"
+              date="November 23 2020"
+              wordcount="350"
+              post="ccv_csdavis"
+              img={require("../public/blog/ccv_csdavis.png")}
             />
           </div>
         </div>
