@@ -14,14 +14,14 @@ function Transfer() {
               title="CCA Basics: WebAssign"
               date="October 20 2020"
               wordcount="1"
-              post="./blog/test"
+              post="cca_webassign"
               img={require("../../public/blog/cca_webassign.png")}
             />
             <BlogCard
               title="CCA Basics: Assist.org"
               date="October 20 2020"
               wordcount="1"
-              post="./blog/test"
+              post="cca_assist"
               img={require("../../public/blog/cca_assist.png")}
             />
           </div>
@@ -33,21 +33,21 @@ function Transfer() {
               title="Deep Dive: Middle College"
               date="October 16 2020"
               wordcount="2"
-              post="./blog/test.md"
+              post="dd_middlecollege"
               img={require("../../public/blog/dd_middlecollege.png")}
             />
             <BlogCard
               title="Deep Dive: IGETC vs CSU GE"
               date="October 8 2020"
               wordcount="3"
-              post="./blog/test.md"
+              post="dd_ges"
               img={require("../../public/blog/dd_ges.png")}
             />
             <BlogCard
               title="Deep Dive: UC TAG"
               date="November 31 2020"
               wordcount="350"
-              post="./blog/test"
+              post="dd_uctag"
               img={require("../../public/blog/dd_uctag.png")}
             />
           </div>
@@ -59,15 +59,34 @@ function Transfer() {
               title="Do's & Dont's: UC Transfer Essay"
               date="October 12 2020"
               wordcount="350"
-              post="./blog/test.md"
+              post="dad_uctransferessay"
               img={require("../../public/blog/dad_uctransferessay.png")}
           />
           <BlogCard
               title="Do's & Dont's: College List"
               date="October 12 2020"
               wordcount="350"
-              post="./blog/test.md"
+              post="dad_collegelist"
               img={require("../../public/blog/dad_collegelist.png")}
+          />
+          </div>
+        </SubContainer>
+
+        <SubContainer title="CCA Spotlight Collection">
+          <div className="grid gap-2 grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-3 xl:grid-cols-4 justify-items-center">
+          <BlogCard
+              title="CCA Spotlight: Data Sci. @ Cal"
+              date="October 12 2020"
+              wordcount="350"
+              post="ccv_dscal"
+              img={require("../../public/blog/ccv_dscal.png")}
+          />
+          <BlogCard
+              title="CCA Spotlight: CS @ Davis"
+              date="October 12 2020"
+              wordcount="350"
+              post="ccv_csdavis"
+              img={require("../../public/blog/ccv_csdavis.png")}
           />
           </div>
         </SubContainer>

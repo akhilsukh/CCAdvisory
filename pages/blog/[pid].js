@@ -1,8 +1,9 @@
 import Head from 'next/head'
 import Layout from '../../components/Layout'
 import SubContainer from '../../components/SubContainer'
+import React from 'react'
+import ReactMarkdown from 'react-markdown'
 import { useRouter } from 'next/router'
-
 
 
 function BlogView({ postData }) {
