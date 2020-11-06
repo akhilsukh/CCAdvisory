@@ -1,5 +1,4 @@
 import Link from "next/link";
-import { unstable_batchedUpdates } from "react-dom";
 import Layout from '../../components/Layout'
 import SubContainer from '../../components/SubContainer'
 

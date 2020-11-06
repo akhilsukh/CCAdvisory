@@ -11,8 +11,10 @@
     "autoprefixer": "^10.0.1",
     "gray-matter": "^4.0.2",
     "next": "^9.5.5",
+    "raw-loader": "^4.0.2",
     "react": "^16.14.0",
-    "react-dom": "^16.14.0"
+    "react-dom": "^16.14.0",
+    "react-markdown": "^5.0.2"
   },
   "devDependencies": {
     "next-images": "^1.6.2",
