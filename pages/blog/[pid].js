@@ -14,11 +14,7 @@ function BlogView({ content, frontmatter }) {
   return (
     <Layout>
       <div className="flex flex-col lg:w-3/5 xl:w-3/5 text-white">
-        <BlogPage title={frontmatter.title} author={frontmatter.author} date={frontmatter.date}>
-          <article className="">
-              <ReactMarkdown escapeHtml={false} source={content} />
-            </article>
-        </BlogPage>
+        <BlogPage title={frontmatter.title} author={frontmatter.author} date={frontmatter.date} content={content} />
       </div>
     </Layout>
   )
@@ -62,8 +58,8 @@ export async function getStaticProps({ params: { pid } }) {
 
   return {
     props: {
-      content: `${content}`,
       frontmatter,
+      content: content,
     },
   };
 }

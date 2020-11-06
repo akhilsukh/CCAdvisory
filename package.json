@@ -14,7 +14,10 @@
     "raw-loader": "^4.0.2",
     "react": "^16.14.0",
     "react-dom": "^16.14.0",
-    "react-markdown": "^5.0.2"
+    "react-markdown": "^5.0.2",
+    "react-typography": "^0.16.19",
+    "typography": "^0.16.19",
+    "typography-theme-kirkham": "^0.16.19"
   },
   "devDependencies": {
     "next-images": "^1.6.2",
