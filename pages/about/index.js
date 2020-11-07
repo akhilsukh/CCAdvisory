@@ -35,7 +35,7 @@ function About() {
           <ul className="grid justify-items-center gap-2 grid-cols-1 sm:grid-cols-2 md:grid-cols-2 lg:grid-cols-2 xl:grid-cols-4">
             <ProfileCard name="Hassham Malik" classes="Computer Science" image={require('../../public/images/has.jpg')}/>
             <ProfileCard name="Preethan Selva" classes="Business" image={require('../../public/images/pre.jpg')}/>
-            <ProfileCard name="Matt Matulewicz" classes="Communications" image={require('../../public/images/mat.jpg')}/>
+            <ProfileCard name="Matthew Matulewicz" classes="Communications" image={require('../../public/images/mat.jpg')}/>
           </ul>
         </SubContainer>
 
