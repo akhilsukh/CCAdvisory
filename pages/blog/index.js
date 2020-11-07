@@ -11,11 +11,11 @@ function Transfer() {
         <SubContainer title="CCA Basics Collection">
           <div className="grid gap-2 grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-3 xl:grid-cols-4 justify-items-center">
           <BlogCard
-              title="CCA Basics: WebAssign"
+              title="CCA Basics: DegreeWorks"
               date="October 20 2020"
               wordcount="1"
-              post="cca_webassign"
-              img={require("../../public/blog/cca_webassign.png")}
+              post="cca_degreeworks"
+              img={require("../../public/blog/cca_degreeworks.png")}
             />
             <BlogCard
               title="CCA Basics: Assist.org"

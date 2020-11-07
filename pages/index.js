@@ -39,11 +39,6 @@ function Home() {
               <Link href="https://admission.universityofcalifornia.edu/admission-requirements/transfer-requirements/transfer-admission-guarantee-tag.html">
               <a target="_blank" className="headline-link hover:underline font-medium">TAG Application </a></Link> 
               deadline for Fall term has now been extended to October 15th due to the recent wildfires and other circumstances. Make sure to review it with your community college advisor or UC TAG Advisor. </p></span>
-            
-            {/* <span className="headline flex flex-row"><p><p className="font-thin text-lg">Sept 11th</p>
-            <Link href="https://admission.universityofcalifornia.edu/admission-requirements/transfer-requirements/transfer-admission-guarantee-tag.html">
-              <a target="_blank" className="headline-link hover:underline font-medium">TAG Application </a></Link>
-              deadline for Fall term is September 30th. Make sure to review it with your community college advisor or corresponding UC TAG Advisor.</p></span> */}
           </div>
         </div>
 
@@ -59,12 +54,12 @@ function Home() {
         <div className="bg-teal-900 p-5 rounded-lg col-span-4">
           <h3 className="subcontainer-text">Latest Blog Posts</h3>
           <div className="grid gap-2 grid-cols-1 sm:grid-cols-2 md:grid-cols-2 lg:grid-cols-4 xl:grid-cols-8 justify-items-center">
-            <BlogCard
-              title="CCA Basics: WebAssign"
+          <BlogCard
+              title="CCA Basics: DegreeWorks"
               date="October 20 2020"
               wordcount="1"
-              post="cca_webassign"
-              img={require("../public/blog/cca_webassign.png")}
+              post="cca_degreeworks"
+              img={require("../../public/blog/cca_degreeworks.png")}
             />
             <BlogCard
               title="Deep Dive: Middle College"

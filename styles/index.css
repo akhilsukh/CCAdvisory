@@ -46,4 +46,17 @@ a {
   .subcontainer-text{
     @apply text-white text-center font-medium text-2xl;
   }
+
+  .markdown h1{
+    @apply text-2xl font-semibold mb-2 mt-3;
+  }
+  .markdown h2{
+    @apply text-xl font-medium my-1;
+  }
+  .markdown a{
+    @apply text-teal-200
+  }
+  .markdown a:hover{
+    @apply underline;
+  }
 }

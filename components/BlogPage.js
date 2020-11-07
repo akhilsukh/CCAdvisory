@@ -20,7 +20,7 @@ function BlogPage(props) {
                     <h4 className="">250 words</h4>
                 </div>
                 <div className="h-8"></div>
-                <article className="">
+                <article className="markdown">
                     <ReactMarkdown 
                         escapeHtml={false} 
                         source={content} />
