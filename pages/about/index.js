@@ -10,9 +10,9 @@ function ProfileCard(props) {
       <Link href="/about/asd">
         <div>
           <img className="rounded-full mx-auto bg-green-200 h-32 w-32 m-2 border border-r-1" src={image}></img>
-          <h6 className="text-white text-lg font-medium m-1 truncate w-full">{name}</h6>
-          <p className="text-gray-200 w-full inline">{role}</p>
-          <p className="text-xs text-gray-400 mb-1 w-full block">{classes}</p>
+          <h6 className="text-white text-lg font-medium mt-1 truncate w-full">{name}</h6>
+          <p className="text-gray-100 text-xs font-medium w-full inline">{role}</p>
+          <p className="text-xs text-gray-400 w-full block">{classes}</p>
         </div>
       </Link>
     </li>
@@ -35,12 +35,7 @@ function About() {
           <ul className="grid justify-items-center gap-2 grid-cols-1 sm:grid-cols-2 md:grid-cols-2 lg:grid-cols-2 xl:grid-cols-4">
             <ProfileCard name="Hassham Malik" classes="Computer Science" image={require('../../public/images/has.jpg')}/>
             <ProfileCard name="Preethan Selva" classes="Business" image={require('../../public/images/pre.jpg')}/>
-            <ProfileCard name="Lorem Ipsum Dolor" classes="CIS 22A/B/C"/>
-            <ProfileCard name="Lorem Ipsum Dolor" classes="CIS 22A/B/C"/>
-            <ProfileCard name="Lorem Ipsum Dolor" classes="CIS 22A/B/C"/>
-            <ProfileCard name="Lorem Ipsum Dolor" classes="CIS 22A/B/C"/>
-            <ProfileCard name="Lorem Ipsum Dolor" classes="CIS 22A/B/C"/>
-            <ProfileCard name="Lorem Ipsum Dolor" classes="CIS 22A/B/C"/>
+            <ProfileCard name="Matt Matulewicz" classes="Communications" image={require('../../public/images/mat.jpg')}/>
           </ul>
         </SubContainer>
 
