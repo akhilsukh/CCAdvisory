@@ -25,15 +25,15 @@ function About() {
       <div className="flex flex-col lg:w-3/5 xl:w-3/5">
         <SubContainer title="Founders">
           <ul className="grid justify-items-center gap-2 grid-cols-1 sm:grid-cols-2 md:grid-cols-2 lg:grid-cols-2 xl:grid-cols-3">
-            <ProfileCard name="Akhil Sukhthankar" classes="CIS 22A/B/C" role="Director, Developer" image={require('../../public/images/akh.jpg')}/>
-            <ProfileCard name="Barr Avrahamov" classes="MATH 1A/B/C CIS 22A/B/C" role="Director of Tutoring" image={require('../../public/images/bar.jpg')}/>
-            <ProfileCard name="Chris Hoeft" classes="AP ECON" role="Director of Content" image={require('../../public/images/chr.jpg')}/>
+            <ProfileCard name="Akhil Sukhthankar" classes="Computer Science" role="Director, Developer" image={require('../../public/images/akh.jpg')}/>
+            <ProfileCard name="Barr Avrahamov" classes="Computer Science" role="Director of Outreach" image={require('../../public/images/bar.jpg')}/>
+            <ProfileCard name="Chris Hoeft" classes="Political Science" role="Director of Content" image={require('../../public/images/chr.jpg')}/>
           </ul>
         </SubContainer>
 
-        <SubContainer title="Tutors">
+        <SubContainer title="Writers">
           <ul className="grid justify-items-center gap-2 grid-cols-1 sm:grid-cols-2 md:grid-cols-2 lg:grid-cols-2 xl:grid-cols-4">
-            <ProfileCard name="Hassham Malik" classes="CIS" image={require('../../public/images/has.jpg')}/>
+            <ProfileCard name="Hassham Malik" classes="Computer Science" image={require('../../public/images/has.jpg')}/>
             <ProfileCard name="Preethan Selva" classes="Business" image={require('../../public/images/pre.jpg')}/>
             <ProfileCard name="Lorem Ipsum Dolor" classes="CIS 22A/B/C"/>
             <ProfileCard name="Lorem Ipsum Dolor" classes="CIS 22A/B/C"/>
