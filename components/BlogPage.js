@@ -1,14 +1,10 @@
 import Link from "next/link";
 import SubContainer from '../components/SubContainer'
 import ReactMarkdown from "react-markdown";
-import Typography from 'typography'
-import kirkhamTheme from 'typography-theme-kirkham'
-
-const typography = new Typography(kirkhamTheme)
 
 function BlogPage(props) {
-    const {title, author, date, wordcount, content , children} = props;
-    
+    const { title, author, date, wordcount, content, children } = props;
+
     return (
         <SubContainer>
             <div className="m-6">
@@ -21,8 +17,8 @@ function BlogPage(props) {
                 </div>
                 <div className="h-8"></div>
                 <article className="markdown">
-                    <ReactMarkdown 
-                        escapeHtml={false} 
+                    <ReactMarkdown
+                        escapeHtml={false}
                         source={content} />
                 </article>
             </div>

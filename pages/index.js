@@ -19,9 +19,9 @@ function Home() {
     <Layout id="Home" index="0">
       <div className="grid grid-cols-4 gap-4 flex-row-reverse mt-4 mb-12">
 
-      <div className="bg-teal-600 p-3 rounded-lg col-span-4 text-center text-white text-sm">
+        <div className="bg-teal-600 p-3 rounded-lg col-span-4 text-center text-white text-sm">
           <span>Our website is undergoing some major changes as we transfer from our old platform. Sorry for any broken links or missing articles! 🧰</span>
-      </div>
+        </div>
 
 
         <div className="bg-teal-900 p-5 rounded-lg col-span-4 xl:col-span-3 lg:col-span-3">
@@ -34,32 +34,32 @@ function Home() {
             <span className="headline flex flex-row"><p><p className="font-thin text-lg">Sept 22nd</p>
               Deadline to drop classes without a 'W' at both De Anza and Foothill College is October 4th.
             </p></span>
-            
+
             <span className="headline flex flex-row"><p><p className="font-thin text-lg">Sept 14th</p>
               <Link href="https://admission.universityofcalifornia.edu/admission-requirements/transfer-requirements/transfer-admission-guarantee-tag.html">
-              <a target="_blank" className="headline-link hover:underline font-medium">TAG Application </a></Link> 
+                <a target="_blank" className="headline-link hover:underline font-medium">TAG Application </a></Link>
               deadline for Fall term has now been extended to October 15th due to the recent wildfires and other circumstances. Make sure to review it with your community college advisor or UC TAG Advisor. </p></span>
           </div>
         </div>
 
         <div className="flex-col space-y-2 col-span-4 xl:col-span-1 lg:col-span-1">
-          <SideButton text="Assist.org - Course Equivalencies 🔗" link="https://assist.org/"/>
-          <SideButton text="UC Application Portal 🔗" link="https://apply.universityofcalifornia.edu/"/>
-          <SideButton text="CommonApp Portal 🔗" link="https://www.commonapp.org/"/>
-          <SideButton text="Coalition Application Portal 🔗" link="https://www.mycoalition.org/"/>
-          <SideButton text="UC Transfer Essay Prompts 📑" link="https://admission.universityofcalifornia.edu/how-to-apply/applying-as-a-transfer/personal-insight-questions.html"/>
+          <SideButton text="Assist.org - Course Equivalencies 🔗" link="https://assist.org/" />
+          <SideButton text="UC Application Portal 🔗" link="https://apply.universityofcalifornia.edu/" />
+          <SideButton text="CommonApp Portal 🔗" link="https://www.commonapp.org/" />
+          <SideButton text="Coalition Application Portal 🔗" link="https://www.mycoalition.org/" />
+          <SideButton text="UC Transfer Essay Prompts 📑" link="https://admission.universityofcalifornia.edu/how-to-apply/applying-as-a-transfer/personal-insight-questions.html" />
           {/* <SideButton text="Have Questions? Contact Us 👋" link="/about/#contact"/> */}
         </div>
 
         <div className="bg-teal-900 p-5 rounded-lg col-span-4">
           <h3 className="subcontainer-text">Latest Blog Posts</h3>
           <div className="grid gap-2 grid-cols-1 sm:grid-cols-2 md:grid-cols-2 lg:grid-cols-4 xl:grid-cols-8 justify-items-center">
-          <BlogCard
+            <BlogCard
               title="CCA Basics: DegreeWorks"
               date="October 20 2020"
               wordcount="1"
               post="cca_degreeworks"
-              img={require("../../public/blog/cca_degreeworks.png")}
+              img={require("../public/blog/cca_degreeworks.png")}
             />
             <BlogCard
               title="Deep Dive: Middle College"
