@@ -1,16 +1,13 @@
 import Head from 'next/head'
 import Layout from '../../components/Layout'
-import SubContainer from '../../components/SubContainer'
 import BlogPage from '../../components/BlogPage'
 import React from 'react'
 import fs from "fs";
 import path from "path";
 import matter from "gray-matter";
-import { useRouter } from 'next/router'
-import ReactMarkdown from "react-markdown/with-html";
 
 function BlogView({ content, frontmatter }) {
- 
+
   return (
     <Layout>
       <div className="flex flex-col lg:w-3/5 xl:w-3/5 text-white">
@@ -39,7 +36,7 @@ export async function getStaticPaths() {
 }
 
 export async function getStaticProps({ params: { pid } }) {
-   const markdownWithMetadata = fs
+  const markdownWithMetadata = fs
     .readFileSync(path.join("posts/", pid + ".md"))
     .toString();
 

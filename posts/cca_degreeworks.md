@@ -4,9 +4,9 @@ author: "Akhil Sukhthankar"
 date: 2020-07-10
 ---
 
-[this article is being reformated to markdown format right now.]
+<!-- [this article is being reformated to markdown format right now.] -->
 
-<!-- # DegreeWorks - How to Check GPA
+# DegreeWorks - How to Check GPA
 
 Aliquam erat volutpat. Vivamus at consectetur justo. Donec tellus nibh, pellentesque quis elit at, hendrerit sodales lacus. Donec mattis vitae justo ut fermentum. Duis eleifend quam id pellentesque commodo. Vivamus suscipit diam turpis, at vestibulum tortor commodo eget. Nulla leo nisi, convallis quis eros ac, volutpat egestas diam. Cras id massa sit amet ligula mollis accumsan eget eu mi. Curabitur lacinia neque vel lobortis congue.
 
@@ -15,4 +15,4 @@ Aliquam erat volutpat. Vivamus at consectetur justo. Donec tellus nibh, pellente
 Aliquam erat volutpat. Vivamus at consectetur justo. Donec tellus nibh, pellentesque quis elit at, hendrerit sodales lacus. Donec mattis vitae justo ut fermentum. Duis eleifend quam id pellentesque commodo. Vivamus suscipit diam turpis, at vestibulum tortor commodo eget. Nulla leo nisi, convallis quis eros ac, volutpat egestas diam. Cras id massa sit amet ligula mollis accumsan eget eu mi. Curabitur lacinia neque vel lobortis congue.
 &nbsp;
 1. Go to [FHDA portal](http://www.example.com) to find 
-2. asd -->
+2. asd
