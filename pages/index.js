@@ -69,7 +69,7 @@ function Home() {
               img={require("../public/blog/dd_middlecollege.png")}
             />
             <BlogCard
-              title="Do's & Dont's: UC Transfer Essay"
+              title="Do's & Don'ts: UC Transfer Essay"
               date="October 12 2020"
               wordcount="350"
               post="dad_uctransferessay"

@@ -53,17 +53,17 @@ function Transfer() {
           </div>
         </SubContainer>
 
-        <SubContainer title="Do's & Dont's Collection">
+        <SubContainer title="Do's & Don'ts Collection">
           <div className="grid gap-2 grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-3 xl:grid-cols-4 justify-items-center">
           <BlogCard
-              title="Do's & Dont's: UC Transfer Essay"
+              title="Do's & Don'ts: UC Transfer Essay"
               date="October 12 2020"
               wordcount="350"
               post="dad_uctransferessay"
               img={require("../../public/blog/dad_uctransferessay.png")}
           />
           <BlogCard
-              title="Do's & Dont's: College List"
+              title="Do's & Don'ts: College List"
               date="October 12 2020"
               wordcount="350"
               post="dad_collegelist"
