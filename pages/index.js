@@ -55,56 +55,56 @@ function Home() {
           <h3 className="subcontainer-text">Latest Blog Posts</h3>
           <div className="grid gap-2 grid-cols-1 sm:grid-cols-2 md:grid-cols-2 lg:grid-cols-4 xl:grid-cols-8 justify-items-center">
             <BlogCard
-              title="CCA Basics: DegreeWorks"
+              title="Top 10"
+              date="November 9 2020"
+              wordcount="3"
+              post="dad_topten"
+              img={require("../public/blog/dad_topten.png")}
+            />
+            <BlogCard
+              title="DegreeWorks"
               date="October 20 2020"
               wordcount="1"
               post="cca_degreeworks"
               img={require("../public/blog/cca_degreeworks.png")}
             />
             <BlogCard
-              title="Deep Dive: Middle College"
+              title="Middle College"
               date="October 16 2020"
               wordcount="2"
               post="dd_middlecollege"
               img={require("../public/blog/dd_middlecollege.png")}
             />
             <BlogCard
-              title="Do's & Don'ts: UC Transfer Essay"
+              title="UC Transfer Essay"
               date="October 12 2020"
               wordcount="350"
               post="dad_uctransferessay"
               img={require("../public/blog/dad_uctransferessay.png")}
             />
             <BlogCard
-              title="Deep Dive: IGETC vs CSU GE"
-              date="October 8 2020"
-              wordcount="3"
-              post="dd_ges"
-              img={require("../public/blog/dd_ges.png")}
-            />
-            <BlogCard
-              title="CCA Basics: Assist.org"
+              title="Assist.org"
               date="October 4 2020"
               wordcount="350"
               post="cca_assist"
               img={require("../public/blog/cca_assist.png")}
             />
             <BlogCard
-              title="Deep Dive: UC TAG"
-              date="November 31 2020"
-              wordcount="350"
-              post="dd_uctag"
-              img={require("../public/blog/dd_uctag.png")}
-            />
-            <BlogCard
-              title="CCA Spotlight: Data Sci. @ Cal"
+              title="Data Science @ Cal"
               date="November 27 2020"
               wordcount="350"
               post="ccv_dscal"
               img={require("../public/blog/ccv_dscal.png")}
             />
             <BlogCard
-              title="CCA Spotlight: CS @ Davis"
+              title="UC TAG"
+              date="November 31 2020"
+              wordcount="350"
+              post="dd_uctag"
+              img={require("../public/blog/dd_uctag.png")}
+            />
+            <BlogCard
+              title="Computer Science @ Davis"
               date="November 23 2020"
               wordcount="350"
               post="ccv_csdavis"

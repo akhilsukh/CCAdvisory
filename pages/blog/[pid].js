@@ -11,7 +11,7 @@ function BlogView({ content, frontmatter }) {
   return (
     <Layout>
       <div className="flex flex-col lg:w-3/5 xl:w-3/5 text-white">
-        <BlogPage title={frontmatter.title} author={frontmatter.author} date={frontmatter.date} content={content} />
+        <BlogPage frontmatter={frontmatter} content={content} />
       </div>
     </Layout>
   )
@@ -50,6 +50,7 @@ export async function getStaticProps({ params: { pid } }) {
     ...data,
     title: `${data.title}`,
     author: `${data.author}`,
+    section: `${data.section}`,
     date: `${formattedDate}`,
   };
 

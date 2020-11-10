@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600&display=swap');
 @import "tailwindcss/base";
 @import "tailwindcss/components";
 @import "tailwindcss/utilities";
@@ -47,14 +48,24 @@ a {
     @apply text-white text-center font-medium text-2xl;
   }
 
+  .markdown-title{
+    @apply font-serif text-4xl;
+  }
+  .markdown-subtitle{
+    @apply uppercase text-xs;
+  }
   .markdown h1{
-    @apply text-2xl font-semibold mb-2 mt-3;
+    @apply font-serif text-2xl font-semibold mt-6;
   }
   .markdown h2{
-    @apply text-xl font-medium my-1;
+    @apply  text-xl font-medium my-1;
   }
+  .markdown p{
+    @apply font-serif text-justify px-8;
+  }
+
   .markdown a{
-    @apply text-teal-200
+    @apply text-teal-200;
   }
   .markdown a:hover{
     @apply underline;
