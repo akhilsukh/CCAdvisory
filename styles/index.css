@@ -61,7 +61,7 @@ a {
     @apply  text-xl font-medium my-1;
   }
   .markdown p {
-    @apply font-serif;
+    @apply font-serif p-1;
   }
 
   .markdown a{
