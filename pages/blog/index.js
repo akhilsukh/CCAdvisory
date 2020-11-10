@@ -56,6 +56,13 @@ function Transfer() {
         <SubContainer title="Do's & Don'ts Collection" id="DO'S_&_DON'TS">
           <div className="grid gap-2 grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-3 xl:grid-cols-4 justify-items-center">
           <BlogCard
+              title="Top 10"
+              date="November 9 2020"
+              wordcount="3"
+              post="dad_topten"
+              img={require("../../public/blog/dad_topten.png")}
+            />
+          <BlogCard
               title="UC Transfer Essay"
               date="October 12 2020"
               wordcount="350"

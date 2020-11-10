@@ -2,9 +2,9 @@ import Link from 'next/link'
 
 function SubContainer (props){
     return (
-        <div className="bg-teal-900 p-5 rounded-lg block mt-4 mb-12" id={props.id}>
+        <div className="bg-teal-900 rounded-lg block my-8 p-4" id={props.id}>
             <h3 className="subcontainer-text">{props.title}</h3>
-            {props.children}
+            <div className="lg:px-4 xl:px-6 xl:pb-2">{props.children}</div>
         </div>
     )
 }

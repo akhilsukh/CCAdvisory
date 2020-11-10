@@ -20,13 +20,13 @@ function Home() {
       <div className="grid grid-cols-4 gap-4 flex-row-reverse mt-4 mb-12">
 
         <div className="bg-teal-600 p-3 rounded-lg col-span-4 text-center text-white text-sm">
-          <span>Our website is undergoing some major changes as we transfer from our old platform. Sorry for any broken links or missing articles! 🧰</span>
+          <span>🧰 Our website is undergoing some major changes as we transfer from our old platform. Sorry for any broken links or missing articles!</span>
         </div>
 
 
-        <div className="bg-teal-900 p-5 rounded-lg col-span-4 xl:col-span-3 lg:col-span-3">
+        <div className="bg-teal-900 pt-4 rounded-lg col-span-4 xl:col-span-3 lg:col-span-3">
           <h3 className="subcontainer-text">Latest Headlines</h3>
-          <div className="flex flex-col mx-6">
+          <div className="flex flex-col px-6 pb-2">
             <span className="headline flex flex-row"><p><p className="font-thin text-lg">Nov 1st</p>
               Prepare to send your official transcripts to your CommonApp colleges after Fall Term for Fall 2021 Applicants.
             </p></span>
@@ -42,18 +42,19 @@ function Home() {
           </div>
         </div>
 
+
         <div className="flex-col space-y-2 col-span-4 xl:col-span-1 lg:col-span-1">
-          <SideButton text="Assist.org - Course Equivalencies 🔗" link="https://assist.org/" />
-          <SideButton text="UC Application Portal 🔗" link="https://apply.universityofcalifornia.edu/" />
-          <SideButton text="CommonApp Portal 🔗" link="https://www.commonapp.org/" />
-          <SideButton text="Coalition Application Portal 🔗" link="https://www.mycoalition.org/" />
-          <SideButton text="UC Transfer Essay Prompts 📑" link="https://admission.universityofcalifornia.edu/how-to-apply/applying-as-a-transfer/personal-insight-questions.html" />
+          <SideButton text="🔗 Assist - Course Equivalencies" link="https://assist.org/" />
+          <SideButton text="🔗 UC Application Portal" link="https://apply.universityofcalifornia.edu/" />
+          <SideButton text="🔗 CommonApp Portal" link="https://www.commonapp.org/" />
+          <SideButton text="🔗 Coalition Application Portal" link="https://www.mycoalition.org/" />
+          <SideButton text="📑 UC Transfer Essay Prompts" link="https://admission.universityofcalifornia.edu/how-to-apply/applying-as-a-transfer/personal-insight-questions.html" />
           {/* <SideButton text="Have Questions? Contact Us 👋" link="/about/#contact"/> */}
         </div>
 
-        <div className="bg-teal-900 p-5 rounded-lg col-span-4">
+        <div className="bg-teal-900 pt-4 rounded-lg col-span-4">
           <h3 className="subcontainer-text">Latest Blog Posts</h3>
-          <div className="grid gap-2 grid-cols-1 sm:grid-cols-2 md:grid-cols-2 lg:grid-cols-4 xl:grid-cols-8 justify-items-center">
+          <div className="px-2 lg:px-4 xl:px-6 pb-2 grid gap-2 grid-cols-1 sm:grid-cols-2 md:grid-cols-2 lg:grid-cols-4 xl:grid-cols-8 justify-items-center">
             <BlogCard
               title="Top 10"
               date="November 9 2020"
