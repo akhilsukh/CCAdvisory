@@ -42,6 +42,9 @@ a {
   .nav-button:hover {
     @apply bg-teal-900 text-sm text-white font-medium p-2 px-3 mx-1 rounded-lg;
   }
+  .nav-button:focus {
+    @apply outline-none bg-teal-900 text-sm text-white font-medium p-2 px-3 mx-1 rounded-lg;
+  }
 
   .headline {
     @apply text-white py-2;

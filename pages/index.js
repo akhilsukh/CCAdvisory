@@ -6,7 +6,7 @@ function SideButton(props) {
   return (
     <div>
       <a href={props.link} target="_blank" rel="noreferrer">
-        <button className="bg-teal-900 hover:bg-teal-800 hover:underline rounded-lg py-4 px-6 w-full focus:outline-none">
+        <button className="bg-teal-800 hover:bg-teal-900 hover:underline rounded-lg py-4 px-6 w-full focus:outline-none">
           <a className="text-white font-medium">{props.text}</a>
         </button>
       </a>
@@ -24,7 +24,7 @@ function Home() {
         </div>
 
 
-        <div className="bg-teal-900 pt-4 rounded-lg col-span-4 xl:col-span-3 lg:col-span-3">
+        <div className="bg-teal-800 pt-4 rounded-lg col-span-4 xl:col-span-3 lg:col-span-3">
           <h3 className="subcontainer-text">Latest Headlines</h3>
           <div className="flex flex-col px-6 pb-2">
             <span className="headline flex flex-row"><p><p className="font-thin text-lg">Nov 1st</p>
@@ -52,7 +52,7 @@ function Home() {
           {/* <SideButton text="Have Questions? Contact Us 👋" link="/about/#contact"/> */}
         </div>
 
-        <div className="bg-teal-900 pt-4 rounded-lg col-span-4">
+        <div className="bg-teal-800 pt-4 rounded-lg col-span-4">
           <h3 className="subcontainer-text">Latest Blog Posts</h3>
           <div className="px-2 lg:px-4 xl:px-6 pb-2 grid gap-2 grid-cols-1 sm:grid-cols-2 md:grid-cols-2 lg:grid-cols-4 xl:grid-cols-8 justify-items-center">
             <BlogCard
