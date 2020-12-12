@@ -20,7 +20,7 @@ function Home() {
       <div className="grid grid-cols-4 gap-4 flex-row-reverse mt-4 mb-12">
 
         <div className="bg-teal-600 p-3 rounded-lg col-span-4 text-center text-white text-sm">
-          <span>🧰 Our website is undergoing some major changes as we transfer from our old platform. Sorry for any broken links or missing articles!</span>
+          <span>🧰 Our website is undergoing some major changes as we upgrade from our old platform. Sorry for any broken links or missing articles!</span>
         </div>
 
 

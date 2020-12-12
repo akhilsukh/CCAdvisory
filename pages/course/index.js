@@ -6,7 +6,7 @@ import SubContainer from '../../components/SubContainer'
 function ClassButton(props){
   return(
     <Link href="/course/2">
-      <button className="bg-teal-900 hover:bg-teal-800 focus:bg-teal-800 rounded-lg py-2 px-4 w-full focus:outline-none">
+      <button className="hover:bg-teal-900 focus:bg-teal-900 rounded-lg py-2 px-4 w-full focus:outline-none">
         <a className="text-white">{props.text}</a>
       </button>
     </Link>

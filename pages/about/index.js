@@ -9,7 +9,7 @@ function ProfileCard(props) {
     <li className="hover:bg-teal-800 text-center cursor-pointer rounded-lg flex-col p-4 mx-4 my-1 w-full">
       <Link href="/about/asd">
         <div>
-          <img className="rounded-full mx-auto bg-green-200 h-32 w-32 m-2 border border-r-1" src={image}></img>
+          <img className="rounded-full mx-auto bg-teal-200 h-32 w-32 m-2 border border-r-1" src={image}></img>
           <h6 className="text-white text-lg font-medium mt-1 truncate w-full">{name}</h6>
           <p className="text-gray-100 text-xs w-full inline">{role}</p>
           <p className="text-xs text-gray-400 w-full block">{classes}</p>
