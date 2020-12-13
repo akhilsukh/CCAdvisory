@@ -1,21 +1,19 @@
+# Dockerfile
+
+# base image
 FROM node:alpine
 
-ENV PORT 3000
-
-# Create app directory
+# create & set working directory
 RUN mkdir -p /usr/src/app
 WORKDIR /usr/src/app
 
-# Installing dependencies
-COPY package.json /usr/src/app/
-RUN npm install
-
-# Copying source files
+# copy source files
 COPY . /usr/src/app
 
-# Building app
-RUN npm run build
-EXPOSE 3000
+# install dependencies
+RUN npm install
 
-# Running the app
-CMD "npm" "run" "dev"
+# start app
+# RUN npm run build
+# EXPOSE 3000
+CMD npm run dev
