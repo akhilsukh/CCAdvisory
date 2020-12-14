@@ -10,7 +10,7 @@ function BlogView({ content, frontmatter }) {
 
   return (
     <Layout>
-      <div className="flex flex-col lg:w-3/5 xl:w-3/5">
+      <div className="flex flex-col w-full max-w-7xl">
         <BlogPage frontmatter={frontmatter} content={content} />
       </div>
     </Layout>

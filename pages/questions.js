@@ -6,7 +6,7 @@ import SubContainer from '../components/SubContainer'
 function QA() {
   return (
     <Layout id="Q&A" index="3">
-      <div className="flex flex-col lg:w-3/5 xl:w-3/5">
+      <div className="flex flex-col w-full max-w-7xl">
         <SubContainer title="TAG: Questions & Answers">
           <p className="text-question">Justo est erat eos rebum duo stet at rebum diam kasd, elitr clita et et et, sit sed dolor magna.</p>
           <p className="text-answer">Dolores dolores eos dolor at aliquyam ipsum sanctus sit magna, invidunt dolore sed sed dolor. Sed invidunt duo eirmod tempor est, et sit no lorem aliquyam nonumy amet invidunt justo.</p>

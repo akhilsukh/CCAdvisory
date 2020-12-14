@@ -17,15 +17,15 @@ function Navbar (props){
     
 
     return (      
-        <header className="flex justify-between bg-teal-800 py-3 px-8 lg:px-16 xl:px-16 items-center">
-               <div className="flex justify-between p-1 mx-1 rounded-lg hover:bg-teal-900">
+        <header className="flex justify-between bg-pacific-800 py-3 px-8 lg:px-16 xl:px-16 items-center">
+               <div className="flex justify-between p-1 mx-1 rounded-lg hover:bg-pacific-900">
                    <Link href="/">
                        <div className="font-semibold text-xl cursor-pointer flex items-center">
                            <img className="h-6 m-1 mx-1" src={require("../public/icon.png")}></img>
                            <span className="flex mx-1">
-                               <h4 className="text-yellow-200 ">C</h4>
-                               <h4 className="text-blue-200">C</h4>
-                               <h4 className="font-light pl-1 text-gray-200">advisory</h4>
+                               <h1 className="text-yellow-300">C</h1>
+                               <h1 className="text-blue-300">C</h1>
+                               <h1 className="font-light pl-1 text-gray-200">advisory</h1>
                            </span>
                        </div></Link>
                </div>

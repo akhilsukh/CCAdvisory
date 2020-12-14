@@ -9,9 +9,8 @@ function Course() {
   
   return (
     <Layout id={pid}>
-      <div className="flex flex-col lg:w-3/5 xl:w-3/5">
-        <SubContainer>
-          <h3 className="text-white text-center font-medium text-xl">{pid}</h3>
+      <div className="flex flex-col w-full max-w-7xl">
+        <SubContainer title={pid}>
 
         </SubContainer>
       </div>
