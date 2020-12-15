@@ -83,7 +83,7 @@ function Transfer() {
                 date="October 12 2020"
                 post="dad_collegelist"
                 section="Do's & Don'ts"
-                author=""
+                author="Hassham Malik"
             />
           </BlogGrid>
         </SubContainer>

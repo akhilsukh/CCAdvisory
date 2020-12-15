@@ -34,30 +34,33 @@ a {
 
 @layer components {
   /* */
+  .subcontainer{
+    @apply bg-gray-100 rounded-lg py-4 px-5 ring-2 ring-gray-200;
+  }
   .subcontainer-text{
     @apply font-semibold text-pacific-900 text-2xl pb-2;
   }
   .alert{
-    @apply bg-gray-100 p-3 mb-5 rounded-lg text-center text-sm font-medium text-pacific-800 ring-2 ring-gray-200;
+    @apply bg-gray-100 p-3 rounded-lg text-center text-sm font-medium text-pacific-800 ring-2 ring-gray-200;
   }
 
   /* For Navbar buttons */
-  .active {
+  .active-nav-button {
+    @apply rounded-lg  p-2 px-3 mx-1 bg-pacific-900 text-sm text-white font-medium;
+  }
+  .inactive-nav-button {
+    @apply rounded-lg p-2 px-3 mx-1 text-sm text-gray-200 font-medium;
+  }
+  .inactive-nav-button:hover {
     @apply bg-pacific-900 text-white;
   }
-  .nav-button {
-    @apply text-sm text-gray-200 font-medium p-2 px-3 mx-1 rounded-lg;
-  }
-  .nav-button:hover {
-    @apply bg-pacific-900 text-sm text-white font-medium p-2 px-3 mx-1 rounded-lg;
-  }
-  .nav-button:focus {
-    @apply outline-none bg-pacific-900 text-sm text-white font-medium p-2 px-3 mx-1 rounded-lg;
+  .inactive-nav-button:focus {
+    @apply outline-none;
   }
 
   /* For Headlines text */
   .headline {
-    @apply py-2;
+    @apply py-1;
   }
   .headline-link {
     @apply text-pacific-800 cursor-pointer;

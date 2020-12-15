@@ -4,7 +4,7 @@ import { useRouter } from 'next/router'
 function NavButton (props) {
     return(
         <Link href={props.target}>
-            <button className={props.active == true ? "active nav-button" : "nav-button"}>
+            <button className={props.active == true ? "active-nav-button" : "inactive-nav-button"}>
                 {props.text}
             </button>
         </Link>
@@ -24,8 +24,15 @@ function Navbar (props){
                            <img className="h-6 m-1 mx-1" src={require("../public/icon.png")}></img>
                            <span className="flex mx-1">
                                <h1 className="text-yellow-300">C</h1>
-                               <h1 className="text-blue-300">C</h1>
+                               <h1 className="text-blue-100">C</h1>
                                <h1 className="font-light pl-1 text-gray-200">advisory</h1>
+                               {/* <div className="text-white">
+                                   <p className="xs:block md:hidden lg:hidden xl:hidden 2xl:hidden">- XS</p>
+                                   <p className="xs:hidden md:block lg:hidden xl:hidden 2xl:hidden">- MD</p>
+                                   <p className="xs:hidden md:hidden lg:block xl:hidden 2xl:hidden">- LG</p>
+                                   <p className="xs:hidden md:hidden lg:hidden xl:block 2xl:hidden">- XL</p>
+                                   <p className="xs:hidden md:hidden lg:hidden xl:hidden 2xl:block">- 2XL</p>
+                               </div> */}
                            </span>
                        </div></Link>
                </div>

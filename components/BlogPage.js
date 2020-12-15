@@ -8,7 +8,8 @@ function BlogPage(props) {
     var sectionLink = "/blog#" + frontmatter.section.replace(/ /g, "_");
 
     return (
-        <div className="border-2 border-pacific-800 rounded-lg block my-8 p-1 lg:p-4 xl:p-4">
+        <SubContainer>
+        {/* <div className="border-2 border-pacific-800 rounded-lg block my-8 p-1 lg:p-4 xl:p-4"> */}
             <div className="m-6">
                 <div className="text-center">
                     <Link href={sectionLink}>
@@ -26,7 +27,8 @@ function BlogPage(props) {
                         source={content} />
                 </article>
             </div>
-        </div>
+            </SubContainer>
+        // </div>
     )
 }
 
