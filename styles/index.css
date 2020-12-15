@@ -73,17 +73,26 @@ a {
   }
 
   /* For BlogCard colors*/
+  .band{
+    @apply w-4;
+  }
+  .band-default{
+    @apply band bg-gray-400;
+  }
   .band-basics{
-    @apply bg-green-400;
+    @apply band bg-green-400;
   }
   .band-deep-dive{
-    @apply bg-blue-400;
+    @apply band bg-blue-400;
   }
   .band-dosanddonts{
-    @apply bg-red-400;
+    @apply band bg-red-400;
   }
   .band-spotlight{
-    @apply bg-yellow-400;
+    @apply band bg-yellow-400;
+  }
+  .blog-card:hover > .band-default{
+    @apply bg-gray-500;
   }
   .blog-card:hover > .band-basics{
     @apply bg-green-500;
