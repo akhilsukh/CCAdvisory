@@ -16,85 +16,85 @@ function Transfer() {
     <Layout id="Blog" index="1">
       <div className="flex flex-col w-full max-w-7xl">
 
-        <SubContainer title="CCA Basics Collection" id="CCA_BASICS">
+        <SubContainer title="CCA Basics Collection">
           <BlogGrid>
             <BlogCard
-                title="All About DegreeWorks"
+                title="DegreeWorks in 5 Minutes"
                 date="October 20 2020"
-                post="cca_degreeworks"
+                post="basics/degreeworks"
                 section="CCA Basics"
                 author="Barr Avrahamov"
               />
               <BlogCard
-                title="Assist.org"
+                title="Top Ten: 2020 Edition"
+                date="2020-07-10"
+                section="CCA Basics"
+                post="basics/topten-2020"
+                author="Chris Hoeft"
+              />
+              <BlogCard
+                title="Assist in 5 Minutes"
                 date="October 20 2020"
-                post="cca_assist"
+                post="basics/assist"
                 section="CCA Basics"
                 author="Hassham Malik"
               />
           </BlogGrid>
         </SubContainer>
         
-        <SubContainer title="Deep Dive Collection" id="DEEP_DIVE">
+        <SubContainer title="Deep Dive Collection">
           <BlogGrid>
-            <BlogCard
-                title="Middle College"
-                date="October 16 2020"
-                post="dd_middlecollege"
+              <BlogCard
+                title="All About Middle College"
+                date="2020-07-10"
                 section="Deep Dive"
+                post="deepdives/middlecollege"
                 author="Preethan Selva"
+              />
+              <BlogCard
+                title="All About UC TAG"
+                date="2020-07-10"
+                section="Deep Dive"
+                post="deepdives/uctag"
+                author="Akhil Sukhthankar"
               />
               <BlogCard
                 title="IGETC vs CSU GE"
                 date="October 8 2020"
                 wordcount="3"
-                post="dd_ges"
+                post="deepdives/cc-ges"
                 section="Deep Dive"
                 author="Akhil Sukhthankar"
-              />
-              <BlogCard
-                title="UC TAG"
-                date="November 31 2020"
-                post="dd_uctag"
-                section="Deep Dive"
-                author="Chris Hoeft"
               />
           </BlogGrid>
         </SubContainer>
 
-        <SubContainer title="Do's & Don'ts Collection" id="DO'S_&_DON'TS">
+        <SubContainer title="Do's & Don'ts Collection">
           <BlogGrid>
             <BlogCard
-                title="Top Ten: 2020 Edition"
-                date="November 9 2020"
-                post="dad_topten"
-                section="Do's & Don'ts"
-                author="Chris Hoeft"
-              />
-            <BlogCard
-                title="UC Transfer Essay"
+                title="College List"
                 date="October 12 2020"
-                post="dad_uctransferessay"
+                post="dosanddonts/collegelist"
                 section="Do's & Don'ts"
                 author="Akhil Sukhthankar"
             />
             <BlogCard
-                title="College List"
+                title="UC Transfer Essay"
                 date="October 12 2020"
-                post="dad_collegelist"
+                post="dosanddonts/uc-transferessay"
                 section="Do's & Don'ts"
                 author="Hassham Malik"
             />
           </BlogGrid>
         </SubContainer>
 
-        <SubContainer title="CCA Spotlight Collection" id="CCA_SPOTLIGHT">
+        <SubContainer title="CCA Spotlight Collection">
           <BlogGrid>
             <BlogCard
                 title="Data Science @ Cal"
                 date="October 12 2020"
                 wordcount="350"
-                post="ccv_dscal"
+                post="spotlight/datascience-cal"
                 section="CCA Spotlight"
                 author="Chris Hoeft"
             />
@@ -102,7 +102,7 @@ function Transfer() {
                 title="Computer Science @ Davis"
                 date="October 12 2020"
                 wordcount="350"
-                post="ccv_csdavis"
+                post="spotlight/cs-davis"
                 section="CCA Spotlight"
                 author="Chris Hoeft"
             />

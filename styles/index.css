@@ -72,6 +72,32 @@ a {
     @apply font-normal;
   }
 
+  /* For BlogCard colors*/
+  .band-basics{
+    @apply bg-green-400;
+  }
+  .band-deep-dive{
+    @apply bg-blue-400;
+  }
+  .band-dosanddonts{
+    @apply bg-red-400;
+  }
+  .band-spotlight{
+    @apply bg-yellow-400;
+  }
+  .blog-card:hover > .band-basics{
+    @apply bg-green-500;
+  }
+  .blog-card:hover > .band-deep-dive{
+    @apply bg-blue-500;
+  }
+  .blog-card:hover > .band-dosanddonts{
+    @apply bg-red-500;
+  }
+  .blog-card:hover > .band-spotlight{
+    @apply bg-yellow-500;
+  }
+
   /* For BlogPage text */
   .markdown-title{
     @apply font-serif text-4xl mb-4;

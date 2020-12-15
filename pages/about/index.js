@@ -29,17 +29,17 @@ function About() {
 
         <SubContainer title="Founders">
           <ul className="grid justify-items-center gap-1 grid-cols-1 sm:grid-cols-2 md:grid-cols-2 lg:grid-cols-2 xl:grid-cols-3">
-            <ProfileCard name="Akhil Sukhthankar" classes="De Anza - Computer Science" role="Director, Developer" image={require('../../public/images/akh.jpg')}/>
-            <ProfileCard name="Barr Avrahamov" classes="De Anza - Computer Science" role="Director of Outreach" image={require('../../public/images/bar.jpg')}/>
-            <ProfileCard name="Chris Hoeft" classes="De Anza - Political Science" role="Director of Content" image={require('../../public/images/chr.jpg')}/>
+            <ProfileCard name="Akhil Sukhthankar" classes="De Anza - Computer Science" role="Director, Developer" image={require('../../public/images/profiles/akh.jpg')}/>
+            <ProfileCard name="Barr Avrahamov" classes="De Anza - Computer Science" role="Director of Outreach" image={require('../../public/images/profiles/bar.jpg')}/>
+            <ProfileCard name="Chris Hoeft" classes="De Anza - Political Science" role="Director of Content" image={require('../../public/images/profiles/chr.jpg')}/>
           </ul>
         </SubContainer>
 
         <SubContainer title="Writers">
           <ul className="grid justify-items-center gap-1 grid-cols-1 sm:grid-cols-2 md:grid-cols-2 lg:grid-cols-2 xl:grid-cols-3">
-            <ProfileCard name="Hassham Malik" classes="De Anza - Computer Science" image={require('../../public/images/has.jpg')}/>
-            <ProfileCard name="Preethan Selva" classes="De Anza - Business" image={require('../../public/images/pre.jpg')}/>
-            <ProfileCard name="Matthew Matulewicz" classes="De Anza - Communications" image={require('../../public/images/mat.jpg')}/>
+            <ProfileCard name="Hassham Malik" classes="De Anza - Computer Science" image={require('../../public/images/profiles/has.jpg')}/>
+            <ProfileCard name="Preethan Selva" classes="De Anza - Business" image={require('../../public/images/profiles/pre.jpg')}/>
+            <ProfileCard name="Matthew Matulewicz" classes="De Anza - Communications" image={require('../../public/images/profiles/mat.jpg')}/>
           </ul>
         </SubContainer>
 

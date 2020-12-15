@@ -23,7 +23,13 @@ export default BlogView;
 export async function getStaticPaths() {
   const files = fs.readdirSync("posts/");
 
-  const paths = files.map((filename) => ({
+  fs.readdirSync(files).forEach(file => {
+    console.log(file);
+  });
+
+  console.log("DONE");
+
+  const paths = files.filter(dirent => dirent.isDirectory()).map((filename) => ({
     params: {
       pid: filename.replace(".md", ""),
     },

@@ -38,43 +38,43 @@ function Home() {
                 title="Top Ten: 2020 Edition"
                 date="2020-07-10"
                 section="CCA Basics"
-                post="dad_topten"
+                post="basics/topten-2020"
                 author="Chris Hoeft"
               />
               <BlogCard
-                title="All About DegreeWorks"
+                title="DegreeWorks in 5 Minutes"
                 date="2020-07-10"
                 section="CCA Basics"
-                post="cca_degreeworks"
+                post="basics/degreeworks"
                 author="Barr Avrahamov"
               />
               <BlogCard
-                title="Middle College"
-                date="2020-07-10"
-                section="Deep Dive"
-                post="dd_middlecollege"
-                author="Preethan Selva"
-              />
-              <BlogCard
                 title="Data Science @ Cal"
                 date="2020-07-10"
                 section="CCA Spotlight"
-                post="dad_datasciencecal"
-                author="Akhil Sukhthankar"
+                post="spotlight/datascience-cal"
+                author="Chris Hoeft"
               />
               <BlogCard
-                title="Middle College"
+                title="All About Middle College"
                 date="2020-07-10"
                 section="Deep Dive"
-                post="dd_middlecollege"
+                post="deepdives/middlecollege"
                 author="Preethan Selva"
               />
               <BlogCard
-                title="Data Science @ Cal"
+                title="All About UC TAG"
+                date="2020-07-10"
+                section="Deep Dive"
+                post="deepdives/uctag"
+                author="Akhil Sukhthankar"
+              />
+              <BlogCard
+                title="Computer Science @ Davis"
                 date="2020-07-10"
                 section="CCA Spotlight"
-                post="dad_datasciencecal"
-                author="Akhil Sukhthankar"
+                post="spotlight/cs-davis"
+                author="Chris Hoeft"
               />
             </div>
           </div>
@@ -106,9 +106,9 @@ function Home() {
           <div className="subcontainer h-full">
             <h2 className="subcontainer-text">Quick Links</h2>
             <div className="grid grid-cols-3 md:grid-cols-6 lg:grid-cols-2 xl:grid-cols-3 gap-5 ">
-              <QuickButton title="Assist.org" link="https://www.assist.org" img={require("../public/images/shortcut-assist.png")}/>
-              <QuickButton title="UC Application" link="https://admission.universityofcalifornia.edu/apply-now.html" img={require("../public/images/shortcut-uc.png")}/>
-              <QuickButton title="Common App" link="https://www.commonapp.org/" img={require("../public/images/shortcut-common.png")}/>
+              <QuickButton title="Assist.org" link="https://www.assist.org" img={require("../public/images/shortcuts/shortcut-assist.png")}/>
+              <QuickButton title="UC Application" link="https://admission.universityofcalifornia.edu/apply-now.html" img={require("../public/images/shortcuts/shortcut-uc.png")}/>
+              <QuickButton title="Common App" link="https://www.commonapp.org/" img={require("../public/images/shortcuts/shortcut-common.png")}/>
               <QuickButton title="Assist.org" link="https://www.assist.org" img="https://assist.org/assets/images/assist-logo.svg"/>
               <QuickButton title="Assist.org" link="https://www.assist.org" img="https://assist.org/assets/images/assist-logo.svg"/>
               <QuickButton title="Assist.org" link="https://www.assist.org" img="https://assist.org/assets/images/assist-logo.svg"/>
@@ -116,11 +116,11 @@ function Home() {
           </div>
         </div>
 
-        {/* empty bar */}
+        {/* timeline bar */}
         <div className="col-span-3 lg:col-span-2 xl:col-span-2">
             <div className="subcontainer h-full">
-              <h2 className="subcontainer-text">Empty Box</h2>
-              <p>box content</p>
+              <h2 className="subcontainer-text">Steps to Success Timeline</h2>
+              <p className="font-mono m-auto w-full text-center">[feature coming soon]</p>
             </div>
         </div>
 
