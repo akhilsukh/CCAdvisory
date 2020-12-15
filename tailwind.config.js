@@ -1,15 +1,13 @@
 const colors = require('tailwindcss/colors')
 
 module.exports = {
-  future: {
-    removeDeprecatedGapUtilities: true,
-    purgeLayersByDefault: true,
-  },
-  purge: [],
   theme: {
     extend: {
       colors: {
-        teal: colors.teal,
+        'pacific': {
+          800: '#0C4A6E',
+          900: '#063C5B'
+        }
       }
     }
   },

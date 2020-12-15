@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600&display=swap');
 @import "tailwindcss/base";
 @import "tailwindcss/components";
@@ -11,7 +11,7 @@ body {
   margin: 0;
   font-family: -apple-system, 'Inter', BlinkMacSystemFont, Segoe UI, Roboto, Oxygen, 'Playfair Display',
     Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
-    background-color: #fafafa;
+    background-color: #f9fafb;
 }
 
 a {
@@ -33,35 +33,46 @@ a {
 }
 
 @layer components {
-  .active {
-    @apply bg-teal-900 text-white;
-  }
-  .nav-button {
-    @apply text-sm text-gray-200 font-medium p-2 px-3 mx-1 rounded-lg;
-  }
-  .nav-button:hover {
-    @apply bg-teal-900 text-sm text-white font-medium p-2 px-3 mx-1 rounded-lg;
-  }
-  .nav-button:focus {
-    @apply outline-none bg-teal-900 text-sm text-white font-medium p-2 px-3 mx-1 rounded-lg;
-  }
-
-  .headline {
-    @apply text-white py-2;
-  }
-  .headline-link {
-    @apply text-green-200 cursor-pointer;
-  }
-  .text-question {
-    @apply text-gray-200 font-medium pt-2;
-  }
-  .text-answer {
-    @apply text-gray-200 font-light pb-2;
+  /* */
+  .subcontainer{
+    @apply bg-gray-100 rounded-lg py-4 px-5 ring-2 ring-gray-200;
   }
   .subcontainer-text{
-    @apply text-white text-center font-medium text-2xl;
+    @apply font-semibold text-pacific-900 text-2xl pb-2;
+  }
+  .alert{
+    @apply bg-gray-100 p-3 rounded-lg text-center text-sm font-medium text-pacific-800 ring-2 ring-gray-200;
   }
 
+  /* For Navbar buttons */
+  .active-nav-button {
+    @apply rounded-lg  p-2 px-3 mx-1 bg-pacific-900 text-sm text-white font-medium;
+  }
+  .inactive-nav-button {
+    @apply rounded-lg p-2 px-3 mx-1 text-sm text-gray-200 font-medium;
+  }
+  .inactive-nav-button:hover {
+    @apply bg-pacific-900 text-white;
+  }
+  .inactive-nav-button:focus {
+    @apply outline-none;
+  }
+
+  /* For Headlines text */
+  .headline {
+    @apply py-1;
+  }
+  .headline-link {
+    @apply text-pacific-800 cursor-pointer;
+  }
+  .text-question {
+    @apply font-medium;
+  }
+  .text-answer {
+    @apply font-light;
+  }
+
+  /* For BlogPage text */
   .markdown-title{
     @apply font-serif text-4xl mb-4;
   }
@@ -78,7 +89,7 @@ a {
     @apply font-serif p-1;
   }
   .markdown a{
-    @apply text-green-200;
+    @apply text-pacific-800;
   }
   .markdown a:hover{
     @apply underline;

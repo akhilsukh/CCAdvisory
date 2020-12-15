@@ -1,6 +1,6 @@
 ---
-title: "DegreeWorks"
-author: "Akhil Sukhthankar"
+title: "All About DegreeWorks"
+author: "Barr Avrahamov"
 date: 2020-07-10
 section: "CCA BASICS"
 ---

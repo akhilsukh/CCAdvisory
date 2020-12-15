@@ -4,7 +4,7 @@ import { useRouter } from 'next/router'
 function NavButton (props) {
     return(
         <Link href={props.target}>
-            <button className={props.active == true ? "active nav-button" : "nav-button"}>
+            <button className={props.active == true ? "active-nav-button" : "inactive-nav-button"}>
                 {props.text}
             </button>
         </Link>
@@ -17,15 +17,22 @@ function Navbar (props){
     
 
     return (      
-        <header className="flex justify-between bg-teal-800 py-3 px-8 lg:px-16 xl:px-16 items-center">
-               <div className="flex justify-between p-1 mx-1 rounded-lg hover:bg-teal-900">
+        <header className="flex justify-between bg-pacific-800 py-3 px-8 lg:px-16 xl:px-16 items-center">
+               <div className="flex justify-between p-1 mx-1 rounded-lg hover:bg-pacific-900">
                    <Link href="/">
                        <div className="font-semibold text-xl cursor-pointer flex items-center">
                            <img className="h-6 m-1 mx-1" src={require("../public/icon.png")}></img>
                            <span className="flex mx-1">
-                               <h4 className="text-yellow-200 ">C</h4>
-                               <h4 className="text-blue-200">C</h4>
-                               <h4 className="font-light pl-1 text-gray-200">advisory</h4>
+                               <h1 className="text-yellow-300">C</h1>
+                               <h1 className="text-blue-100">C</h1>
+                               <h1 className="font-light pl-1 text-gray-200">advisory</h1>
+                               {/* <div className="text-white">
+                                   <p className="xs:block md:hidden lg:hidden xl:hidden 2xl:hidden">- XS</p>
+                                   <p className="xs:hidden md:block lg:hidden xl:hidden 2xl:hidden">- MD</p>
+                                   <p className="xs:hidden md:hidden lg:block xl:hidden 2xl:hidden">- LG</p>
+                                   <p className="xs:hidden md:hidden lg:hidden xl:block 2xl:hidden">- XL</p>
+                                   <p className="xs:hidden md:hidden lg:hidden xl:hidden 2xl:block">- 2XL</p>
+                               </div> */}
                            </span>
                        </div></Link>
                </div>

@@ -1,8 +1,8 @@
 ---
-title: "Top 10"
+title: "Top Ten: 2020 Edition"
 author: "Chris Hoeft"
 date: 2020-11-09
-section: "DO'S & DON'TS"
+section: "CCA Basics"
 ---
 
 # 1. Check Rate My Professor.

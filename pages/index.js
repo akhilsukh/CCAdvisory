@@ -1,13 +1,18 @@
 import Layout from "../components/Layout";
 import Link from "next/link";
 import BlogCard from "../components/BlogCard";
+import { Container } from "postcss";
+import SubContainer from "../components/SubContainer";
 
-function SideButton(props) {
+function QuickButton(props) {
   return (
-    <div>
+    <div className="hover:cursor-pointer hover:underline hover:ring-pacific-800">
       <a href={props.link} target="_blank" rel="noreferrer">
-        <button className="bg-teal-800 hover:bg-teal-900 hover:underline rounded-lg py-4 px-6 w-full focus:outline-none">
-          <a className="text-white font-medium">{props.text}</a>
+        <button className="bg-blue-100 hover:bg-blue-200 hover:underline rounded-lg p-2 pt-3 ring-2 ring-pacific-800">
+          <img className="w-3/5 m-auto" src={props.img}></img>
+          <p className="mt-2 font-medium text-pacific-800 text-center text-xs">
+            {props.title}
+          </p>
         </button>
       </a>
     </div>
@@ -17,102 +22,127 @@ function SideButton(props) {
 function Home() {
   return (
     <Layout id="Home" index="0">
-      <div className="grid grid-cols-4 gap-4 flex-row-reverse mt-4 mb-12">
+      <div className="grid grid-cols-3 gap-5 mb-2">
 
-        <div className="bg-teal-600 p-3 rounded-lg col-span-4 text-center text-white text-sm">
-          <span>🧰 Our website is undergoing some major changes as we upgrade from our old platform. Sorry for any broken links or missing articles!</span>
+        {/* alert bar */}
+        <div className="alert col-span-3">
+          <span>Our website is undergoing some major changes as we upgrade from our old platform. Sorry for any broken links or missing articles!</span>
         </div>
 
+        {/* blog bar */}
+        <div className="col-span-3">
+          <SubContainer title="Latest Blog Posts">
+            <div className="grid gap-3 grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-3 2xl:grid-cols-6 justify-items-center">
+              <BlogCard
+                title="Top Ten: 2020 Edition"
+                date="2020-07-10"
+                section="CCA Basics"
+                post="dad_topten"
+                author="Chris Hoeft"
+              />
+              <BlogCard
+                title="All About DegreeWorks"
+                date="2020-07-10"
+                section="CCA Basics"
+                post="cca_degreeworks"
+                author="Barr Avrahamov"
+              />
+              <BlogCard
+                title="Middle College"
+                date="2020-07-10"
+                section="Deep Dive"
+                post="dd_middlecollege"
+                author="Preethan Selva"
+              />
+              <BlogCard
+                title="Data Science @ Cal"
+                date="2020-07-10"
+                section="CCA Spotlight"
+                post="dad_datasciencecal"
+                author="Akhil Sukhthankar"
+              />
+              <BlogCard
+                title="Middle College"
+                date="2020-07-10"
+                section="Deep Dive"
+                post="dd_middlecollege"
+                author="Preethan Selva"
+              />
+              <BlogCard
+                title="Data Science @ Cal"
+                date="2020-07-10"
+                section="CCA Spotlight"
+                post="dad_datasciencecal"
+                author="Akhil Sukhthankar"
+              />
+            </div>
+          </SubContainer>
+          {/* <h3 className="subcontainer-text">Latest Blog Posts</h3> */}
+        </div>
 
-        <div className="bg-teal-800 pt-4 rounded-lg col-span-4 xl:col-span-3 lg:col-span-3">
-          <h3 className="subcontainer-text">Latest Headlines</h3>
-          <div className="flex flex-col px-6 pb-2">
-            <span className="headline flex flex-row"><p><p className="font-thin text-lg">Nov 1st</p>
-              Prepare to send your official transcripts to your CommonApp colleges after Fall Term for Fall 2021 Applicants.
-            </p></span>
+        {/* headlines bar */}
+        <div className="col-span-3 lg:col-span-2 xl:col-span-2">
+          <div className="subcontainer h-full">
+            <h2 className="subcontainer-text">Latest Headlines</h2>
+            <div className="flex flex-col">
+              <span className="headline flex flex-row"><p><p className="text-pacific-800 text-lg">Nov 1st</p>
+                Prepare to send your official transcripts to your CommonApp colleges after Fall Term for Fall 2021 Applicants.
+              </p></span>
 
-            <span className="headline flex flex-row"><p><p className="font-thin text-lg">Sept 22nd</p>
-              Deadline to drop classes without a 'W' at both De Anza and Foothill College is October 4th.
-            </p></span>
+              <span className="headline flex flex-row"><p><p className="text-pacific-800 text-lg">Sept 22nd</p>
+                Deadline to drop classes without a 'W' at both De Anza and Foothill College is October 4th.
+              </p></span>
 
-            <span className="headline flex flex-row"><p><p className="font-thin text-lg">Sept 14th</p>
-              <Link href="https://admission.universityofcalifornia.edu/admission-requirements/transfer-requirements/transfer-admission-guarantee-tag.html">
-                <a target="_blank" className="headline-link hover:underline font-medium">TAG Application </a></Link>
-              deadline for Fall term has now been extended to October 15th due to the recent wildfires and other circumstances. Make sure to review it with your community college advisor or UC TAG Advisor. </p></span>
+              <span className="headline flex flex-row"><p><p className="text-pacific-800 text-lg">Sept 14th</p>
+                <Link href="https://admission.universityofcalifornia.edu/admission-requirements/transfer-requirements/transfer-admission-guarantee-tag.html">
+                  <a target="_blank" className="headline-link hover:underline font-medium">TAG Application </a></Link>
+                deadline for Fall term has now been extended to October 15th due to the recent wildfires and other circumstances. Make sure to review it with your community college advisor or UC TAG Advisor. </p></span>
+            </div>
           </div>
         </div>
 
-
-        <div className="flex-col space-y-2 col-span-4 xl:col-span-1 lg:col-span-1">
-          <SideButton text="🔗 Assist - Course Equivalencies" link="https://assist.org/" />
-          <SideButton text="🔗 UC Application Portal" link="https://apply.universityofcalifornia.edu/" />
-          <SideButton text="🔗 CommonApp Portal" link="https://www.commonapp.org/" />
-          <SideButton text="🔗 Coalition Application Portal" link="https://www.mycoalition.org/" />
-          <SideButton text="📑 UC Transfer Essay Prompts" link="https://admission.universityofcalifornia.edu/how-to-apply/applying-as-a-transfer/personal-insight-questions.html" />
-          {/* <SideButton text="Have Questions? Contact Us 👋" link="/about/#contact"/> */}
-        </div>
-
-        <div className="bg-teal-800 pt-4 rounded-lg col-span-4">
-          <h3 className="subcontainer-text">Latest Blog Posts</h3>
-          <div className="px-2 lg:px-4 xl:px-6 pb-2 grid gap-2 grid-cols-1 sm:grid-cols-2 md:grid-cols-2 lg:grid-cols-4 xl:grid-cols-8 justify-items-center">
-            <BlogCard
-              title="Top 10"
-              date="November 9 2020"
-              wordcount="3"
-              post="dad_topten"
-              img={require("../public/blog/dad_topten.png")}
-            />
-            <BlogCard
-              title="DegreeWorks"
-              date="October 20 2020"
-              wordcount="1"
-              post="cca_degreeworks"
-              img={require("../public/blog/cca_degreeworks.png")}
-            />
-            <BlogCard
-              title="Middle College"
-              date="October 16 2020"
-              wordcount="2"
-              post="dd_middlecollege"
-              img={require("../public/blog/dd_middlecollege.png")}
-            />
-            <BlogCard
-              title="UC Transfer Essay"
-              date="October 12 2020"
-              wordcount="350"
-              post="dad_uctransferessay"
-              img={require("../public/blog/dad_uctransferessay.png")}
-            />
-            <BlogCard
-              title="Assist.org"
-              date="October 4 2020"
-              wordcount="350"
-              post="cca_assist"
-              img={require("../public/blog/cca_assist.png")}
-            />
-            <BlogCard
-              title="Data Science @ Cal"
-              date="November 27 2020"
-              wordcount="350"
-              post="ccv_dscal"
-              img={require("../public/blog/ccv_dscal.png")}
-            />
-            <BlogCard
-              title="UC TAG"
-              date="November 31 2020"
-              wordcount="350"
-              post="dd_uctag"
-              img={require("../public/blog/dd_uctag.png")}
-            />
-            <BlogCard
-              title="Computer Science @ Davis"
-              date="November 23 2020"
-              wordcount="350"
-              post="ccv_csdavis"
-              img={require("../public/blog/ccv_csdavis.png")}
-            />
+        {/* quick links bar */}
+        <div className="col-span-3 lg:col-span-1 xl:col-span-1">
+          <div className="subcontainer h-full">
+            <h2 className="subcontainer-text">Quick Links</h2>
+            <div className="grid grid-cols-3 md:grid-cols-6 lg:grid-cols-2 xl:grid-cols-3 gap-5 ">
+              <QuickButton title="Assist.org" link="https://www.assist.org" img={require("../public/images/shortcut-assist.png")}/>
+              <QuickButton title="UC Application" link="https://admission.universityofcalifornia.edu/apply-now.html" img={require("../public/images/shortcut-uc.png")}/>
+              <QuickButton title="Common App" link="https://www.commonapp.org/" img={require("../public/images/shortcut-common.png")}/>
+              <QuickButton title="Assist.org" link="https://www.assist.org" img="https://assist.org/assets/images/assist-logo.svg"/>
+              <QuickButton title="Assist.org" link="https://www.assist.org" img="https://assist.org/assets/images/assist-logo.svg"/>
+              <QuickButton title="Assist.org" link="https://www.assist.org" img="https://assist.org/assets/images/assist-logo.svg"/>
+            </div>
           </div>
         </div>
+
+        {/* empty bar */}
+        <div className="col-span-3 lg:col-span-2 xl:col-span-2">
+            <div className="subcontainer h-full">
+              <h2 className="subcontainer-text">Empty Box</h2>
+              <p>box content</p>
+            </div>
+        </div>
+
+        {/* newsletter and contact bar */}
+        <div className="col-span-3 lg:col-span-1 xl:col-span-1">
+          <div className="grid grid-col-1 gap-5">
+            <SubContainer title="Subscribe to our Weekly Newsletter">
+              <div className="grid grid-cols-3 gap-2">
+                <input type="email"  placeholder="Email" className="px-3 py-2 rounded-lg ring-1 ring-gray-300 focus:ring-pacific-900 outline-none col-span-2 lg:col-span-3 xl:col-span-2"/>
+                <button className=" text-white font-medium px-4 py-2 bg-pacific-800 hover:bg-pacific-900 rounded-lg focus:outline-none col-span-1 lg:col-span-3 xl:col-span-1">Subscribe</button>
+              </div>
+            </SubContainer>
+            <SubContainer title="Contact Us">
+              <div className="grid grid-cols-3 gap-2">
+                  <input type="email" placeholder="Email" className="px-3 py-2 rounded-lg ring-1 ring-gray-300 focus:ring-pacific-900 outline-none col-span-2"/>
+                  <button className="px-4 py-2 bg-pacific-800 text-white font-medium rounded-lg hover:bg-pacific-900 col-span-1 focus:outline-none">Send</button>
+                  <textarea cols="50" rows="4" placeholder="Message" className="px-3 py-2 h-16 rounded-lg ring-1 ring-gray-300 focus:ring-pacific-900 outline-none col-span-3"/>
+                </div>
+            </SubContainer>
+          </div>
+        </div>
+
       </div>
     </Layout>
   );
