@@ -69,7 +69,7 @@ a {
     @apply font-medium;
   }
   .text-answer {
-    @apply font-light;
+    @apply font-normal;
   }
 
   /* For BlogPage text */

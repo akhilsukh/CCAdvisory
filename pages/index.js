@@ -31,7 +31,8 @@ function Home() {
 
         {/* blog bar */}
         <div className="col-span-3">
-          <SubContainer title="Latest Blog Posts">
+          <div className="subcontainer">
+            <h2 className="subcontainer-text">Latest Blog Posts</h2>
             <div className="grid gap-3 grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-3 2xl:grid-cols-6 justify-items-center">
               <BlogCard
                 title="Top Ten: 2020 Edition"
@@ -76,8 +77,7 @@ function Home() {
                 author="Akhil Sukhthankar"
               />
             </div>
-          </SubContainer>
-          {/* <h3 className="subcontainer-text">Latest Blog Posts</h3> */}
+          </div>
         </div>
 
         {/* headlines bar */}
@@ -126,20 +126,21 @@ function Home() {
 
         {/* newsletter and contact bar */}
         <div className="col-span-3 lg:col-span-1 xl:col-span-1">
-          <div className="grid grid-col-1 gap-5">
+          <div className="grid grid-col-1">
             <SubContainer title="Subscribe to our Weekly Newsletter">
               <div className="grid grid-cols-3 gap-2">
                 <input type="email"  placeholder="Email" className="px-3 py-2 rounded-lg ring-1 ring-gray-300 focus:ring-pacific-900 outline-none col-span-2 lg:col-span-3 xl:col-span-2"/>
                 <button className=" text-white font-medium px-4 py-2 bg-pacific-800 hover:bg-pacific-900 rounded-lg focus:outline-none col-span-1 lg:col-span-3 xl:col-span-1">Subscribe</button>
               </div>
             </SubContainer>
-            <SubContainer title="Contact Us">
+            <div className="subcontainer">
+              <h2 className="subcontainer-text">Contact Us</h2>
               <div className="grid grid-cols-3 gap-2">
                   <input type="email" placeholder="Email" className="px-3 py-2 rounded-lg ring-1 ring-gray-300 focus:ring-pacific-900 outline-none col-span-2"/>
                   <button className="px-4 py-2 bg-pacific-800 text-white font-medium rounded-lg hover:bg-pacific-900 col-span-1 focus:outline-none">Send</button>
                   <textarea cols="50" rows="4" placeholder="Message" className="px-3 py-2 h-16 rounded-lg ring-1 ring-gray-300 focus:ring-pacific-900 outline-none col-span-3"/>
                 </div>
-            </SubContainer>
+            </div>
           </div>
         </div>
 
