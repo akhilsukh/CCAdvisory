@@ -85,18 +85,19 @@ function Home() {
           <div className="subcontainer h-full">
             <h2 className="subcontainer-text">Latest Headlines</h2>
             <div className="flex flex-col">
-              <span className="headline flex flex-row"><p><p className="text-pacific-800 text-lg">Nov 1st</p>
+              <span className="headline flex flex-row"><span><p className="text-pacific-800 text-lg">Nov 1st</p>
                 Prepare to send your official transcripts to your CommonApp colleges after Fall Term for Fall 2021 Applicants.
-              </p></span>
+              </span></span>
 
-              <span className="headline flex flex-row"><p><p className="text-pacific-800 text-lg">Sept 22nd</p>
+              <span className="headline flex flex-row"><span><p className="text-pacific-800 text-lg">Sept 22nd</p>
                 Deadline to drop classes without a 'W' at both De Anza and Foothill College is October 4th.
-              </p></span>
+              </span></span>
 
-              <span className="headline flex flex-row"><p><p className="text-pacific-800 text-lg">Sept 14th</p>
+              <span className="headline flex flex-row"><span><p className="text-pacific-800 text-lg">Sept 14th</p>
                 <Link href="https://admission.universityofcalifornia.edu/admission-requirements/transfer-requirements/transfer-admission-guarantee-tag.html">
                   <a target="_blank" className="headline-link hover:underline font-medium">TAG Application </a></Link>
-                deadline for Fall term has now been extended to October 15th due to the recent wildfires and other circumstances. Make sure to review it with your community college advisor or UC TAG Advisor. </p></span>
+                deadline for Fall term has now been extended to October 15th due to the recent wildfires and other circumstances. Make sure to review it with your community college advisor or UC TAG Advisor.
+                </span></span>
             </div>
           </div>
         </div>
