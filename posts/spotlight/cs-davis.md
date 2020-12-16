@@ -1,6 +1,6 @@
 ---
-title: "Data Science @ Cal"
-author: "Akhil Sukhthankar"
+title: "Computer Science @ Davis"
+author: "Chris Hoeft"
 date: 2020-10-12
 section: "CCA Spotlight"
 ---
