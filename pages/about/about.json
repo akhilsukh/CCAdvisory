@@ -1,14 +1,16 @@
 {
 	"team": [{
 			"id": "akhilsukhthankar",
+			"res": "director",
 			"name": "Akhil Sukhthankar",
-			"role": "Exective Director",
+			"role": "Exective Director, Developer",
 			"bio": "I am a second year CS major. I created CCAdvisory after transferring to a CC from a 4 year college.",
 			"major": "De Anza - Computer Science",
 			"image": "akh.jpg"
 		},
 		{
 			"id": "chrishoeft",
+			"res": "director",
 			"name": "Chris Hoeft",
 			"role": "Director of Content",
 			"bio": "My dream school is Berkeley.",
@@ -17,11 +19,39 @@
 		},
 		{
 			"id": "barravrahamov",
+			"res": "director",
 			"name": "Barr Avrahamov",
-			"role": "Outreach Director",
+			"role": "Director of Outreach",
 			"bio": "I like to code.",
 			"major": "De Anza - Computer Science",
 			"image": "bar.jpg"
+		},
+		{
+			"id": "hasshammalik",
+			"res": "writer",
+			"name": "Hassham Malik",
+			"role": "Writer",
+			"bio": "I like soccer.",
+			"major": "De Anza - Computer Science",
+			"image": "has.jpg"
+		},
+		{
+			"id": "preethanselva",
+			"res": "writer",
+			"name": "Preethan Selva",
+			"role": "Writer",
+			"bio": "I like photography.",
+			"major": "De Anza - Business",
+			"image": "pre.jpg"
+		},
+		{
+			"id": "vahnitagirisa",
+			"res": "editor",
+			"name": "Vahni Tagirisa",
+			"role": "Senior Editor",
+			"bio": "I like Philly.",
+			"major": "Drexel - Biomedical Engineering",
+			"image": "vah.jpg"
 		}
 	]
 }
