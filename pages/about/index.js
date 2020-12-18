@@ -39,7 +39,8 @@ function About() {
           <ul className="grid justify-items-center gap-1 grid-cols-1 sm:grid-cols-2 md:grid-cols-2 lg:grid-cols-2 xl:grid-cols-3">
             <ProfileCard name="Hassham Malik" classes="De Anza - Computer Science" image={require('../../public/images/profiles/has.jpg')}/>
             <ProfileCard name="Preethan Selva" classes="De Anza - Business" image={require('../../public/images/profiles/pre.jpg')}/>
-            <ProfileCard name="Matthew Matulewicz" classes="De Anza - Communications" image={require('../../public/images/profiles/mat.jpg')}/>
+            {/* <ProfileCard name="Matthew Matulewicz" classes="De Anza - Communications" image={require('../../public/images/profiles/mat.jpg')}/> */}
+            <ProfileCard name="Vahni Tagirisa" classes="Drexel - Biomedical Engineering" image={require('../../public/images/profiles/vah.jpg')}/>
           </ul>
         </SubContainer>
 
