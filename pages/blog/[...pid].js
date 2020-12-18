@@ -21,30 +21,6 @@ export default BlogView;
 
 
 export async function getStaticPaths() {
-  // const files = fs.readdirSync("posts/");
-
-  // fs.readdirSync("posts/").forEach(file => {
-  //   console.log(file);
-  // });
-
-
-  // if (!fs.existsSync("/posts")){
-  //     console.log("no dir ","/posts");
-  //     return;
-  // }
-
-  // var files = [];
-  // var folders = fs.readdirSync("/posts");
-  // for(var i = 0; i < folders.length; i++){
-  //   var subFileLoc = path.join("/posts", folders[i]);
-  //   var subFiles = fs.readdirSync(subFileLoc);
-  //   for(var j = 0; j < subFiles.length; j++){
-  //     var fileLoc = path.join(folders[i], subFiles[j]);
-  //     if (path.extname(subFiles[i]) == ".md") {
-  //       files.push(fileLoc);
-  //     };
-  //   }
-  // };
   var glob = require('glob');
   var options = {
     cwd: 'posts',

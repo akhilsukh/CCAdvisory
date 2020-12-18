@@ -124,7 +124,7 @@ a {
     @apply font-serif p-1;
   }
   .markdown img {
-    @apply m-auto mt-3 max-w-3xl border-2 rounded-lg border-pacific-800; 
+    @apply m-auto mt-3 w-11/12 md:w-3/5 lg:w-3/5 xl:w-3/5 border-2 rounded-lg border-pacific-800; 
   }
   .markdown a{
     @apply text-pacific-800;

@@ -1,0 +1,27 @@
+{
+	"team": [{
+			"id": "akhilsukhthankar",
+			"name": "Akhil Sukhthankar",
+			"role": "Exective Director",
+			"bio": "I am a second year CS major. I created CCAdvisory after transferring to a CC from a 4 year college.",
+			"major": "De Anza - Computer Science",
+			"image": "akh.jpg"
+		},
+		{
+			"id": "chrishoeft",
+			"name": "Chris Hoeft",
+			"role": "Director of Content",
+			"bio": "My dream school is Berkeley.",
+			"major": "De Anza - Political Science",
+			"image": "chr.jpg"
+		},
+		{
+			"id": "barravrahamov",
+			"name": "Barr Avrahamov",
+			"role": "Outreach Director",
+			"bio": "I like to code.",
+			"major": "De Anza - Computer Science",
+			"image": "bar.jpg"
+		}
+	]
+}

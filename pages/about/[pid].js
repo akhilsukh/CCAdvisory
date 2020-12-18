@@ -7,10 +7,19 @@ function Profile(props) {
   const router = useRouter()
   const { pid } = router.query
 
+  var data = require('./about.json')
+  var teams = data['team'];
+  var teamnames = [];
+  for (var i = 0; i < teams.length; i++) {
+    teamnames.push(teams[i]['name'])
+  }
+
+
   return (
     <Layout id={pid}>
       <div className="flex flex-col lg:w-3/5 xl:w-3/5">
         <SubContainer title={pid}>
+          <p>Teams: [{teamnames.toString()}]</p>
         </SubContainer>
       </div>
     </Layout>
