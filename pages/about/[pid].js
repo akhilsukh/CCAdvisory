@@ -8,11 +8,9 @@ function Profile(props) {
   const { pid } = router.query
 
   return (
-    <Layout id="_name">
+    <Layout id={pid}>
       <div className="flex flex-col lg:w-3/5 xl:w-3/5">
-        <SubContainer>
-          <h3 className="text-white text-center font-medium text-xl">{pid}</h3>
-
+        <SubContainer title={pid}>
         </SubContainer>
       </div>
     </Layout>
@@ -21,3 +19,8 @@ function Profile(props) {
 }
 
 export default Profile;
+
+// <!-- Calendly inline widget begin -->
+// <div class="calendly-inline-widget" data-url="https://calendly.com/akhil-ccadvisory/session" style="min-width:320px;height:630px;"></div>
+// <script type="text/javascript" src="https://assets.calendly.com/assets/external/widget.js"></script>
+// <!-- Calendly inline widget end -->
