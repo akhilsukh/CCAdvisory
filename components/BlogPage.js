@@ -9,7 +9,7 @@ function BlogPage(props) {
 
     return (
         <SubContainer>
-            <div className="m-6">
+            <div className="m-0.5 md:mx-1 lg:mx-1.5 xl:mx-2.5">
                 <div className="text-center">
                     <Link href={sectionLink}>
                         <a className="markdown-subtitle text-orange-300 hover:underline">{frontmatter.section}</a>
@@ -19,8 +19,8 @@ function BlogPage(props) {
                     <h4 className="markdown-subtitle text-pacific-800">{frontmatter.date}</h4>
                 </div>
 
-                <div className="h-2 lg:h-4 xl:h-4"></div>
-                <article className="markdown">
+                {/* <div className="h-2 lg:h-4 xl:h-4"></div> */}
+                <article className="markdown mt-2">
                     <ReactMarkdown
                         escapeHtml={false}
                         source={content} />

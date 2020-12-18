@@ -123,6 +123,9 @@ a {
   .markdown p {
     @apply font-serif p-1;
   }
+  .markdown img {
+    @apply m-auto mt-3 max-w-3xl border-2 rounded-lg border-pacific-800; 
+  }
   .markdown a{
     @apply text-pacific-800;
   }

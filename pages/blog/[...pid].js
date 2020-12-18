@@ -9,7 +9,7 @@ import matter from "gray-matter";
 function BlogView({ content, frontmatter }) {
 
   return (
-    <Layout>
+    <Layout id={frontmatter.title}>
       <div className="flex flex-col w-full max-w-7xl">
         <BlogPage frontmatter={frontmatter} content={content} />
       </div>
