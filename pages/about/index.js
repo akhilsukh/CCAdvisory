@@ -42,7 +42,8 @@ function About() {
                   name={person.name} 
                   role={person.role} 
                   major={person.major} 
-                  image={`${basePath}/${person.image}`} />              }
+                  image={`${basePath}/${person.id.substring(0,3)}.jpg`} />
+                }
             })}
           </ul>
         </SubContainer>
@@ -57,7 +58,7 @@ function About() {
                   name={person.name} 
                   role={person.role} 
                   major={person.major} 
-                  image={`${basePath}/${person.image}`} />
+                  image={`${basePath}/${person.id.substring(0,3)}.jpg`} />
               }
             })}
           </ul>
