@@ -26,7 +26,7 @@ function About() {
 
   useEffect(() => {
     const preUrl = 'https://cors-anywhere.herokuapp.com/';
-    const url = 'https://raw.githubusercontent.com/akhilsukh01/CCAdvisory/assets/data/about.json';
+    const url = 'https://rawcdn.githack.com/akhilsukh01/CCAdvisory/3757305b537eb5a1e00934e0bda63341ba488e4b/data/about.json';
     fetch((preUrl + url), {
       headers: {
         'Content-Type': 'application/json',
