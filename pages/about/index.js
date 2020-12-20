@@ -2,6 +2,7 @@ import Link from "next/link";
 import Layout from '../../components/Layout'
 import SubContainer from '../../components/SubContainer'
 import Image from 'next/image'
+import React, { useState, useEffect } from 'react';
 
 function ProfileCard(props) {
   const { id, name, role, major, image } = props;
@@ -21,9 +22,27 @@ function ProfileCard(props) {
 }
 
 function About() {
-  var data = require('./about.json')
-  var teams = data['team'];
-  var basePath = "/images/profiles";
+  const [teams, setTeams] = useState([]);
+
+  useEffect(() => {
+    const preUrl = 'https://cors-anywhere.herokuapp.com/';
+    const url = 'https://raw.githubusercontent.com/akhilsukh01/CCAdvisory/assets/data/about.json';
+    fetch((preUrl + url), {
+      headers: {
+        'Content-Type': 'application/json',
+        'Accept': 'application/json',
+      }
+    }).then(function (response) {
+      // console.log("RES", response);
+      return response.json();
+    })
+      .then(function (jsonData) {
+        var teamData = jsonData.team;
+        setTeams(teamData);
+      });
+  }, [])
+
+  const basePath = "https://raw.githubusercontent.com/akhilsukh01/CCAdvisory/assets/images/profiles";
 
   return (
     <Layout id="About" index="4">
@@ -36,14 +55,14 @@ function About() {
           <ul className="grid justify-items-center gap-1 grid-cols-1 sm:grid-cols-2 md:grid-cols-2 lg:grid-cols-2 xl:grid-cols-3">
             {teams.map((person) => {
               if (person.res == "director") {
-                return <ProfileCard 
-                  key={person.id} 
-                  id={person.id} 
-                  name={person.name} 
-                  role={person.role} 
-                  major={person.major} 
-                  image={`${basePath}/${person.id.substring(0,3)}.jpg`} />
-                }
+                return <ProfileCard
+                  key={person.id}
+                  id={person.id}
+                  name={person.name}
+                  role={person.role}
+                  major={person.major}
+                  image={`${basePath}/${person.id.substring(0, 3)}.jpg`} />
+              }
             })}
           </ul>
         </SubContainer>
@@ -52,13 +71,13 @@ function About() {
           <ul className="grid justify-items-center gap-1 grid-cols-1 sm:grid-cols-2 md:grid-cols-2 lg:grid-cols-2 xl:grid-cols-3">
             {teams.map((person) => {
               if (person.res == "editor" || person.res == "writer") {
-                return <ProfileCard 
-                  key={person.id} 
-                  id={person.id} 
-                  name={person.name} 
-                  role={person.role} 
-                  major={person.major} 
-                  image={`${basePath}/${person.id.substring(0,3)}.jpg`} />
+                return <ProfileCard
+                  key={person.id}
+                  id={person.id}
+                  name={person.name}
+                  role={person.role}
+                  major={person.major}
+                  image={`${basePath}/${person.id.substring(0, 3)}.jpg`} />
               }
             })}
           </ul>
