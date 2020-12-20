@@ -1,0 +1,61 @@
+{
+	"team": [
+		{
+			"id": "akhilsukhthankar",
+			"res": "director",
+			"name": "Akhil Sukhthankar",
+			"role": "Exective Director, Developer",
+			"bio": "I like De Anza.",
+			"major": "De Anza - Computer Science",
+			"tutor": 1,
+			"calendar": "https://calendly.com/akhil-ccadvisory/session"
+		},
+		{
+			"id": "chrishoeft",
+			"res": "director",
+			"name": "Chris Hoeft",
+			"role": "Director of Content",
+			"bio": "My dream school is Berkeley.",
+			"major": "De Anza - Political Science",
+			"tutor": 1,
+			"calendar": "https://calendly.com/akhil-ccadvisory/session"
+		},
+		{
+			"id": "barravrahamov",
+			"res": "director",
+			"name": "Barr Avrahamov",
+			"role": "Director of Outreach",
+			"bio": "I like to code.",
+			"major": "De Anza - Computer Science",
+			"tutor": 1,
+			"calendar": "https://calendly.com/akhil-ccadvisory/session"
+		},
+		{
+			"id": "hasshammalik",
+			"res": "writer",
+			"name": "Hassham Malik",
+			"role": "Writer",
+			"bio": "I like soccer.",
+			"major": "De Anza - Computer Science",
+			"tutor": 0
+		},
+		{
+			"id": "preethanselva",
+			"res": "writer",
+			"name": "Preethan Selva",
+			"role": "Writer",
+			"bio": "I like photography.",
+			"major": "De Anza - Business",
+			"tutor": 0
+		},
+		{
+			"id": "vahnitagirisa",
+			"res": "editor",
+			"name": "Vahni Tagirisa",
+			"role": "Senior Editor",
+			"bio": "I like Philly.",
+			"major": "Drexel - Biomedical Engineering",
+			"tutor": 0
+		}
+	]
+}
