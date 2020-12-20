@@ -1,11 +1,11 @@
 import Head from 'next/head'
 import Layout from '../../components/Layout'
 import SubContainer from '../../components/SubContainer'
-import React,{useState, useEffect} from 'react';
+import React, { useState, useEffect } from 'react';
 import { useRouter } from 'next/router'
 import { InlineWidget } from "react-calendly";
 
-var calSettings={
+var calSettings = {
   backgroundColor: '0C4A6E',
   hideEventTypeDetails: false,
   hideLandingPageDetails: false,
@@ -21,31 +21,28 @@ function Profile() {
     'name': null,
   });
 
-  useEffect(()=>{
-    fetch('https://api.npoint.io/58db17246e832b9b695b', {
-      headers : {
-        'Content-Type': 'application/json', 
-        'Accept': 'application/json',}
-    }).then(function(response){
-        console.log("RES", response);
-        return response.json();
-      })
-      .then(function(jsonData) {
+  useEffect(() => {
+    const preUrl = 'https://cors-anywhere.herokuapp.com/'
+    const url = 'https://raw.githubusercontent.com/akhilsukh01/CCAdvisory/assets/data/about.json'
+    fetch((preUrl + url), {
+      headers: {
+        'Content-Type': 'application/json',
+        'Accept': 'application/json',
+      }
+    }).then(function (response) {
+      // console.log("RES", response);
+      return response.json();
+    })
+      .then(function (jsonData) {
         var aboutData = jsonData.team;
-        console.log("ARRAY: ", aboutData);
-        console.log("LENGTH: ", aboutData.length);
         for (var i = 0; i < aboutData.length; i++) {
-          if(aboutData[i].id == pid) {
-            console.log("FOUND:", aboutData[i])
+          if (aboutData[i].id == pid) {
             setProfile(aboutData[i]);
             break;
           }
-          else{
-            console.log("PID IS", pid ,"SO NOT FOUND:", aboutData[i])
-          }
         }
       });
-  },[pid])
+  }, [pid])
 
   return (
     <Layout id={profile.name}>
@@ -55,8 +52,8 @@ function Profile() {
           <p>Role: {profile.role}</p>
           <p>Major: {profile.major}</p>
           <p>Bio: {profile.bio}</p>
-          {profile.tutor == 1 && 
-              <InlineWidget url={profile.calendar} />
+          {profile.tutor == 1 &&
+            <InlineWidget url={profile.calendar} />
           }
         </SubContainer>
       </div>
