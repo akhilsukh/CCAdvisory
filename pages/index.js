@@ -25,7 +25,7 @@ function HeadlineSection() {
 
   useEffect(() => {
     const preUrl = 'https://cors-anywhere.herokuapp.com/'
-    const url = 'https://raw.githubusercontent.com/akhilsukh01/CCAdvisory/assets/data/headlines.json'
+    const url = 'https://rawcdn.githack.com/akhilsukh01/CCAdvisory/3757305b537eb5a1e00934e0bda63341ba488e4b/data/headlines.json'
     fetch((preUrl + url), {
       headers: {
         'Content-Type': 'application/json',
@@ -43,21 +43,22 @@ function HeadlineSection() {
 
   return (
     <div className="flex flex-col">
-      {headlines.map((hl) => {
-        return <span className="headline flex flex-row">
-                <span> <p className="text-pacific-800 text-lg">{hl.date}</p>
-                  {hl.message}
-                </span>
-              </span>
+      {headlines.map((hl, index) => {
+        return <span className="headline flex flex-row" key={index}>
+          <span> <p className="text-pacific-800 text-lg">{hl.date}</p>
+            {hl.message}
+          </span>
+        </span>
       })}
     </div>
   )
 }
 
 function Home() {
-  const shortcutAssist = "https://raw.githubusercontent.com/akhilsukh01/CCAdvisory/assets/images/shortcuts/shortcut-assist.png";
-  const shortcutUCApp = "https://raw.githubusercontent.com/akhilsukh01/CCAdvisory/assets/images/shortcuts/shortcut-uc.png";
-  const shortcutCommonApp = "https://raw.githubusercontent.com/akhilsukh01/CCAdvisory/assets/images/shortcuts/shortcut-common.png";
+  const basePath = 'https://raw.githubusercontent.com/akhilsukh01/CCAdvisory/assets/images/shortcuts/';
+  const shortcutAssist = "shortcut-assist.png";
+  const shortcutUCApp = "shortcut-uc.png";
+  const shortcutCommonApp = "shortcut-common.png";
 
   return (
     <Layout id="Home" index="0">
@@ -132,12 +133,12 @@ function Home() {
           <div className="subcontainer h-full">
             <h2 className="subcontainer-text">Quick Links</h2>
             <div className="grid grid-cols-3 md:grid-cols-6 lg:grid-cols-2 xl:grid-cols-3 gap-5 ">
-              <QuickButton title="Assist.org" link="https://www.assist.org" img={shortcutAssist} />
-              <QuickButton title="UC Application" link="https://admission.universityofcalifornia.edu/apply-now.html" img={shortcutUCApp} />
-              <QuickButton title="Common App" link="https://www.commonapp.org/" img={shortcutCommonApp}/>
-              <QuickButton title="Assist.org" link="https://www.assist.org" img={shortcutAssist} />
-              <QuickButton title="Assist.org" link="https://www.assist.org" img={shortcutAssist} />
-              <QuickButton title="Assist.org" link="https://www.assist.org" img={shortcutAssist} />
+              <QuickButton title="Assist.org" link="https://www.assist.org" img={basePath + shortcutAssist} />
+              <QuickButton title="UC Application" link="https://admission.universityofcalifornia.edu/apply-now.html" img={basePath + shortcutUCApp} />
+              <QuickButton title="Common App" link="https://www.commonapp.org/" img={basePath + shortcutCommonApp} />
+              <QuickButton title="Assist.org" link="https://www.assist.org" img={basePath + shortcutAssist} />
+              <QuickButton title="Assist.org" link="https://www.assist.org" img={basePath + shortcutAssist} />
+              <QuickButton title="Assist.org" link="https://www.assist.org" img={basePath + shortcutAssist} />
             </div>
           </div>
         </div>
