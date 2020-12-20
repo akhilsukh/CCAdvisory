@@ -76,9 +76,9 @@ a {
   .band{
     @apply w-4;
   }
-  .band-default{
+  /* .band-default{
     @apply band bg-gray-400;
-  }
+  } */
   .band-basics{
     @apply band bg-green-400;
   }
@@ -91,9 +91,9 @@ a {
   .band-spotlight{
     @apply band bg-yellow-400;
   }
-  .blog-card:hover > .band-default{
+  /* .blog-card:hover > .band-default{
     @apply bg-gray-500;
-  }
+  } */
   .blog-card:hover > .band-basics{
     @apply bg-green-500;
   }
@@ -122,6 +122,9 @@ a {
   }
   .markdown p {
     @apply font-serif p-1;
+  }
+  .markdown img {
+    @apply m-auto mt-3 w-11/12 md:w-3/5 lg:w-3/5 xl:w-3/5 border-2 rounded-lg border-pacific-800; 
   }
   .markdown a{
     @apply text-pacific-800;

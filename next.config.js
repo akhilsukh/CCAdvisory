@@ -1,12 +1,11 @@
 const withImages = require('next-images')
-// module.exports = withImages()
 
 module.exports = withImages({
   webpack: (config) => {
-  //   config.module.rules.push({
-  //     test: /\.md$/,
-  //     use: 'raw-loader',
-  //   })
+    config.module.rules.push({
+      test: /\.md$/,
+      use: 'raw-loader',
+    })
   // },
   // webpackDevMiddleware: (config) => {
   //   config.watchOptions = {
@@ -16,3 +15,5 @@ module.exports = withImages({
     return config
   }
 });
+
+// module.exports = withImages();
