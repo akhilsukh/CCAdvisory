@@ -49,7 +49,7 @@ function About() {
         </SubContainer>
 
         <SubContainer title="Writers and Editors">
-        <ul className="grid justify-items-center gap-1 grid-cols-1 sm:grid-cols-2 md:grid-cols-2 lg:grid-cols-2 xl:grid-cols-3">
+          <ul className="grid justify-items-center gap-1 grid-cols-1 sm:grid-cols-2 md:grid-cols-2 lg:grid-cols-2 xl:grid-cols-3">
             {teams.map((person) => {
               if (person.res == "editor" || person.res == "writer") {
                 return <ProfileCard 

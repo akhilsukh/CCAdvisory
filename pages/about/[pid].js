@@ -1,35 +1,67 @@
 import Head from 'next/head'
 import Layout from '../../components/Layout'
 import SubContainer from '../../components/SubContainer'
+import React,{useState, useEffect} from 'react';
 import { useRouter } from 'next/router'
+import { InlineWidget } from "react-calendly";
 
-function Profile(props) {
-  const router = useRouter()
-  const { pid } = router.query
+var calSettings={
+  backgroundColor: '0C4A6E',
+  hideEventTypeDetails: false,
+  hideLandingPageDetails: false,
+  primaryColor: 'fcd34d',
+  textColor: 'f3f4f6'
+}
 
-  var data = require('./about.json')
-  var teams = data['team'];
-  var teamnames = [];
-  for (var i = 0; i < teams.length; i++) {
-    teamnames.push(teams[i]['name'])
-  }
+function Profile() {
+  const { pid } = useRouter().query;
 
+  const [profile, setProfile] = useState({
+    'id': null,
+    'name': null,
+  });
+
+  useEffect(()=>{
+    fetch('https://api.npoint.io/58db17246e832b9b695b', {
+      headers : {
+        'Content-Type': 'application/json', 
+        'Accept': 'application/json',}
+    }).then(function(response){
+        console.log("RES", response);
+        return response.json();
+      })
+      .then(function(jsonData) {
+        var aboutData = jsonData.team;
+        console.log("ARRAY: ", aboutData);
+        console.log("LENGTH: ", aboutData.length);
+        for (var i = 0; i < aboutData.length; i++) {
+          if(aboutData[i].id == pid) {
+            console.log("FOUND:", aboutData[i])
+            setProfile(aboutData[i]);
+            break;
+          }
+          else{
+            console.log("PID IS", pid ,"SO NOT FOUND:", aboutData[i])
+          }
+        }
+      });
+  },[pid])
 
   return (
-    <Layout id={pid}>
-      <div className="flex flex-col lg:w-3/5 xl:w-3/5">
-        <SubContainer title={pid}>
-          <p>Teams: [{teamnames.toString()}]</p>
+    <Layout id={profile.name}>
+      <div className="flex flex-col w-full max-w-7xl">
+        <SubContainer title={`${profile.name}`}>
+          <p>Name: {profile.name}</p>
+          <p>Role: {profile.role}</p>
+          <p>Major: {profile.major}</p>
+          <p>Bio: {profile.bio}</p>
+          {profile.tutor == 1 && 
+              <InlineWidget url={profile.calendar} />
+          }
         </SubContainer>
       </div>
     </Layout>
-
   )
 }
 
 export default Profile;
-
-// <!-- Calendly inline widget begin -->
-// <div class="calendly-inline-widget" data-url="https://calendly.com/akhil-ccadvisory/session" style="min-width:320px;height:630px;"></div>
-// <script type="text/javascript" src="https://assets.calendly.com/assets/external/widget.js"></script>
-// <!-- Calendly inline widget end -->

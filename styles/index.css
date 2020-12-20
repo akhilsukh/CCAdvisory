@@ -76,9 +76,9 @@ a {
   .band{
     @apply w-4;
   }
-  .band-default{
+  /* .band-default{
     @apply band bg-gray-400;
-  }
+  } */
   .band-basics{
     @apply band bg-green-400;
   }
@@ -91,9 +91,9 @@ a {
   .band-spotlight{
     @apply band bg-yellow-400;
   }
-  .blog-card:hover > .band-default{
+  /* .blog-card:hover > .band-default{
     @apply bg-gray-500;
-  }
+  } */
   .blog-card:hover > .band-basics{
     @apply bg-green-500;
   }
