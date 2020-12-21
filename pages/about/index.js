@@ -1,7 +1,7 @@
 import Link from "next/link";
 import Layout from '../../components/Layout'
 import SubContainer from '../../components/SubContainer'
-import Image from 'next/image'
+import Loader from '../../components/Loader'
 import React, { useState, useEffect } from 'react';
 
 function ProfileCard(props) {
@@ -22,15 +22,19 @@ function ProfileCard(props) {
 }
 
 function About() {
-  const [teams, setTeams] = useState([]);
+  const [teams, setTeams] = useState({
+    'members': [],
+    'loading': true,
+  });
+  const preUrl = 'https://cca-cors.herokuapp.com/';
 
   useEffect(() => {
-    const preUrl = 'https://cors-anywhere.herokuapp.com/';
-    const url = 'https://rawcdn.githack.com/akhilsukh01/CCAdvisory/3757305b537eb5a1e00934e0bda63341ba488e4b/data/about.json';
-    fetch((preUrl + url), {
+    const url = preUrl + 'https://cdn.statically.io/gh/akhilsukh01/CCAdvisory/assets/data/about.json';
+    fetch((url), {
       headers: {
         'Content-Type': 'application/json',
         'Accept': 'application/json',
+        'X-Requested-With': 'XMLHttpRequest'
       }
     }).then(function (response) {
       // console.log("RES", response);
@@ -38,11 +42,12 @@ function About() {
     })
       .then(function (jsonData) {
         var teamData = jsonData.team;
-        setTeams(teamData);
+        setTeams({'members': teamData, 'loading': false});
       });
   }, [])
 
-  const basePath = "https://raw.githubusercontent.com/akhilsukh01/CCAdvisory/assets/images/profiles";
+  //preUrl not needed for image requests
+  const url = "https://cdn.statically.io/gh/akhilsukh01/CCAdvisory/assets/images/profiles";
 
   return (
     <Layout id="About" index="4">
@@ -52,35 +57,41 @@ function About() {
         </SubContainer>
 
         <SubContainer title="Founders">
-          <ul className="grid justify-items-center gap-1 grid-cols-1 sm:grid-cols-2 md:grid-cols-2 lg:grid-cols-2 xl:grid-cols-3">
-            {teams.map((person) => {
-              if (person.res == "director") {
-                return <ProfileCard
-                  key={person.id}
-                  id={person.id}
-                  name={person.name}
-                  role={person.role}
-                  major={person.major}
-                  image={`${basePath}/${person.id.substring(0, 3)}.jpg`} />
-              }
-            })}
-          </ul>
+          {teams.loading && <Loader loading={teams.loading} />}
+          {!teams.loading && 
+            <ul className="grid justify-items-center gap-1 grid-cols-1 sm:grid-cols-2 md:grid-cols-2 lg:grid-cols-2 xl:grid-cols-3">
+              {teams.members.map((person) => {
+                if (person.res == "director") {
+                  return <ProfileCard
+                    key={person.id}
+                    id={person.id}
+                    name={person.name}
+                    role={person.role}
+                    major={person.major}
+                    image={`${url}/${person.id.substring(0, 3)}.jpg`} />
+                }
+              })}
+            </ul>
+          }
         </SubContainer>
 
         <SubContainer title="Writers and Editors">
-          <ul className="grid justify-items-center gap-1 grid-cols-1 sm:grid-cols-2 md:grid-cols-2 lg:grid-cols-2 xl:grid-cols-3">
-            {teams.map((person) => {
-              if (person.res == "editor" || person.res == "writer") {
-                return <ProfileCard
-                  key={person.id}
-                  id={person.id}
-                  name={person.name}
-                  role={person.role}
-                  major={person.major}
-                  image={`${basePath}/${person.id.substring(0, 3)}.jpg`} />
-              }
-            })}
-          </ul>
+          {teams.loading && <Loader loading={teams.loading} />}
+          {!teams.loading && 
+            <ul className="grid justify-items-center gap-1 grid-cols-1 sm:grid-cols-2 md:grid-cols-2 lg:grid-cols-2 xl:grid-cols-3">
+              {teams.members.map((person) => {
+                if (person.res == "editor" || person.res == "writer") {
+                  return <ProfileCard
+                    key={person.id}
+                    id={person.id}
+                    name={person.name}
+                    role={person.role}
+                    major={person.major}
+                    image={`${url}/${person.id.substring(0, 3)}.jpg`} />
+                }
+              })}
+            </ul>
+          }
         </SubContainer>
 
         <SubContainer title="Interested In Joining The Team?">
