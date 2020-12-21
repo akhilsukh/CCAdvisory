@@ -28,7 +28,7 @@ function HeadlineSection() {
   });
 
   useEffect(() => {
-    const preUrl = 'https://cors-anywhere.herokuapp.com/'
+    const preUrl = 'https://cca-cors.herokuapp.com/';
     const url = 'https://cdn.statically.io/gh/akhilsukh01/CCAdvisory/assets/data/headlines.json'
     fetch((preUrl + url), {
       headers: {
@@ -61,8 +61,7 @@ function HeadlineSection() {
 
 function Home() {
   //preUrl not needed for image request
-  const preUrl = '';
-  const url = preUrl + 'https://cdn.statically.io/gh/akhilsukh01/CCAdvisory/assets/images/shortcuts/';
+  const url = 'https://cdn.statically.io/gh/akhilsukh01/CCAdvisory/assets/images/shortcuts/';
   const shortcutAssist = "shortcut-assist.png";
   const shortcutUCApp = "shortcut-uc.png";
   const shortcutCommonApp = "shortcut-common.png";

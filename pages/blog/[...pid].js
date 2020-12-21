@@ -26,7 +26,7 @@ function BlogView({ content, frontmatter }) {
   // const [post, setPost] = useState({});
 
   useEffect(() => {
-    const preUrl = 'https://cors-anywhere.herokuapp.com/';
+    const preUrl = 'https://cca-cors.herokuapp.com/';
     const url = preUrl +'https://cdn.statically.io/gh/akhilsukh01/CCAdvisory/assets/posts/';
     // const basePath = 'https://raw.githubusercontent.com/akhilsukh01/CCAdvisory/assets/posts/'
 

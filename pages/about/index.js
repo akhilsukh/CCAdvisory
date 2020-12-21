@@ -26,7 +26,7 @@ function About() {
     'members': [],
     'loading': true,
   });
-  const preUrl = 'https://cors-anywhere.herokuapp.com/';
+  const preUrl = 'https://cca-cors.herokuapp.com/';
 
   useEffect(() => {
     const url = preUrl + 'https://cdn.statically.io/gh/akhilsukh01/CCAdvisory/assets/data/about.json';

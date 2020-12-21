@@ -26,7 +26,7 @@ function Profile() {
   });
 
   useEffect(() => {
-    const preUrl = 'https://cors-anywhere.herokuapp.com/'
+    const preUrl = 'https://cca-cors.herokuapp.com/';
     const url = preUrl + 'https://cdn.statically.io/gh/akhilsukh01/CCAdvisory/assets/data/about.json'
     fetch((url), {
       headers: {
