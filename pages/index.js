@@ -4,6 +4,7 @@ import BlogCard from "../components/BlogCard";
 import { Container } from "postcss";
 import SubContainer from "../components/SubContainer";
 import React, { useState, useEffect } from 'react';
+import Loader from '../components/Loader'
 
 function QuickButton(props) {
   return (
@@ -21,41 +22,47 @@ function QuickButton(props) {
 }
 
 function HeadlineSection() {
-  const [headlines, setHeadlines] = useState([]);
+  const [headlines, setHeadlines] = useState({
+    'entries': [],
+    'loading': true
+  });
 
   useEffect(() => {
     const preUrl = 'https://cors-anywhere.herokuapp.com/'
-    const url = 'https://rawcdn.githack.com/akhilsukh01/CCAdvisory/3757305b537eb5a1e00934e0bda63341ba488e4b/data/headlines.json'
+    const url = 'https://cdn.statically.io/gh/akhilsukh01/CCAdvisory/assets/data/headlines.json'
     fetch((preUrl + url), {
       headers: {
         'Content-Type': 'application/json',
         'Accept': 'application/json',
       }
     }).then(function (response) {
-      // console.log("RES", response);
       return response.json();
     })
       .then(function (jsonData) {
         var headlineData = jsonData.headlines;
-        setHeadlines(headlineData);
+        setHeadlines({ 'entries': headlineData, 'loading': false });
       });
   }, [])
 
   return (
     <div className="flex flex-col">
-      {headlines.map((hl, index) => {
-        return <span className="headline flex flex-row" key={index}>
-          <span> <p className="text-pacific-800 text-lg">{hl.date}</p>
-            {hl.message}
+      {headlines.loading && <Loader loading={headlines.loading} />}
+      {!headlines.loading &&
+        headlines.entries.map((hl, index) => {
+          return <span className="headline flex flex-row" key={index}>
+            <span> <p className="text-pacific-800 text-lg">{hl.date}</p>
+              {hl.message}
+            </span>
           </span>
-        </span>
-      })}
+        })}
     </div>
   )
 }
 
 function Home() {
-  const basePath = 'https://raw.githubusercontent.com/akhilsukh01/CCAdvisory/assets/images/shortcuts/';
+  //preUrl not needed for image request
+  const preUrl = '';
+  const url = preUrl + 'https://cdn.statically.io/gh/akhilsukh01/CCAdvisory/assets/images/shortcuts/';
   const shortcutAssist = "shortcut-assist.png";
   const shortcutUCApp = "shortcut-uc.png";
   const shortcutCommonApp = "shortcut-common.png";
@@ -133,12 +140,12 @@ function Home() {
           <div className="subcontainer h-full">
             <h2 className="subcontainer-text">Quick Links</h2>
             <div className="grid grid-cols-3 md:grid-cols-6 lg:grid-cols-2 xl:grid-cols-3 gap-5 ">
-              <QuickButton title="Assist.org" link="https://www.assist.org" img={basePath + shortcutAssist} />
-              <QuickButton title="UC Application" link="https://admission.universityofcalifornia.edu/apply-now.html" img={basePath + shortcutUCApp} />
-              <QuickButton title="Common App" link="https://www.commonapp.org/" img={basePath + shortcutCommonApp} />
-              <QuickButton title="Assist.org" link="https://www.assist.org" img={basePath + shortcutAssist} />
-              <QuickButton title="Assist.org" link="https://www.assist.org" img={basePath + shortcutAssist} />
-              <QuickButton title="Assist.org" link="https://www.assist.org" img={basePath + shortcutAssist} />
+              <QuickButton title="Assist.org" link="https://www.assist.org" img={url + shortcutAssist} />
+              <QuickButton title="UC Application" link="https://admission.universityofcalifornia.edu/apply-now.html" img={url + shortcutUCApp} />
+              <QuickButton title="Common App" link="https://www.commonapp.org/" img={url + shortcutCommonApp} />
+              <QuickButton title="Assist.org" link="https://www.assist.org" img={url + shortcutAssist} />
+              <QuickButton title="Assist.org" link="https://www.assist.org" img={url + shortcutAssist} />
+              <QuickButton title="Assist.org" link="https://www.assist.org" img={url + shortcutAssist} />
             </div>
           </div>
         </div>
@@ -170,6 +177,8 @@ function Home() {
             </div>
           </div>
         </div>
+
+        <script defer src='https://cors-anywhere.herokuapp.com/https://static.cloudflareinsights.com/beacon.min.js' data-cf-beacon='{"token": "16f83f98f5d94f5b8f1e563dd9641161"}'></script>
 
       </div>
     </Layout>
