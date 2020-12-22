@@ -11,7 +11,7 @@ function QuickButton(props) {
     <div className="hover:cursor-pointer hover:underline hover:ring-pacific-800">
       <a href={props.link} target="_blank" rel="noreferrer">
         <button className="bg-blue-100 hover:bg-blue-200 hover:underline rounded-lg p-2 pt-3 ring-2 ring-pacific-800">
-          <img className="w-3/5 m-auto" src={props.img}></img>
+          <img className="w-7/12 m-auto" src={props.img}></img>
           <p className="mt-2 font-medium text-pacific-800 text-center text-xs">
             {props.title}
           </p>
@@ -177,7 +177,7 @@ function Home() {
           </div>
         </div>
 
-        <script defer src='https://cors-anywhere.herokuapp.com/https://static.cloudflareinsights.com/beacon.min.js' data-cf-beacon='{"token": "16f83f98f5d94f5b8f1e563dd9641161"}'></script>
+        <script defer src='https://static.cloudflareinsights.com/beacon.min.js' data-cf-beacon='{"token": "16f83f98f5d94f5b8f1e563dd9641161"}'></script>
 
       </div>
     </Layout>
