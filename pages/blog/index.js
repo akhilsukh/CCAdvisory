@@ -1,7 +1,7 @@
 import Head from 'next/head'
-import Layout from '../../components/Layout'
-import SubContainer from '../../components/SubContainer'
-import BlogCard from "../../components/BlogCard"
+import Layout from '../../components/structural/Layout'
+import SubContainer from '../../components/common/SubContainer'
+import BlogCard from "../../components/blogpage/BlogCard"
 
 function BlogGrid(props){
   return (

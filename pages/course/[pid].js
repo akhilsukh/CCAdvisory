@@ -1,6 +1,6 @@
 import Head from 'next/head'
-import Layout from '../../components/Layout'
-import SubContainer from '../../components/SubContainer'
+import Layout from '../../components/structural/Layout'
+import SubContainer from '../../components/common/SubContainer'
 import { useRouter } from 'next/router'
 
 function Course() {

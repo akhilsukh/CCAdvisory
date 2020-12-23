@@ -1,8 +1,8 @@
-import Layout from "../components/Layout";
+import Layout from "../components/structural/Layout";
 import Link from "next/link";
-import BlogCard from "../components/BlogCard";
+import BlogCard from "../components/blogpage/BlogView/BlogCard";
 import { Container } from "postcss";
-import SubContainer from "../components/SubContainer";
+import SubContainer from "../components/common/SubContainer";
 
 function Error() {
   return (

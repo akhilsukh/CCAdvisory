@@ -1,7 +1,7 @@
 import Head from 'next/head'
 import Link from "next/link";
-import Layout from '../../components/Layout'
-import SubContainer from '../../components/SubContainer'
+import Layout from '../../components/structural/Layout'
+import SubContainer from '../../components/common/SubContainer'
 
 function ClassButton(props){
   return(

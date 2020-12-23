@@ -107,7 +107,7 @@ a {
     @apply bg-yellow-300;
   }
 
-  /* For BlogPage text */
+  /* For BlogView text */
   .markdown-title{
     @apply font-serif text-4xl mb-4;
   }

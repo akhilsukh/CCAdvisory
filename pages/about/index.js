@@ -1,7 +1,7 @@
 import Link from "next/link";
-import Layout from '../../components/Layout'
-import SubContainer from '../../components/SubContainer'
-import Loader from '../../components/Loader'
+import Layout from '../../components/structural/Layout'
+import SubContainer from '../../components/common/SubContainer'
+import Loader from '../../components/common/Loader'
 import React, { useState, useEffect } from 'react';
 
 function ProfileCard(props) {

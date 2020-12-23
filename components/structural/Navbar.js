@@ -21,7 +21,7 @@ function Navbar (props){
                <div className="flex justify-between p-1 mx-1 rounded-lg hover:bg-pacific-900">
                    <Link href="/">
                        <div className="font-semibold text-xl cursor-pointer flex items-center">
-                           <img className="h-6 m-1 mx-1" src={require("../public/icon.png")}></img>
+                           <img className="h-6 m-1 mx-1" src={require("../../public/icon.png")}></img>
                            <span className="flex mx-1">
                                <h1 className="text-yellow-300">C</h1>
                                <h1 className="text-blue-100">C</h1>

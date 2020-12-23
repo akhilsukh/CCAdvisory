@@ -1,10 +1,10 @@
-import Layout from "../components/Layout";
+import Layout from "../components/structural/Layout";
 import Link from "next/link";
-import BlogCard from "../components/BlogCard";
+import BlogCard from "../components/blogpage/BlogCard";
 import { Container } from "postcss";
-import SubContainer from "../components/SubContainer";
+import SubContainer from "../components/common/SubContainer";
 import React, { useState, useEffect } from 'react';
-import Loader from '../components/Loader'
+import Loader from '../components/common/Loader'
 
 function QuickButton(props) {
   return (

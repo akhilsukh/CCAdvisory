@@ -1,8 +1,8 @@
 import Link from "next/link";
-import SubContainer from '../components/SubContainer'
+import SubContainer from '../common/SubContainer'
 import ReactMarkdown from "react-markdown";
 
-function BlogPage(props) {
+function BlogView(props) {
   const { frontmatter, content, children } = props;
 
   var sectionLink = "/blog#" + frontmatter.section.replace(/ /g, "_");
@@ -30,4 +30,4 @@ function BlogPage(props) {
   )
 }
 
-export default BlogPage;
+export default BlogView;
