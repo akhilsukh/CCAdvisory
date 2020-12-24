@@ -32,14 +32,16 @@ function Profile() {
     })
       .then(function (jsonData) {
         var aboutData = jsonData.team;
+        var foundMember = false;
         for (var i = 0; i < aboutData.length; i++) {
           if (aboutData[i].id == pid) {
             setMember({ 'profile': aboutData[i], 'loading': false });
+            foundMember = true;
             break;
           }
-          else if (i === aboutData.length - 1) {
-            Router.push('/about');
-          }
+        }
+        if (!foundMember && !member.loading) {
+          Router.push('/about');
         }
       });
   }, [pid])
@@ -65,6 +67,7 @@ function Profile() {
             </div>
           }
         </SubContainer>
+
         {member.profile.tutor === 1 &&
           <div>
             {!member.loading &&
