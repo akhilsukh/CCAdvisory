@@ -67,7 +67,7 @@ function About() {
                     id={person.id}
                     name={person.name}
                     role={person.role}
-                    major={person.major}
+                    // major={person.major}
                     image={`${url}/${person.id.substring(0, 3)}.jpg`} />
                 }
               })}
@@ -86,7 +86,7 @@ function About() {
                     id={person.id}
                     name={person.name}
                     role={person.role}
-                    major={person.major}
+                    // major={person.major}
                     image={`${url}/${person.id.substring(0, 3)}.jpg`} />
                 }
               })}

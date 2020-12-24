@@ -10,7 +10,7 @@ function QuickButton(props) {
   return (
     <div className="hover:cursor-pointer hover:underline hover:ring-pacific-800">
       <a href={props.link} target="_blank" rel="noreferrer">
-        <button className="bg-blue-100 hover:underline rounded-lg p-2 pt-3 ring-1 ring-gray-200 hover:shadow">
+        <button className="bg-blue-100 hover:underline rounded-lg p-2 pt-3 ring-1 ring-gray-200 hover:ring-gray-800 hover:bg-blue-200">
           <img className="w-7/12 m-auto" src={props.img}></img>
           <p className="mt-2 font-medium text-pacific-800 text-center text-xs">
             {props.title}
@@ -65,6 +65,7 @@ function Home() {
   const shortcutAssist = "shortcut-assist.png";
   const shortcutUCApp = "shortcut-uc.png";
   const shortcutCommonApp = "shortcut-common.png";
+  const shortcutMyCoalition = "shortcut-coalition.png";
 
   return (
     <Layout id="Home" index="0">
@@ -78,7 +79,7 @@ function Home() {
         {/* blog bar */}
         <div className="col-span-3">
           <div className="subcontainer">
-            <h2 className="subcontainer-text">Latest Blog Posts</h2>
+            <h2 className="subcontainer-text">Featured Posts</h2>
             <div className="grid gap-3 grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-3 2xl:grid-cols-6 justify-items-center">
               <BlogCard
                 title="Top Ten: 2020 Edition"
@@ -139,9 +140,9 @@ function Home() {
           <div className="subcontainer h-full">
             <h2 className="subcontainer-text">Quick Links</h2>
             <div className="grid grid-cols-3 md:grid-cols-6 lg:grid-cols-2 xl:grid-cols-3 gap-5 ">
-              <QuickButton title="Assist.org" link="https://www.assist.org" img={url + shortcutAssist} />
-              <QuickButton title="UC Application" link="https://admission.universityofcalifornia.edu/apply-now.html" img={url + shortcutUCApp} />
+              <QuickButton title="UC App" link="https://admission.universityofcalifornia.edu/apply-now.html" img={url + shortcutUCApp} />
               <QuickButton title="Common App" link="https://www.commonapp.org/" img={url + shortcutCommonApp} />
+              <QuickButton title="MyCoalition" link="https://mycoalition.org" img={url + shortcutMyCoalition} />
               <QuickButton title="Assist.org" link="https://www.assist.org" img={url + shortcutAssist} />
               <QuickButton title="Assist.org" link="https://www.assist.org" img={url + shortcutAssist} />
               <QuickButton title="Assist.org" link="https://www.assist.org" img={url + shortcutAssist} />
