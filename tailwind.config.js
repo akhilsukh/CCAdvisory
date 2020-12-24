@@ -10,6 +10,7 @@ module.exports = {
     extend: {
       colors: {
         'pacific': {
+          200: "#B6DBF0",
           800: '#0C4A6E',
           900: '#063C5B'
         }

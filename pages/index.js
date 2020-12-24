@@ -10,7 +10,7 @@ function QuickButton(props) {
   return (
     <div className="hover:cursor-pointer hover:underline hover:ring-pacific-800">
       <a href={props.link} target="_blank" rel="noreferrer">
-        <button className="bg-blue-100 hover:bg-blue-200 hover:underline rounded-lg p-2 pt-3 ring-2 ring-pacific-800">
+        <button className="bg-blue-100 hover:underline rounded-lg p-2 pt-3 ring-1 ring-gray-200 hover:shadow">
           <img className="w-7/12 m-auto" src={props.img}></img>
           <p className="mt-2 font-medium text-pacific-800 text-center text-xs">
             {props.title}
@@ -162,16 +162,16 @@ function Home() {
           <div className="grid grid-col-1">
             <SubContainer title="Subscribe to our Weekly Newsletter">
               <div className="grid grid-cols-3 gap-2">
-                <input type="email" placeholder="Email" className="px-3 py-2 rounded-lg ring-1 ring-gray-300 focus:ring-pacific-900 outline-none col-span-2 lg:col-span-3 xl:col-span-2" />
-                <button className=" text-white font-medium px-4 py-2 bg-pacific-800 hover:bg-pacific-900 rounded-lg focus:outline-none col-span-1 lg:col-span-3 xl:col-span-1">Subscribe</button>
+                <input type="email" placeholder="Email" className="px-3 py-2 rounded-md ring-1 ring-gray-300 focus:ring-pacific-900 outline-none col-span-2 lg:col-span-3 xl:col-span-2" />
+                <button className="font-medium px-4 py-2 bg-blue-200 hover:bg-blue-300 text-pacific-800 rounded-md focus:outline-none col-span-1 lg:col-span-3 xl:col-span-1">Subscribe</button>
               </div>
             </SubContainer>
             <div className="subcontainer">
               <h2 className="subcontainer-text">Contact Us</h2>
               <div className="grid grid-cols-3 gap-2">
-                <input type="email" placeholder="Email" className="px-3 py-2 rounded-lg ring-1 ring-gray-300 focus:ring-pacific-900 outline-none col-span-2" />
-                <button className="px-4 py-2 bg-pacific-800 text-white font-medium rounded-lg hover:bg-pacific-900 col-span-1 focus:outline-none">Send</button>
-                <textarea cols="50" rows="4" placeholder="Message" className="px-3 py-2 h-16 rounded-lg ring-1 ring-gray-300 focus:ring-pacific-900 outline-none col-span-3" />
+                <input type="email" placeholder="Email" className="px-3 py-2 rounded-md ring-1 ring-gray-300 focus:ring-pacific-900 outline-none col-span-2" />
+                <button className="px-4 py-2 bg-blue-200 hover:bg-blue-300 font-medium text-pacific-800 rounded-md col-span-1 focus:outline-none">Send</button>
+                <textarea cols="50" rows="4" placeholder="Message" className="px-3 py-2 h-16 rounded-md ring-1 ring-gray-300 focus:ring-pacific-900 outline-none col-span-3" />
               </div>
             </div>
           </div>

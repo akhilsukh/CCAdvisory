@@ -22,7 +22,7 @@ function BlogCard(props) {
 
     return (
         <Link href={`/blog/${post}`}>
-            <div className="flex cursor-pointer w-full ring-0 ring-pacific-900 rounded-lg overflow-hidden blog-card">
+            <div className="flex cursor-pointer w-full ring-0 ring-pacific-900 rounded-lg overflow-hidden blog-card hover:shadow">
                 <div className={band_color}/>
                 <div className="bg-pacific-800 hover:bg-pacific-900 cursor-pointer flex-col p-3 w-full blog-card-content">
                     <p className="text-yellow-300 uppercase text-xs font-medium truncate w-full">{section}</p>

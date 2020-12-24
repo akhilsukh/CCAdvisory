@@ -2,17 +2,10 @@ import Head from 'next/head'
 import Layout from '../../components/structural/Layout'
 import SubContainer from '../../components/common/SubContainer'
 import React, { useState, useEffect } from 'react';
-import { useRouter } from 'next/router'
+import Router, { useRouter } from 'next/router'
 import Loader from '../../components/common/Loader'
 import { InlineWidget } from "react-calendly";
 
-var calSettings = {
-  backgroundColor: '0C4A6E',
-  hideEventTypeDetails: false,
-  hideLandingPageDetails: false,
-  primaryColor: 'fcd34d',
-  textColor: 'f3f4f6'
-}
 
 function Profile() {
   const { pid } = useRouter().query;
@@ -20,7 +13,8 @@ function Profile() {
   const [member, setMember] = useState({
     'profile': {
       'id': '...',
-      'name': '...,'
+      'name': '...',
+      'tutor': 0
     },
     'loading': true,
   });
@@ -43,9 +37,14 @@ function Profile() {
             setMember({ 'profile': aboutData[i], 'loading': false });
             break;
           }
+          else if (i === aboutData.length - 1) {
+            Router.push('/about');
+          }
         }
       });
   }, [pid])
+
+  const url = 'https://cdn.statically.io/gh/akhilsukh01/CCAdvisory/assets/images/profiles';
 
   return (
     <Layout id={member.profile.name}>
@@ -54,17 +53,27 @@ function Profile() {
           {member.loading && <Loader loading={member.loading} />}
           {!member.loading &&
             <div>
-              <h2 className="subcontainer-text">{`${member.profile.name}`}</h2>
-              <p>Name: {member.profile.name}</p>
-              <p>Role: {member.profile.role}</p>
-              <p>Major: {member.profile.major}</p>
-              <p>Bio: {member.profile.bio}</p>
-              {member.profile.tutor == 1 &&
-                <InlineWidget url={member.profile.calendar} />
-              }
+              <div className="flex p-4">
+                <img className="rounded-full bg-blue-200 h-48 w-48 m-2 border-2 border-gray-300" src={`${url}/${member.profile.id.substring(0, 3)}.jpg`} />
+                <div className="flex-col py-2 px-6">
+                  <h2 className="text-3xl font-medium">{member.profile.name}</h2>
+                  <h3 className="text-lg font-medium text-pacific-900">{member.profile.role}</h3>
+                  {/* <p>{member.profile.major}</p> */}
+                  <p className="text-gray-600 mt-1">{member.profile.bio}</p>
+                </div>
+              </div>
             </div>
           }
         </SubContainer>
+        {member.profile.tutor === 1 &&
+          <div>
+            {!member.loading &&
+              <SubContainer>
+                <InlineWidget url={member.profile.calendar} />
+              </SubContainer>
+            }
+          </div>
+        }
       </div>
     </Layout>
   )
