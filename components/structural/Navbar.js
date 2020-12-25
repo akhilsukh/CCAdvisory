@@ -23,12 +23,12 @@ function Navbar(props) {
             <img className="h-6 m-1 mx-1" src={require("../../public/icon.png")}></img>
             <h1 className="mx-1">
                 <span className="text-yellow-300">C</span>
-                <span className="text-blue-100">C</span>
+                <span className="text-gray-100">C</span>
                 <span className="font-light pl-1 text-gray-200">advisory</span>
               </h1>
             {/* <span className="flex mx-1">
               <h1 className="text-yellow-300">C</h1>
-              <h1 className="text-blue-100">C</h1>
+              <h1 className="text-gray-100">C</h1>
               <h1 className="font-light pl-1 text-gray-200">advisory</h1> */}
               {/* <div className="text-white">
                 <p className="xs:block md:hidden lg:hidden xl:hidden 2xl:hidden">- XS</p>

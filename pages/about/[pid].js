@@ -56,7 +56,7 @@ function Profile() {
           {!member.loading &&
             <div>
               <div className="flex p-4">
-                <img className="rounded-full bg-blue-200 h-48 w-48 m-2 border-2 border-gray-300" src={`${url}/${member.profile.id.substring(0, 3)}.jpg`} />
+                <img className="rounded-full bg-gray-200 h-48 w-48 m-2 border-2 border-gray-300" src={`${url}/${member.profile.id.substring(0, 3)}.jpg`} />
                 <div className="flex-col py-2 px-6">
                   <h2 className="text-3xl font-medium">{member.profile.name}</h2>
                   <h3 className="text-lg font-medium text-pacific-900">{member.profile.role}</h3>
