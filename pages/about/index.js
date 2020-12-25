@@ -12,7 +12,7 @@ function ProfileCard(props) {
       <Link href={"/about/" + id}>
         <div>
           <img className="rounded-full mx-auto bg-gray-200 h-40 w-40 m-2 border-2 border-gray-300" src={image} />
-          <h6 className="text-2xl font-medium mt-1 truncate w-full">{name}</h6>
+          <h6 className="text-xl font-medium mt-1 truncate w-full">{name}</h6>
           <p className="text-pacific-800 font-medium text-sm w-full inline">{role}</p>
           <p className="text-gray-800 font-medium text-sm w-full block">{major}</p>
         </div>
