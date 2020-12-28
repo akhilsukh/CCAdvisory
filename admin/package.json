@@ -1,0 +1,16 @@
+{
+  "name": "admin",
+  "version": "1.0.0",
+  "description": "Admin tool for dealing with assets.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Akhil Sukhthankar",
+  "license": "ISC",
+  "dependencies": {
+    "@json-editor/json-editor": "^2.5.1",
+    "core-js": "^3.8.1",
+    "jsoneditor": "^9.1.6"
+  }
+}
