@@ -1,11 +1,11 @@
 import Head from 'next/head'
 import Layout from '../../components/structural/Layout'
 import SubContainer from '../../components/common/SubContainer'
-import Link from "next/link";
-import React, { useState, useEffect } from 'react';
+import Link from "next/link"
+import React, { useState, useEffect } from 'react'
 import { useRouter, Router } from 'next/router'
-import ReactMarkdown from "react-markdown";
-import matter from "gray-matter";
+import ReactMarkdown from "react-markdown"
+import matter from "gray-matter"
 import Loader from "../../components/common/Loader";
 
 function BlogView({ content, frontmatter }) {

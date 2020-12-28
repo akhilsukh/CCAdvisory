@@ -1,7 +1,7 @@
 import Head from 'next/head'
 import Layout from '../../components/structural/Layout'
 import SubContainer from '../../components/common/SubContainer'
-import React, { useState, useEffect } from 'react';
+import React, { useState, useEffect } from 'react'
 import Router, { useRouter } from 'next/router'
 import Loader from '../../components/common/Loader'
 import { InlineWidget } from "react-calendly";

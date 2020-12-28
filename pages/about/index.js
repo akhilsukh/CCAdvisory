@@ -1,4 +1,4 @@
-import Link from "next/link";
+import Link from "next/link"
 import Layout from '../../components/structural/Layout'
 import SubContainer from '../../components/common/SubContainer'
 import Loader from '../../components/common/Loader'

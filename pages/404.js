@@ -1,7 +1,7 @@
-import Layout from "../components/structural/Layout";
-import Link from "next/link";
-import BlogCard from "../components/blogpage/BlogView";
-import { Container } from "postcss";
+import Layout from "../components/structural/Layout"
+import Link from "next/link"
+import BlogCard from "../components/blogpage/BlogView"
+import { Container } from "postcss"
 import SubContainer from "../components/common/SubContainer";
 
 function Error() {
