@@ -1,0 +1,125 @@
+{
+	"posts": [{
+			"title": "Top Ten Rules for Community College",
+			"section": "CCA Basics",
+			"path": "basics/topten-2020",
+			"author": "chrishoeft",
+			"date": "2020-11-09",
+			"frontpage": 1
+		},
+		{
+			"title": "Degreeworks in 5 minutes",
+			"section": "CCA Basics",
+			"path": "basics/degreeworks",
+			"author": "akhilsukhthankar",
+			"date": "2020-11-09",
+			"frontpage": 1
+		},
+		{
+			"title": "Assist.org in 5 minutes",
+			"section": "CCA Basics",
+			"path": "basics/assist",
+			"author": "hasshammalik",
+			"date": "2020-11-09",
+			"frontpage": 0
+		},
+		{
+			"title": "All About Middle College",
+			"section": "Deep Dive",
+			"path": "deepdives/middle-college",
+			"author": "akhilsukhthankar",
+			"date": "2020-11-09",
+			"frontpage": 0
+		},
+		{
+			"title": "All About General Education Classes",
+			"section": "Deep Dive",
+			"path": "deepdives/ge-classes",
+			"author": "akhilsukhthankar",
+			"date": "2020-11-09",
+			"frontpage": 1
+		},
+		{
+			"title": "All About Middle College",
+			"section": "Do's & Don'ts",
+			"path": "dosanddonts/uc-transfer-essay",
+			"author": "preethanselva",
+			"date": "2020-11-09",
+			"frontpage": 1
+		},
+		{
+			"title": "Computer Science @ Davis",
+			"section": "CCA Spotlight",
+			"path": "spotlight/cs-davis",
+			"author": "chrishoeft",
+			"date": "2020-11-09",
+			"frontpage": 1
+		},
+		{
+			"title": "Data Science @ Berkeley",
+			"section": "CCA Spotlight",
+			"path": "spotlight/datascience-cal",
+			"author": "chrishoeft",
+			"date": "2020-11-09",
+			"frontpage": 1
+		}
+	],
+	"team": [{
+			"id": "akhilsukhthankar",
+			"res": "director",
+			"name": "Akhil Sukhthankar",
+			"role": "Exective Director, Developer",
+			"bio": "I like De Anza.",
+			"major": "De Anza - Computer Science",
+			"tutor": 1,
+			"calendar": "https://calendly.com/akhil-ccadvisory/session"
+		},
+		{
+			"id": "chrishoeft",
+			"res": "director",
+			"name": "Chris Hoeft",
+			"role": "Director of Content",
+			"bio": "My dream school is Berkeley.",
+			"major": "De Anza - Political Science",
+			"tutor": 1,
+			"calendar": "https://calendly.com/akhil-ccadvisory/session"
+		},
+		{
+			"id": "barravrahamov",
+			"res": "director",
+			"name": "Barr Avrahamov",
+			"role": "Director of Outreach",
+			"bio": "I like to code.",
+			"major": "De Anza - Computer Science",
+			"tutor": 1,
+			"calendar": "https://calendly.com/akhil-ccadvisory/session"
+		},
+		{
+			"id": "hasshammalik",
+			"res": "writer",
+			"name": "Hassham Malik",
+			"role": "Writer",
+			"bio": "I like soccer.",
+			"major": "De Anza - Computer Science",
+			"tutor": 0
+		},
+		{
+			"id": "preethanselva",
+			"res": "writer",
+			"name": "Preethan Selva",
+			"role": "Writer",
+			"bio": "I like photography.",
+			"major": "De Anza - Business",
+			"tutor": 0
+		},
+		{
+			"id": "vahnitagirisa",
+			"res": "editor",
+			"name": "Vahni Tagirisa",
+			"role": "Senior Editor",
+			"bio": "I like Philly.",
+			"major": "Drexel - Biomedical Engineering",
+			"tutor": 0
+		}
+	]
+}
