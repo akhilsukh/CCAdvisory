@@ -22,7 +22,7 @@ function BlogDirectory() {
   const preUrl = 'https://cca-cors.herokuapp.com/';
 
   useEffect(() => {
-    const url = preUrl + 'https://api.npoint.io/850e1c65335d4e8a0fe1';
+    const url = preUrl + 'https://cdn.statically.io/gh/akhilsukh01/CCAdvisory/assets/data/data.json';
     fetch((url), {
       headers: {
         'Content-Type': 'application/json',
