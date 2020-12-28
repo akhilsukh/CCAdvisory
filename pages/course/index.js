@@ -1,5 +1,5 @@
 import Head from 'next/head'
-import Link from "next/link";
+import Link from "next/link"
 import Layout from '../../components/structural/Layout'
 import SubContainer from '../../components/common/SubContainer'
 
@@ -31,9 +31,7 @@ function Tutor() {
           <div className="grid grid-flow-row divide-solid divide-y divide-gray-200">
             <ClassButton text="AP Statistics"/>
             <ClassButton text="Precalculus"/>
-            <ClassButton text="Calculus I"/>
-            <ClassButton text="Calculus II"/>
-            <ClassButton text="Calculus III"/>
+            <ClassButton text="Calculus Series"/>
             <ClassButton text="Differential Equations"/>
             <ClassButton text="Linear Algebra"/>
             <ClassButton text="Discrete Mathematics"/>
