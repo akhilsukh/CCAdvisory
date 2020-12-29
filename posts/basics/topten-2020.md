@@ -1,10 +1,3 @@
----
-title: "Top Ten: 2020 Edition"
-author: "Chris Hoeft"
-date: 2020-11-09
-section: "CCA Basics"
----
-
 # 1. Check Rate My Professor.
 &nbsp;&nbsp;&nbsp;&nbsp;The most important thing to do before choosing your classes is to find the right instructor. Going to community college is one of the smartest financial decisions you can make, but there are drawbacks like any decision. Until you transfer to a UC or CSU, professors are hit or miss. Ratemyprofessors.com is a website where students can view and write reviews about professors on a 5 level difficulty system. You can find detailed descriptions of almost any professor from a CA community college. Some reviews will flat out tell you if a class is an easy A or not, while others require a more in-depth look. Take advantage of special tools, such as overall satisfaction ratings, percentages, and tags.
 
