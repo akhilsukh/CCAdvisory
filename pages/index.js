@@ -30,7 +30,7 @@ function HeadlineSection() {
   useEffect(() => {
     const preUrl = 'https://cca-cors.herokuapp.com/';
     // const url = 'https://cdn.statically.io/gh/akhilsukh01/CCAdvisory/assets/data/headlines.json'
-    const url = 'https://raw.githubusercontent.com/akhilsukh01/CCAdvisory/assets/data/headlines.json'
+    const url = 'https://akhilsukh01.github.io/CCAdvisory/data/headlines.json'
     fetch((preUrl + url), {
       headers: {
         'Content-Type': 'application/json',
@@ -63,7 +63,7 @@ function HeadlineSection() {
 function Home() {
   //preUrl not needed for image request
   // const url = 'https://cdn.statically.io/gh/akhilsukh01/CCAdvisory/assets/images/shortcuts/';
-  const url = 'https://raw.githubusercontent.com/akhilsukh01/CCAdvisory/assets/images/shortcuts/'
+  const url = 'https://akhilsukh01.github.io/CCAdvisory/images/shortcuts/'
   const shortcutAssist = "shortcut-assist.png";
   const shortcutUCApp = "shortcut-uc.png";
   const shortcutCommonApp = "shortcut-common.png";
@@ -78,7 +78,7 @@ function Home() {
 
   useEffect(() => {
     // const url = preUrl + 'https://cdn.statically.io/gh/akhilsukh01/CCAdvisory/assets/data/data.json';
-    const url = preUrl + 'https://raw.githubusercontent.com/akhilsukh01/CCAdvisory/assets/data/data.json';
+    const url = preUrl + 'https://akhilsukh01.github.io/CCAdvisory/data/data.json';
 
     fetch((url), {
       headers: {

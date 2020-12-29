@@ -22,7 +22,7 @@ function BlogDirectory() {
   const preUrl = 'https://cca-cors.herokuapp.com/';
   useEffect(() => {
     // const url = preUrl + 'https://cdn.statically.io/gh/akhilsukh01/CCAdvisory/assets/data/data.json';
-    const url = preUrl + 'https://raw.githubusercontent.com/akhilsukh01/CCAdvisory/assets/data/data.json';
+    const url = preUrl + 'https://akhilsukh01.github.io/CCAdvisory/data/data.json';
     fetch((url), {
       headers: {
         'Content-Type': 'application/json',
