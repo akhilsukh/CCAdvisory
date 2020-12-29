@@ -20,9 +20,9 @@ function BlogDirectory() {
     'loading': true,
   });
   const preUrl = 'https://cca-cors.herokuapp.com/';
-
   useEffect(() => {
-    const url = preUrl + 'https://cdn.statically.io/gh/akhilsukh01/CCAdvisory/assets/data/data.json';
+    // const url = preUrl + 'https://cdn.statically.io/gh/akhilsukh01/CCAdvisory/assets/data/data.json';
+    const url = preUrl + 'https://raw.githubusercontent.com/akhilsukh01/CCAdvisory/assets/data/data.json';
     fetch((url), {
       headers: {
         'Content-Type': 'application/json',
@@ -76,7 +76,7 @@ function BlogDirectory() {
           {!directory.loading &&
             <BlogGrid>
               {directory.posts.map((post, index) => {
-                if (post.section == "Do's & Don'ts") {
+                if (post.section == "Deep Dive") {
                   return <BlogCard
                     key={index}
                     title={post.title}

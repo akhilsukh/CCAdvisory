@@ -21,7 +21,9 @@ function Profile() {
 
   useEffect(() => {
     const preUrl = 'https://cca-cors.herokuapp.com/';
-    const url = preUrl + 'https://cdn.statically.io/gh/akhilsukh01/CCAdvisory/assets/data/about.json'
+    // const url = preUrl + 'https://cdn.statically.io/gh/akhilsukh01/CCAdvisory/assets/data/about.json'
+    const url = preUrl + 'https://raw.githubusercontent.com/akhilsukh01/CCAdvisory/assets/data/data.json'
+
     fetch((url), {
       headers: {
         'Content-Type': 'application/json',
@@ -46,7 +48,7 @@ function Profile() {
       });
   }, [pid])
 
-  const url = 'https://cdn.statically.io/gh/akhilsukh01/CCAdvisory/assets/images/profiles';
+  const url = 'https://raw.githubusercontent.com/akhilsukh01/CCAdvisory/assets/images/profiles';
 
   return (
     <Layout id={member.profile.name}>

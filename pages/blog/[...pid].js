@@ -25,8 +25,11 @@ function Blog({ content, frontmatter }) {
 
   useEffect(() => {
     const preUrl = 'https://cca-cors.herokuapp.com/';
-    const url1 = preUrl + 'https://cdn.statically.io/gh/akhilsukh01/CCAdvisory/assets/posts/';
-    const url2 = preUrl + 'https://cdn.statically.io/gh/akhilsukh01/CCAdvisory/assets/data/data.json';
+    // const url1 = preUrl + 'https://cdn.statically.io/gh/akhilsukh01/CCAdvisory/assets/posts/';
+    // const url2 = preUrl + 'https://cdn.statically.io/gh/akhilsukh01/CCAdvisory/assets/data/data.json';
+    const url1 = preUrl + 'https://raw.githubusercontent.com/akhilsukh01/CCAdvisory/assets/posts/';
+    const url2 = preUrl + 'https://raw.githubusercontent.com/akhilsukh01/CCAdvisory/assets/data/data.json';
+
 
     if (pid) {
       var formattedpid = pid.toString().replace(",", "/");

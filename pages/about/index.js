@@ -29,7 +29,9 @@ function About() {
   const preUrl = 'https://cca-cors.herokuapp.com/';
 
   useEffect(() => {
-    const url = preUrl + 'https://cdn.statically.io/gh/akhilsukh01/CCAdvisory/assets/data/about.json';
+    // const url = preUrl + 'https://cdn.statically.io/gh/akhilsukh01/CCAdvisory/assets/data/about.json';
+    const url = preUrl + 'https://raw.githubusercontent.com/akhilsukh01/CCAdvisory/assets/data/data.json';
+
     fetch((url), {
       headers: {
         'Content-Type': 'application/json',
@@ -47,7 +49,8 @@ function About() {
   }, [])
 
   //preUrl not needed for image requests
-  const url = "https://cdn.statically.io/gh/akhilsukh01/CCAdvisory/assets/images/profiles";
+  // const url = "https://cdn.statically.io/gh/akhilsukh01/CCAdvisory/assets/images/profiles";
+  const url = "https://raw.githubusercontent.com/akhilsukh01/CCAdvisory/assets/images/profiles";
 
   return (
     <Layout id="About" index="4">
