@@ -83,7 +83,6 @@ function Home() {
         'X-Requested-With': 'XMLHttpRequest'
       }
     }).then(function (response) {
-      console.log("RES", response);
       return response.json();
     })
       .then(function (jsonData) {
@@ -117,9 +116,10 @@ function Home() {
             {directory.loading && <Loader loading={directory.loading} />}
             {!directory.loading &&
               <div className="grid gap-3 grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-3 2xl:grid-cols-6 justify-items-center">
-                {directory.posts.map((post) => {
+                {directory.posts.map((post, index) => {
                   if (post.frontpage == 1) {
                     return <BlogCard
+                      key={index}
                       title={post.title}
                       date={post.date}
                       post={post.path}
@@ -184,7 +184,7 @@ function Home() {
           </div>
         </div>
 
-        <script defer src='https://static.cloudflareinsights.com/beacon.min.js' data-cf-beacon='{"token": "16f83f98f5d94f5b8f1e563dd9641161"}'></script>
+        {/* <script defer src='https://static.cloudflareinsights.com/beacon.min.js' data-cf-beacon='{"token": "16f83f98f5d94f5b8f1e563dd9641161"}'></script> */}
 
       </div>
     </Layout>

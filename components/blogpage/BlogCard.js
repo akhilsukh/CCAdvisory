@@ -3,8 +3,8 @@ import Link from "next/link";
 function BlogCard(props) {
   const { post, title, date, author, section } = props;
 
-  var formattedDate = new Date(date);
   const options = { year: "numeric", month: "short", day: "numeric" };
+  var formattedDate = new Date(date);
 
   var band_color = "band-default";
   if (section.toUpperCase() === "CCA BASICS") {

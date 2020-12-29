@@ -1,31 +1,31 @@
 import Link from "next/link"
 import SubContainer from '../common/SubContainer'
 import ReactMarkdown from "react-markdown";
+import Loader from "../../components/common/Loader"
 
 function BlogView(props) {
-  const { frontmatter, content, children } = props;
+  const { metadata, author, content, loading} = props;
 
-  var sectionLink = "/blog#" + frontmatter.section.replace(/ /g, "_");
+  // Convert post date to format: Month day, Year
+  const options = { year: "numeric", month: "short", day: "numeric" };
+  var formattedDate = new Date(metadata.date).toLocaleDateString("en-US", options);
 
   return (
     <SubContainer>
-      <div className="m-0.5 md:mx-1 lg:mx-1.5 xl:mx-2.5">
+      {loading && <Loader loading={loading} />}
+      {!loading && <div className="m-0.5 md:mx-1 lg:mx-1.5 xl:mx-2.5">
         <div className="text-center">
-          <Link href={sectionLink}>
-            <a className="markdown-subtitle text-orange-300 hover:underline">{frontmatter.section}</a>
-          </Link>
-          <h2 className="markdown-title">{frontmatter.title}</h2>
-          <h3 className="markdown-subtitle">By {frontmatter.author}</h3>
-          <h4 className="markdown-subtitle text-pacific-800">{frontmatter.date}</h4>
+          <a className="markdown-subtitle text-orange-300 hover:underline">{metadata.section}</a>
+          <h2 className="markdown-title">{metadata.title}</h2>
+          <h3 className="markdown-subtitle">By {author.name}</h3>
+          <h4 className="markdown-subtitle text-pacific-800">{formattedDate}</h4>
         </div>
-
-        {/* <div className="h-2 lg:h-4 xl:h-4"></div> */}
         <article className="markdown mt-2">
           <ReactMarkdown
             escapeHtml={false}
             source={content} />
         </article>
-      </div>
+      </div>}
     </SubContainer>
   )
 }

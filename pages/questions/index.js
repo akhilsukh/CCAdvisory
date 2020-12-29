@@ -23,7 +23,6 @@ function QA() {
             <QAButton target="asd" image="https://i.imgur.com/X16vNj5.png" />
             <QAButton target="asd" image="https://i.imgur.com/3WtdV5A.png" />
             <QAButton target="asd" image="https://i.imgur.com/XO2Q1kQ.png" />
-
           </div>
         </SubContainer>
       </div>

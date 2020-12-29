@@ -30,7 +30,6 @@ function BlogDirectory() {
         'X-Requested-With': 'XMLHttpRequest'
       }
     }).then(function (response) {
-      console.log("RES", response);
       return response.json();
     })
       .then(function (jsonData) {
@@ -38,7 +37,7 @@ function BlogDirectory() {
         var teamData = jsonData.team;
         setDirectory({ 'posts': postsData, 'team': teamData, 'loading': false });
       });
-  }, [])
+  }, [true])
 
   function getNameFromID(ID) {
     for (var i = 0; i < directory.team.length; i++) {
@@ -48,7 +47,6 @@ function BlogDirectory() {
     }
   }
 
-
   return (
     <Layout id="Blog" index="1">
       <div className="flex flex-col w-full max-w-7xl">
@@ -57,9 +55,10 @@ function BlogDirectory() {
           {directory.loading && <Loader loading={directory.loading} />}
           {!directory.loading &&
             <BlogGrid>
-              {directory.posts.map((post) => {
+              {directory.posts.map((post, index) => {
                 if (post.section == "CCA Basics") {
                   return <BlogCard
+                    key={index}
                     title={post.title}
                     date={post.date}
                     post={post.path}
@@ -76,9 +75,10 @@ function BlogDirectory() {
           {directory.loading && <Loader loading={directory.loading} />}
           {!directory.loading &&
             <BlogGrid>
-              {directory.posts.map((post) => {
+              {directory.posts.map((post, index) => {
                 if (post.section == "Do's & Don'ts") {
                   return <BlogCard
+                    key={index}
                     title={post.title}
                     date={post.date}
                     post={post.path}
@@ -95,9 +95,10 @@ function BlogDirectory() {
           {directory.loading && <Loader loading={directory.loading} />}
           {!directory.loading &&
             <BlogGrid>
-              {directory.posts.map((post) => {
+              {directory.posts.map((post, index) => {
                 if (post.section == "Do's & Don'ts") {
                   return <BlogCard
+                    key={index}
                     title={post.title}
                     date={post.date}
                     post={post.path}
@@ -114,9 +115,10 @@ function BlogDirectory() {
           {directory.loading && <Loader loading={directory.loading} />}
           {!directory.loading &&
             <BlogGrid>
-              {directory.posts.map((post) => {
+              {directory.posts.map((post, index) => {
                 if (post.section == "CCA Spotlight") {
                   return <BlogCard
+                    key={index}
                     title={post.title}
                     date={post.date}
                     post={post.path}
