@@ -11,7 +11,7 @@ body {
   margin: 0;
   font-family: -apple-system, 'Inter', BlinkMacSystemFont, Segoe UI, Roboto, Oxygen, 'Playfair Display',
     Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
-    background-color: #f9fafb;
+    background-color: white;
 }
 
 a {
@@ -35,13 +35,13 @@ a {
 @layer components {
   /* */
   .subcontainer{
-    @apply bg-gray-100 rounded-lg py-4 px-5 ring-2 ring-gray-200;
+    @apply bg-gray-50 py-4 px-5 rounded-lg ring-1 ring-gray-200;
   }
   .subcontainer-text{
-    @apply font-semibold text-pacific-900 text-2xl pb-2;
+    @apply font-medium text-2xl pb-2;
   }
   .alert{
-    @apply bg-gray-100 p-3 rounded-lg text-center text-sm font-medium text-pacific-800 ring-2 ring-gray-200;
+    @apply bg-gray-100 p-3 rounded-lg text-center text-sm font-medium text-pacific-800 ring-1 ring-gray-200;
   }
 
   /* For Navbar buttons */
@@ -65,6 +65,8 @@ a {
   .headline-link {
     @apply text-pacific-800 cursor-pointer;
   }
+
+  /* For Q&A page text */
   .text-question {
     @apply font-medium;
   }
@@ -83,13 +85,13 @@ a {
     @apply band bg-green-300;
   }
   .band-deep-dive{
-    @apply band bg-blue-300;
+    @apply band bg-indigo-300;
   }
   .band-dosanddonts{
     @apply band bg-red-300;
   }
   .band-spotlight{
-    @apply band bg-yellow-200;
+    @apply band bg-yellow-300;
   }
   /* .blog-card:hover > .band-default{
     @apply bg-gray-500;
@@ -98,16 +100,16 @@ a {
     @apply bg-green-400;
   }
   .blog-card:hover > .band-deep-dive{
-    @apply bg-blue-400;
+    @apply bg-indigo-400;
   }
   .blog-card:hover > .band-dosanddonts{
     @apply bg-red-400;
   }
   .blog-card:hover > .band-spotlight{
-    @apply bg-yellow-300;
+    @apply bg-yellow-400;
   }
 
-  /* For BlogPage text */
+  /* For BlogView text */
   .markdown-title{
     @apply font-serif text-4xl mb-4;
   }

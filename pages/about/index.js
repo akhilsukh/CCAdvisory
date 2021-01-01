@@ -1,18 +1,18 @@
-import Link from "next/link";
-import Layout from '../../components/Layout'
-import SubContainer from '../../components/SubContainer'
-import Loader from '../../components/Loader'
+import Link from "next/link"
+import Layout from '../../components/structural/Layout'
+import SubContainer from '../../components/common/SubContainer'
+import Loader from '../../components/common/Loader'
 import React, { useState, useEffect } from 'react';
 
 function ProfileCard(props) {
   const { id, name, role, major, image } = props;
 
   return (
-    <li className="hover:bg-gray-200 hover:border-2 rounded-xl text-center cursor-pointer flex-col py-3 w-full">
+    <li className="hover:bg-gray-100 hover:border-2 rounded-xl text-center cursor-pointer flex-col py-3 w-full">
       <Link href={"/about/" + id}>
         <div>
-          <img className="rounded-full mx-auto bg-blue-200 h-40 w-40 m-2 border-2 border-gray-300" src={image} />
-          <h6 className="text-xl font-semibold text-pacific-900 mt-1 truncate w-full">{name}</h6>
+          <img className="rounded-full mx-auto bg-gray-200 h-40 w-40 m-2 border-2 border-gray-300" src={image} />
+          <h6 className="text-xl font-medium mt-1 truncate w-full">{name}</h6>
           <p className="text-pacific-800 font-medium text-sm w-full inline">{role}</p>
           <p className="text-gray-800 font-medium text-sm w-full block">{major}</p>
         </div>
@@ -29,7 +29,9 @@ function About() {
   const preUrl = 'https://cca-cors.herokuapp.com/';
 
   useEffect(() => {
-    const url = preUrl + 'https://cdn.statically.io/gh/akhilsukh01/CCAdvisory/assets/data/about.json';
+    // const url = preUrl + 'https://cdn.statically.io/gh/akhilsukh01/CCAdvisory/assets/data/about.json';
+    const url = preUrl + 'https://akhilsukh01.github.io/CCAdvisory/data/data.json';
+
     fetch((url), {
       headers: {
         'Content-Type': 'application/json',
@@ -47,13 +49,14 @@ function About() {
   }, [])
 
   //preUrl not needed for image requests
-  const url = "https://cdn.statically.io/gh/akhilsukh01/CCAdvisory/assets/images/profiles";
+  // const url = "https://cdn.statically.io/gh/akhilsukh01/CCAdvisory/assets/images/profiles";
+  const url = "https://akhilsukh01.github.io/CCAdvisory/images/profiles";
 
   return (
     <Layout id="About" index="4">
       <div className="flex flex-col w-full max-w-7xl">
         <SubContainer title="About Us">
-          <p>Dolores dolores eos dolor at aliquyam ipsum sanctus sit magna, invidunt dolore sed sed dolor. Sed invidunt duo eirmod tempor est, et sit no lorem aliquyam nonumy amet invidunt justo. Dolores dolores eos dolor at aliquyam ipsum sanctus sit magna, invidunt dolore sed sed dolor. Sed invidunt duo eirmod tempor est, et sit no lorem aliquyam nonumy amet invidunt justo. Dolores dolores eos dolor at aliquyam ipsum sanctus sit magna, invidunt dolore sed sed dolor. Sed invidunt duo eirmod tempor est, et sit no lorem aliquyam nonumy amet invidunt justo.</p>
+          <p>CCAdvisory was created by community college students for community college students. In 2020, we all found ourselves at community college, whether it was straight from high school or after exploring opportunities at other institutions. While preparing to take the next step in our respective journeys, we came together to share our experiences with you because we truly believe that is the most valuable thing to offer the next generation of students.</p>
         </SubContainer>
 
         <SubContainer title="Founders">
@@ -67,7 +70,7 @@ function About() {
                     id={person.id}
                     name={person.name}
                     role={person.role}
-                    major={person.major}
+                    // major={person.major}
                     image={`${url}/${person.id.substring(0, 3)}.jpg`} />
                 }
               })}
@@ -86,7 +89,7 @@ function About() {
                     id={person.id}
                     name={person.name}
                     role={person.role}
-                    major={person.major}
+                    // major={person.major}
                     image={`${url}/${person.id.substring(0, 3)}.jpg`} />
                 }
               })}

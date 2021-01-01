@@ -1,4 +1,4 @@
-import Navbar from './Navbar.js'
+import Navbar from './Navbar'
 import Head from 'next/head'
 
 function Layout (props) {

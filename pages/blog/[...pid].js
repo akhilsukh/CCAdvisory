@@ -1,154 +1,89 @@
 import Head from 'next/head'
-import Layout from '../../components/Layout'
-import SubContainer from '../../components/SubContainer'
-import Link from "next/link";
-import React, { useState, useEffect } from 'react';
-import { useRouter } from 'next/router'
-import ReactMarkdown from "react-markdown";
-import matter from "gray-matter";
-import Router from "next/router";
-import Loader from "../../components/Loader";
+import Layout from '../../components/structural/Layout'
+import SubContainer from '../../components/common/SubContainer'
+import Link from "next/link"
+import React, { useState, useEffect } from 'react'
+import Router, { useRouter } from 'next/router'
+import ReactMarkdown from "react-markdown"
+import matter from "gray-matter"
+import BlogView from "../../components/blogpage/BlogView"
 
-function BlogView({ content, frontmatter }) {
+
+function Blog({ content, frontmatter }) {
   const { pid } = useRouter().query;
 
-  const [post, setPost] = useState({
-    'frontmatter': {
-      'title': '...',
-      // 'author': '...',
-      // 'section': '...',
-      // 'date': Date.now().toString()
+  const [article, setArticle] = useState({
+    'metadata': {
+      'title': '...'
     },
-    'data': null,
+    'content': null,
+    'author': null,
     'loading': true
   });
 
-  // const [post, setPost] = useState({});
+  var state = {};
 
   useEffect(() => {
     const preUrl = 'https://cca-cors.herokuapp.com/';
-    const url = preUrl +'https://cdn.statically.io/gh/akhilsukh01/CCAdvisory/assets/posts/';
-    // const basePath = 'https://raw.githubusercontent.com/akhilsukh01/CCAdvisory/assets/posts/'
+    // const url1 = preUrl + 'https://cdn.statically.io/gh/akhilsukh01/CCAdvisory/assets/posts/';
+    // const url2 = preUrl + 'https://cdn.statically.io/gh/akhilsukh01/CCAdvisory/assets/data/data.json';
+    const url1 = preUrl + 'https://akhilsukh01.github.io/CCAdvisory/posts/';
+    const url2 = preUrl + 'https://akhilsukh01.github.io/CCAdvisory/data/data.json';
+
 
     if (pid) {
-      var path = (url + pid[0] + "/" + pid[1] + ".md");
+      var formattedpid = pid.toString().replace(",", "/");
+      var path = (url1 + formattedpid + ".md");
       fetch(path, {
         headers: {
           'Content-Type': 'text/plain',
           'Accept': 'text/plain',
         }
       }).then(function (response) {
-        // console.log("RES", response);
-        // console.log("STATUS", response.status);
         if (response.status == 404) {
           Router.push('/blog');
         }
         return response.text();
       }).then(function (textData) {
-        // console.log("MD", textData);
         const { data, content } = matter(textData);
+        state.content = content;
 
-        // Convert post date to format: Month day, Year
-        const options = { year: "numeric", month: "long", day: "numeric" };
-        const formattedDate = (data.date ? data.date.toLocaleDateString("en-US", options) : "...");
+        return fetch((url2), {
+          headers: {
+            'Content-Type': 'application/json',
+            'Accept': 'application/json',
+          }
+        });
+      }).then(function (response) {
+        return response.json();
+      }).then(function (response) {       
+        for (var i = 0; i < response.posts.length; i++) {
+          if(response.posts[i].path == formattedpid){
+            state.metadata = response.posts[i];
+            break;
+          }
+        }
 
-        const frontmatter = {
-          ...data,
-          title: `${data.title}`,
-          author: `${data.author}`,
-          section: `${data.section}`,
-          date: `${formattedDate}`,
-        };
-
-        setPost({ frontmatter, content , 'loading': false });
-      });
+        return response;
+      }).then(function (response) {
+        for (var i = 0; i < response.team.length; i++) {
+          if(response.team[i].id == state.metadata.author){
+            state.author = response.team[i];
+            state.loading = false;
+            setArticle(state);
+          }
+        }
+      })
     }
   }, [pid])
 
   return (
-    <Layout id={post.frontmatter.title}>
+    <Layout id={article.metadata.title}>
       <div className="flex flex-col w-full max-w-7xl">
-        <SubContainer>
-          {!post.loading && <div className="m-0.5 md:mx-1 lg:mx-1.5 xl:mx-2.5">
-            <div className="text-center">
-              {/* <Link href={post.frontmatter.section}> */}
-              <a className="markdown-subtitle text-orange-300 hover:underline">{post.frontmatter.section}</a>
-              {/* </Link> */}
-              <h2 className="markdown-title">{post.frontmatter.title}</h2>
-              <h3 className="markdown-subtitle">By {post.frontmatter.author}</h3>
-              <h4 className="markdown-subtitle text-pacific-800">{post.frontmatter.date}</h4>
-            </div>
-            <article className="markdown mt-2">
-              <ReactMarkdown
-                escapeHtml={false}
-                source={post.content} />
-            </article>
-          </div>}
-
-          {post.loading && <Loader loading={post.loading}/>}
-
-        </SubContainer>
+        <BlogView metadata={article.metadata} author={article.author} content={article.content} loading={article.loading}/>
       </div>
     </Layout>
   )
 }
 
-export default BlogView;
-
-
-// export async function getStaticPaths() {
-//   var glob = require('glob');
-//   var options = {
-//     cwd: 'posts',
-//     matchBase: true,
-//   }
-//   const files = glob.sync("*.md", options);
-
-//   for(var i = 0; i < files.length; i++) {
-//     //removes all but the last '/'
-//     while(files[i].split("/").length - 1 >= 2){
-//       files[i] = files[i].substring(files[i].indexOf('/')+1);
-//     }
-
-//     //removes .md extention
-//     files[i] = files[i].replace(".md", "");
-//   }
-
-//   const paths = files.map((filename) => ({
-//     params: {
-//       pid: [filename.split('/')[0], filename.split('/')[1]],
-//     },
-//   }));
-
-//   return {
-//     paths,
-//     fallback: false,
-//   };
-// }
-
-// export async function getStaticProps({ params: { pid } }) {
-//   const markdownWithMetadata = fs
-//     .readFileSync(path.join("posts/", pid[0], pid[1] + ".md"))
-//     .toString();
-
-//     const { data, content } = matter(markdownWithMetadata);
-
-//   // Convert post date to format: Month day, Year
-//   const options = { year: "numeric", month: "long", day: "numeric" };
-//   const formattedDate = data.date.toLocaleDateString("en-US", options);
-
-//   const frontmatter = {
-//     ...data,
-//     title: `${data.title}`,
-//     author: `${data.author}`,
-//     section: `${data.section}`,
-//     date: `${formattedDate}`,
-//   };
-
-//   return {
-//     props: {
-//       frontmatter,
-//       content: content,
-//     },
-//   };
-// }
+export default Blog;
