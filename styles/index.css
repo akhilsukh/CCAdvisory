@@ -44,6 +44,26 @@ a {
     @apply bg-gray-100 p-3 rounded-lg text-center text-sm font-medium text-pacific-800 ring-1 ring-gray-200;
   }
 
+  /*For Form Elements*/
+  .email-input{
+    @apply px-3 py-2 rounded-md ring-1 ring-gray-300 outline-none col-span-2 lg:col-span-3 xl:col-span-2;
+  }
+  .email-input:focus{
+    @apply ring-pacific-900;
+  }
+  .submit-button{
+    @apply font-medium px-4 py-2 bg-gray-150 text-sm text-pacific-800 rounded-md col-span-1 lg:col-span-3 xl:col-span-1;
+  }
+  .submit-button:hover{
+    @apply bg-gray-200;
+  }
+  .submit-button:hover{
+    @apply outline-none;
+  }
+  .clicked-success{
+    @apply cursor-not-allowed bg-pacific-800 text-gray-100;
+  }
+
   /* For Navbar buttons */
   .active-nav-button {
     @apply rounded-lg  p-2 px-3 mx-1 bg-pacific-900 text-sm text-white font-medium;
