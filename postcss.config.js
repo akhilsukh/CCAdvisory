@@ -1,40 +1,11 @@
-// module.exports = {
-//     plugins: [
-//       require("tailwindcss"), 
-//       require("postcss-preset-env")
-//     ],
-//   }
-
-// const purgecss = require("@fullhuman/postcss-purgecss")({
-//   // paths to all of the template files in the project
-//   content: ["./src/**/*.html", "./src/**/*.tsx", "./public/**/*.html"],
-
-//   // default extractor including tailwind's special characters
-//   defaultExtractor: content => content.match(/[A-Za-z0-9-_:/]+/g) || []
-// });
-
-// module.exports = {
-//   plugins: [
-//     'tailwindcss',
-//     'postcss-preset-env',
-//   // ({
-//   //     stage: 1,
-//   //     features: {
-//   //       'focus-within-pseudo-class': false
-//   //     }
-//   //   }),
-//     ...(process.env.NODE_ENV === "production" ? [purgecss] : [])
-//   ]
-// };
-
 module.exports = {
-  plugins: [
-    "tailwindcss",
-    ["postcss-preset-env",{
-      stage: 1,
-      features: {
-        'focus-within-pseudo-class': false
-      }
-    }],
-  ]
+		plugins: {
+				tailwindcss: {},
+				'@fullhuman/postcss-purgecss': {
+						enabled: false,
+						preserveHtmlElements: true,
+						content: ['./pages/*js', './pages/**/*.js','./components/**/*.js', './styles/*.css'],
+						defaultExtractor: content => content.match(/[\w-:/]+(?<!:)/g) || []
+				},
+		}
 };
