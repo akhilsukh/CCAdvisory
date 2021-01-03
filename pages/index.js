@@ -5,13 +5,15 @@ import { Container } from "postcss"
 import SubContainer from "../components/common/SubContainer"
 import React, { useState, useEffect } from 'react'
 import Loader from '../components/common/Loader'
+import SubscriptionForm from "../components/homepage/subscriptionForm";
+import FeedbackForm from "../components/homepage/feedbackForm";
 
 function QuickButton(props) {
   return (
     <div className="hover:cursor-pointer hover:underline hover:ring-pacific-800">
       <a href={props.link} target="_blank" rel="noreferrer">
         <button className="bg-gray-150 hover:bg-gray-200 hover:underline rounded-lg p-2 pt-3 ring-1 ring-gray-200 hover:ring-gray-800">
-          <img className="w-7/12 m-auto" src={props.img}></img>
+          <img className="w-7/12 m-auto" src={props.img} alt="shortcut-image"/>
           <p className="mt-2 font-medium text-pacific-800 text-center text-xs">
             {props.title}
           </p>
@@ -98,7 +100,7 @@ function Home() {
 
   function getNameFromID(ID) {
     for (var i = 0; i < directory.team.length; i++) {
-      if (directory.team[i].id == ID) {
+      if (directory.team[i].id === ID) {
         return directory.team[i].name;
       }
     }
@@ -121,7 +123,7 @@ function Home() {
             {!directory.loading &&
               <div className="grid gap-3 grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-3 2xl:grid-cols-6 justify-items-center">
                 {directory.posts.map((post, index) => {
-                  if (post.frontpage == 1) {
+                  if (post.frontpage === 1) {
                     return <BlogCard
                       key={index}
                       title={post.title}
@@ -171,24 +173,10 @@ function Home() {
         {/* newsletter and contact bar */}
         <div className="col-span-3 lg:col-span-1 xl:col-span-1">
           <div className="grid grid-col-1">
-            <SubContainer title="Subscribe to our Weekly Newsletter">
-              <div className="grid grid-cols-3 gap-2">
-                <input type="email" placeholder="Email" className="px-3 py-2 rounded-md ring-1 ring-gray-300 focus:ring-pacific-900 outline-none col-span-2 lg:col-span-3 xl:col-span-2" />
-                <button className="font-medium px-4 py-2 bg-gray-150 hover:bg-gray-200 ring-1 ring-gray-200 hover:ring-gray-800 text-sm text-pacific-800 rounded-md focus:outline-none col-span-1 lg:col-span-3 xl:col-span-1">Subscribe</button>
-              </div>
-            </SubContainer>
-            <div className="subcontainer">
-              <h2 className="subcontainer-text">Contact Us</h2>
-              <div className="grid grid-cols-3 gap-2">
-                <input type="email" placeholder="Email" className="px-3 py-2 rounded-md ring-1 ring-gray-300 focus:ring-pacific-900 outline-none col-span-2" />
-                <button className="px-4 py-2 bg-gray-150 hover:bg-gray-200 ring-1 ring-gray-200 hover:ring-gray-800 text-sm font-medium text-pacific-800 rounded-md col-span-1 focus:outline-none">Send</button>
-                <textarea cols="50" rows="4" placeholder="Message" className="px-3 py-2 h-16 rounded-md ring-1 ring-gray-300 focus:ring-pacific-900 outline-none col-span-3" />
-              </div>
-            </div>
+            <SubscriptionForm/>
+            <FeedbackForm/>
           </div>
         </div>
-
-        {/* <script defer src='https://static.cloudflareinsights.com/beacon.min.js' data-cf-beacon='{"token": "16f83f98f5d94f5b8f1e563dd9641161"}'></script> */}
 
       </div>
     </Layout>

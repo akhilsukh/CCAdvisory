@@ -1,5 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600,700&display=swap');
 @import "tailwindcss/base";
 @import "tailwindcss/components";
 @import "tailwindcss/utilities";
@@ -9,7 +9,7 @@ html,
 body {
   padding: 0;
   margin: 0;
-  font-family: -apple-system, 'Inter', BlinkMacSystemFont, Segoe UI, Roboto, Oxygen, 'Playfair Display',
+  font-family: -apple-system, 'Inter', BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
     Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
     background-color: white;
 }
@@ -42,6 +42,26 @@ a {
   }
   .alert{
     @apply bg-gray-100 p-3 rounded-lg text-center text-sm font-medium text-pacific-800 ring-1 ring-gray-200;
+  }
+
+  /*For Form Elements*/
+  .email-input{
+    @apply px-3 py-2 rounded-md ring-1 ring-gray-300 outline-none col-span-2 lg:col-span-3 xl:col-span-2;
+  }
+  .email-input:focus{
+    @apply ring-pacific-900;
+  }
+  .submit-button{
+    @apply font-medium px-4 py-2 bg-gray-150 text-sm text-pacific-800 rounded-md col-span-1 lg:col-span-3 xl:col-span-1;
+  }
+  .submit-button:hover{
+    @apply bg-gray-200;
+  }
+  .submit-button:hover{
+    @apply outline-none;
+  }
+  .clicked-success{
+    @apply cursor-not-allowed bg-pacific-800 text-gray-100;
   }
 
   /* For Navbar buttons */
@@ -116,17 +136,14 @@ a {
   .markdown-subtitle{
     @apply uppercase text-xs;
   }
-  .markdown h1{
-    @apply font-serif text-2xl font-semibold mt-6;
-  }
   .markdown h2{
-    @apply text-xl font-medium my-1;
+    @apply font-serif text-2xl font-medium mt-4;
   }
   .markdown p {
     @apply font-serif p-1;
   }
   .markdown img {
-    @apply m-auto mt-3 w-11/12 md:w-3/5 lg:w-3/5 xl:w-3/5 border-2 rounded-lg border-pacific-800; 
+    @apply m-auto my-3 w-11/12 md:w-3/5 lg:w-3/5 xl:w-3/5 border rounded-md border-pacific-800;
   }
   .markdown a{
     @apply text-pacific-800;
