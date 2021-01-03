@@ -18,6 +18,9 @@ module.exports = {
 								gray: {
 										150: "#ECEEF1"
 								}
+						},
+						fontFamily: {
+								'serif':  ['Playfair Display', 'ui-serif', 'Georgia']
 						}
 				}
 		},
