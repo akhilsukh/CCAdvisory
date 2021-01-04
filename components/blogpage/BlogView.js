@@ -1,14 +1,15 @@
 import Link from "next/link"
 import SubContainer from '../common/SubContainer'
 import ReactMarkdown from "react-markdown";
-import Loader from "../../components/common/Loader"
+import Loader from "../../components/common/Loader";
+import Markdown from 'markdown-to-jsx';
 
 function BlogView(props) {
   const { metadata, author, content, loading} = props;
 
   // Convert post date to format: Month day, Year
   const options = { year: "numeric", month: "short", day: "numeric" };
-  var formattedDate = new Date(metadata.date).toLocaleDateString("en-US", options);
+  const formattedDate = new Date(metadata.date).toLocaleDateString("en-US", options);
 
   return (
     <SubContainer>
@@ -20,11 +21,16 @@ function BlogView(props) {
           <h3 className="markdown-subtitle">By {author.name}</h3>
           <h4 className="markdown-subtitle text-pacific-800">{formattedDate}</h4>
         </div>
+
+
+
+        {/*<div dangerouslySetInnerHTML={md.render(content)} />*/}
         <article className="markdown mt-2">
-          <ReactMarkdown
-            escapeHtml={false}
-            source={content} />
+          <Markdown>
+            {content}
+          </Markdown>
         </article>
+
       </div>}
     </SubContainer>
   )
