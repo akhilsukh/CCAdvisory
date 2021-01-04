@@ -14,14 +14,14 @@
 **IGETC [Requirements Table](https://admission.universityofcalifornia.edu/admission-requirements/transfer-requirements/general-education-igetc/igetc/ "Requirements Table")**
 
 | Subject area  | Required courses  | Units required |
-| :------------ |:---------------| :-----|
-|**1. English Communication**|2 courses|6 semester units or 8-10 quarter units|
-|**2. Mathematical Concepts and Quantitative Reasoning**|1 course|3 semester units or 4-5 quarter units|
-|**3. Arts and Humanities**|3 courses|9 semester units or 12-15 quarter units|
-|**4. Social and Behavioral Sciences**|3 courses|9 semester units or 12-15 quarter units|
-|**5. Physical and Biological Sciences**|3 courses|7-9 semester units or 9-12 quarter units|
-|**6. Language Other than English**|Proficiency*|Proficiency*|
-|**Total:**|3 courses|34 semester units|
+| :------------ |:---------------| :----|
+|1. English Communication|2 courses|6 semester units or 8-10 quarter units|
+|2. Mathematical Concepts and Quantitative Reasoning|1 course|3 semester units or 4-5 quarter units|
+|3. Arts and Humanities |3 courses|9 semester units or 12-15 quarter units|
+|4. Social and Behavioral Sciences|3 courses|9 semester units or 12-15 quarter units|
+|5. Physical and Biological Sciences|3 courses|7-9 semester units or 9-12 quarter units|
+|6. Language Other than English|Proficiency*|Proficiency*|
+|Total:|3 courses|34 semester units|
 
 
 **Proficiency equivalent to two years of high school courses in the same language.*
@@ -39,7 +39,7 @@ Below are the CSU-breadth guidelines as provided by the CSU system for upper-div
 **CSU-Breadth [Requirements Table](https://www2.calstate.edu/csu-system/administration/academic-and-student-affairs/academic-programs-innovations-and-faculty-development/faculty-development-and-innovative-pedagogy/Pages/general-education-policy.aspx "Requirements Table")**
 
 | Subject area | Required courses | Units required |
-|-|-|-|
+|:-|:-|:-|
 | Area A: English Language Communication and Critical Thinking | A1, A2, A3 | 9 semester units (12 quarter units) |
 | Area B: Scientific Inquiry and Quantitative Reasoning | B1, B2, B3(lab), B4 | 12 semester units (18 quarter units) |
 | Area C: Arts and Humanities | C1, C2 | 12 semester units (18 quarter units) |
@@ -49,8 +49,8 @@ Below are the CSU-breadth guidelines as provided by the CSU system for upper-div
 
 The [CSU classes](https://www2.calstate.edu/csu-system/administration/academic-and-student-affairs/academic-programs-innovations-and-faculty-development/faculty-development-and-innovative-pedagogy/Pages/general-education-policy.aspx "CSU classes") themselves are articulated below.
 
-| Requirement ID | Requirement Description |
-|-|-|
+|Requirement ID | Requirement Description |
+|:-|:-|
 | A1 | Oral Communication |
 | A2 | Written Communication |
 | A3 | Critical Thinking |
@@ -83,3 +83,5 @@ You can find more details [here](https://www2.calstate.edu/csu-system/administra
 | Upper-Division Transfer. Retrieved from https://www2.calstate.edu/apply/transfer/Pages/upper-division-transfer.aspx\ |
 | Retrieved from https://pearsonaccelerated.com/blog/what-exactly-is-general-education |
 | Which GE is for me? Retrieved from https://www.sbcc.edu/transfercenter/whichge.php |
+
+
