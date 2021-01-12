@@ -20,7 +20,7 @@
 |3. Arts and Humanities |3 courses|9 semester units or 12-15 quarter units|
 |4. Social and Behavioral Sciences|3 courses|9 semester units or 12-15 quarter units|
 |5. Physical and Biological Sciences|3 courses|7-9 semester units or 9-12 quarter units|
-|6. Language Other than English|Proficiency* | Proficiency* |
+|6. Language Other than English|Proficiency\* | Proficiency\* |
 |Total:|3 courses|34 semester units|
 
 
