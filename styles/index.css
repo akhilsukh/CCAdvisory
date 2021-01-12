@@ -1,6 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700&display=swap');
-@import "tailwindcss/base";
+@import url('https://fonts.googleapis.com/css2?family=Source+Serif+Pro:wght@400;600;700&display=swap');@import "tailwindcss/base";
 @import "tailwindcss/components";
 @import "tailwindcss/utilities";
 
@@ -145,21 +144,27 @@ a {
     @apply font-serif p-1;
   }
   .markdown img {
-    @apply m-auto my-3 w-11/12 md:w-3/5 lg:w-3/5 xl:w-3/5 border rounded-md border-pacific-800;
+    @apply m-auto my-3 w-3/5  border rounded-md border-pacific-800;
   }
   .markdown a{
-    @apply text-pacific-800;
+    @apply text-pacific-800 break-normal;
   }
   .markdown a:hover{
     @apply underline;
   }
   .markdown table{
-    @apply mt-2 mb-4 mx-auto border border-gray-400 p-4 rounded-md w-full;
+    @apply mt-2 mb-4 mx-auto border border-gray-400 p-4 break-words w-full;
   }
   .markdown thead{
     @apply m-4 bg-gray-150;
   }
   .markdown hr{
     @apply border-t border-gray-400 mt-4 mb-8;
+  }
+  .markdown td{
+    @apply p-1;
+  }
+  .markdown th{
+    @apply p-1;
   }
 }
