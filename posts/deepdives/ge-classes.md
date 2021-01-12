@@ -71,17 +71,14 @@ You can find more details [here](https://www2.calstate.edu/csu-system/administra
 
 | Bibliography  |
 | :------------ |
-| Retrieved from https://study.com/academy/popular/what-are-general-education-courses.html |
-| Retrieved from http://www.paloverde.edu/students/tuition-fees.aspx |
-| Retrieved from https://financialaid.usc.edu/graduates/prospective/how-much-wil-my-education-cost.html |
-| General Education Policy. Retrieved from https://www2.calstate.edu/csu-system/administration/academic-and-student-affairs/academic-programs-innovations-and-faculty-development/faculty-development-and-innovative-pedagogy/Pages/general-education-policy.aspx |
-| IGETC. Retrieved from https://admission.universityofcalifornia.edu/admission-requirements/transfer-requirements/general-education-igetc/igetc/ |
-| O'Banion, T. (2015, November 30). A Brief History of General Education. Retrieved from https://eric.ed.gov/?id=EJ1090127 |
-| Savidge, N. (2020, April 29). Quick Guide: Tuition-free college in California. Retrieved from https://edsource.org/2018/getting-free-college-tuition-in-california-a-quick-guide/599039 |
-| Tuition &amp; Financial Aid. (2020, November 24). Retrieved from https://online-iovine-young.usc.edu/admissions/tuition-and-financial-aid/ |
-| USC Schedule of Classes. Retrieved from https://classes.usc.edu/term-20202/tuition-and-fees/ |
-| Upper-Division Transfer. Retrieved from https://www2.calstate.edu/apply/transfer/Pages/upper-division-transfer.aspx\ |
-| Retrieved from https://pearsonaccelerated.com/blog/what-exactly-is-general-education |
-| Which GE is for me? Retrieved from https://www.sbcc.edu/transfercenter/whichge.php |
-
-
+| [**study.com**: What are General Education Courses](https://study.com/academy/popular/what-are-general-education-courses.html) |
+| [**paloverde.edu**: Tuition and Fees](http://www.paloverde.edu/students/tuition-fees.aspx) |
+| [**financialaid.usc.edu**: How Much Will My Education Cost?](https://financialaid.usc.edu/graduates/prospective/how-much-wil-my-education-cost.html) |
+| [**calstate.edu**: General Education Classes](https://www2.calstate.edu/csu-system/administration/academic-and-student-affairs/academic-programs-innovations-and-faculty-development/faculty-development-and-innovative-pedagogy/Pages/general-education-policy.aspx) |
+| [**admission.universityofcalifornia.edu**: IGETC](https://admission.universityofcalifornia.edu/admission-requirements/transfer-requirements/general-education-igetc/igetc/) |
+| [**eric.ed.gov**: A Brief History of General Education](https://eric.ed.gov/?id=EJ1090127) |
+| [**edsource.gov**: Tuition-free college in California](https://edsource.org/2018/getting-free-college-tuition-in-california-a-quick-guide/599039) |
+| [**classes.usc.edu**: Tuition and Fees](https://classes.usc.edu/term-20202/tuition-and-fees/) |
+| [**calstate.edu**: Upper Division Transfer](https://www2.calstate.edu/apply/transfer/Pages/upper-division-transfer.aspx%5C) |
+| [**pearsonaccelerated.com**: What Exactly Are General Education Credits?](https://pearsonaccelerated.com/blog/what-exactly-is-general-education) |
+| [**sbcc.edu**: Which GE is for me?](https://www.sbcc.edu/transfercenter/whichge.php) |
