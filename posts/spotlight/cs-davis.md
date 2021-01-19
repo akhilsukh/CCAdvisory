@@ -2,7 +2,8 @@
 
 &nbsp;&nbsp;&nbsp;&nbsp;I had the opportunity to sit down with Alex Nguyen, a Computer Science major attending UC Davis. Alex gave me the rundown on what it is like to be one of a few hundred transfer students admitted to Davis Computer science. In our interview, we discussed coursework, the different transfer pathways you can pursue, and the level of commitment needed to succeed during and after college.
 
-##UC Transfer Requirements
+## UC Transfer Requirements
+
 &nbsp;&nbsp;&nbsp;&nbsp;Computer science can be a very customizable degree if you pursue the right courses and work hard. With it, you can assume various roles such as a software engineer, web developer, program manager, and many others. Naturally, what you pursue and the skills you obtain will open up lucrative job opportunities after college.
 ![](https://images2.imgbox.com/38/8f/ywbbo2ZL_o.png)
 
@@ -13,7 +14,8 @@
 *You can find out more about each UCs major requirements at [Assist Davis 2016-17 Report](https://www.assist.org/transfer/report/13752617). as well as our [Deep Dive on General Eduation Classed](http://ccadvisory.org/blog/deepdives/ge-classes "Deep Dive on General Eduation Classed")*
 also check out our Deep Dive _____.
 
-##Why UC Davis?
+## Why UC Davis?
+
 The big question I had for Alex was, why Davis?
 
 &nbsp;&nbsp;&nbsp;&nbsp;Alex got accepted into UC San Diego’s Data Science program and had a plan to switch majors, but he said Davis was the more time-efficient option for transferring. San Diego is ranked sixteenth in computer science nationally; compare that to Davis, ranked thirty-seventh, and Alex must have a good reason for choosing the latter.
@@ -22,7 +24,8 @@ The big question I had for Alex was, why Davis?
 
 &nbsp;&nbsp;&nbsp;&nbsp;The only thing that separates Davis from San Diego and the other UCs is the different networking opportunities each campus offers. Big tech companies recruit out of UC job fairs, Intel, Twitter, and LinkedIn specifically all recruit out of Davis based on Alex’s experience. Coupled with Davis’s undergraduate program’s flexibility, and it is clear Alex made a reasonable decision.
 
-###Alex’s Decision was Impacted By TAG
+### Alex’s Decision was Impacted By TAG
+
 &nbsp;&nbsp;&nbsp;&nbsp;In 2019 the average GPA for non-TAG Computer Science majors admitted to Davis was 3.8, and only 20% were accepted. Comparatively, Davis TAG only requires an overall 3.2 GPA and a selective 3.4 GPA in your calculus classes. On top of that, Davis TAG has NO science requirement, meaning you can opt-out of an entire series of courses if you solely choose to TAG. However, putting all your eggs in one basket is risky, and we recommend you pursue multiple transfer pathways as a backup. Nonetheless, Alex said the difference in TAG vs. non-TAG requirements was a colossal destresser for him.
 
 ![](https://images2.imgbox.com/58/bf/1jRFt13e_o.png)
@@ -30,7 +33,7 @@ The big question I had for Alex was, why Davis?
 &nbsp;&nbsp;&nbsp;&nbsp;It is worth mentioning Davis, Riverside, and Santa Cruz are the only UCs that still offer TAG for Computer Science majors. Beginning Fall 2022, Davis TAG will require an overall and selective 3.5 GPA.
 
 
-###What’s the Grind like for Computer Science majors?
+### What’s the Grind like for Computer Science majors?
 
 Alex’s first word of advice for any student beginning a coding language is to “master the fundamentals in your beginner classes.” Alex went into his beginner C++ class feeling prepared because he had experience coding in his high school Java class and felt comfortable using tools like Microsoft Visual Studio. You can also self-study using YouTube, Udemy/Udacity, Textbooks, and Bootcamps. Alex said he wishes he took the Beginner + Intermediate course instead because every Beginner coding class can be a “slow-paced drag” for non-novices. He noted many students trail behind in their Beginner coding classes because they go in completely blank. Perfecting your coding skills early on is essential for success in subsequent coding classes.
 
