@@ -2,7 +2,7 @@
 
 module.exports = {
 		purge: {
-				enabled: true,
+				enabled: process.env.NODE_ENV === 'production',
 				preserveHtmlElements: true,
 				content: ['./pages/*js', './pages/**/*.js', './components/**/*.js', './styles/*.css'],
 				defaultExtractor: content => content.match(/[\w-:/]+(?<!:)/g) || []

@@ -19,12 +19,12 @@ function Navbar(props) {
     <header className="flex justify-between bg-pacific-800 py-3 px-8 lg:px-16 xl:px-16 items-center">
       <Link href="/">
         <div className="flex justify-between p-1 mx-1 rounded-lg hover:bg-pacific-900">
-          <div className="font-semibold text-xl cursor-pointer flex items-center">
-            <img className="h-6 m-1 mx-1" src={require("../../public/icon.png")}></img>
-            <h1 className="mx-1">
+          <div className="cursor-pointer flex items-center">
+            <img className="h-6 m-1 mx-1" src={require("../../public/icon.png")} alt="cca icon"/>
+            <h1 className="mx-1 font-semibold text-xl ">
                 <span className="text-yellow-300">C</span>
-                <span className="text-gray-100">C</span>
-                <span className="font-light pl-1 text-gray-200">advisory</span>
+                <span className="text-blue-200">C</span>
+                <span className="text-gray-100">Advisory</span>
               </h1>
             {/* <span className="flex mx-1">
               <h1 className="text-yellow-300">C</h1>
