@@ -140,6 +140,9 @@ a {
   .markdown h2{
     @apply font-serif text-2xl font-medium mt-4;
   }
+  .markdown h3{
+    @apply font-serif text-xl font-medium mt-2;
+  }
   .markdown p {
     @apply font-serif p-1;
   }

@@ -14,7 +14,8 @@ function Blog({ content, frontmatter }) {
 
   const [article, setArticle] = useState({
     'metadata': {
-      'title': '...'
+      'title': '...',
+      'path': '../..'
     },
     'content': null,
     'author': null,
@@ -80,6 +81,7 @@ function Blog({ content, frontmatter }) {
   return (
     <Layout id={article.metadata.title}>
       <div className="flex flex-col w-full max-w-7xl">
+        <div></div>
         <BlogView metadata={article.metadata} author={article.author} content={article.content} loading={article.loading}/>
       </div>
     </Layout>
