@@ -35,7 +35,7 @@ The big question I had for Alex was, why Davis?
 
 ### What’s the Grind like for Computer Science majors?
 
-Alex’s first word of advice for any student beginning a coding language is to “master the fundamentals in your beginner classes.” Alex went into his beginner C++ class feeling prepared because he had experience coding in his high school Java class and felt comfortable using tools like Microsoft Visual Studio. You can also self-study using YouTube, Udemy/Udacity, Textbooks, and Bootcamps. Alex said he wishes he took the Beginner + Intermediate course instead because every Beginner coding class can be a “slow-paced drag” for non-novices. He noted many students trail behind in their Beginner coding classes because they go in completely blank. Perfecting your coding skills early on is essential for success in subsequent coding classes.
+&nbsp;&nbsp;&nbsp;&nbsp;Alex’s first word of advice for any student beginning a coding language is to “master the fundamentals in your beginner classes.” Alex went into his beginner C++ class feeling prepared because he had experience coding in his high school Java class and felt comfortable using tools like Microsoft Visual Studio. You can also self-study using YouTube, Udemy/Udacity, Textbooks, and Bootcamps. Alex said he wishes he took the Beginner + Intermediate course instead because every Beginner coding class can be a “slow-paced drag” for non-novices. He noted many students trail behind in their Beginner coding classes because they go in completely blank. Perfecting your coding skills early on is essential for success in subsequent coding classes.
 
 |  Udacity.com | Udemy.com |
 | ------------ | ------------ |
