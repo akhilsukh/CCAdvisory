@@ -11,8 +11,7 @@
 
 &nbsp;&nbsp;&nbsp;&nbsp;In addition to the computer language requirement, every UC requires a minimum math requirement of Calculus 1A through 1C and a specific science series. Alex told me there is a big misconception that all UCs specifically need Physics as a science. While most UCs require the Physics series, he said Davis lets you choose between Biology, Chemistry, and Physics. You’ll still have to take a full year of science, but Alex thinks Davis’s lower-division courses are the most flexible out of any of the UCs.
 
-*You can find out more about each UCs major requirements at [Assist Davis 2016-17 Report](https://www.assist.org/transfer/report/13752617). as well as our [Deep Dive on General Eduation Classed](http://ccadvisory.org/blog/deepdives/ge-classes "Deep Dive on General Eduation Classed")*
-also check out our Deep Dive _____.
+*You can find out more about each UCs major requirements at [Assist Davis 2016-17 Report](https://www.assist.org/transfer/report/13752617), as well as our [Deep Dive on General Eduation Classed](http://ccadvisory.org/blog/deepdives/ge-classes "Deep Dive on General Eduation Classed")*
 
 ## Why UC Davis?
 
