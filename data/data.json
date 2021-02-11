@@ -79,7 +79,7 @@
             "res": "director",
             "name": "Akhil Sukhthankar",
             "role": "Exective Director, Developer",
-            "bio": "I like De Anza.",
+            "bio": "Akhil Sukthankar is a Computer Science major at De Anza/Foothill Community College. He started community college in 2020 and founded CCAdvisory along with the friends who helped him in that process. He currently serves as the Executive Director and hopes he can offer you a helping hand in your community college journey.",
             "major": "De Anza - Computer Science",
             "tutor": 1,
             "calendar": "https://calendly.com/akhil-ccadvisory/session"
@@ -89,7 +89,7 @@
             "res": "director",
             "name": "Chris Hoeft",
             "role": "Director of Content",
-            "bio": "My dream school is Berkeley.",
+            "bio": "I was only able to succeed in my first year of college because I relied on my peers’ help. I co-founded CCAdvisory to help guide students like me who’ve struggled to make a transfer plan. Being a Political Science major has also afforded me the chance to lead our team in publishing a diverse array of articles as the Director of Content.",
             "major": "De Anza - Political Science",
             "tutor": 1,
             "calendar": "https://calendly.com/akhil-ccadvisory/session"
@@ -109,7 +109,7 @@
             "res": "writer",
             "name": "Hassham Malik",
             "role": "Writer",
-            "bio": "I like soccer.",
+            "bio": "Hassham Malik is  a Computer Science major at De Anza/Foothill Community College. He currently works as a tutor and is part of the CCAdvisory team in an effort to help students do better in school. He is also a big fan of watching and playing multiple sports.",
             "major": "De Anza - Computer Science",
             "tutor": 0
         },
@@ -118,7 +118,7 @@
             "res": "writer",
             "name": "Preethan Selva",
             "role": "Writer",
-            "bio": "I like photography.",
+            "bio": "Preethan Selva is a Business Administration major at De Anza Community College. He is an upcoming photographer and likes taking portrait and landscape photography. Currently, he writes for CCAdvisory in his free time and is working on giving back to his community.",
             "major": "De Anza - Business",
             "tutor": 0
         },
@@ -127,7 +127,7 @@
             "res": "editor",
             "name": "Vahni Tagirisa",
             "role": "Senior Editor",
-            "bio": "I like Philly.",
+            "bio": "Vahni Tagirisa is currently a Biomedical Engineering student at Drexel University. Being passionate about accessible education, she joined the CCAdvisory team as the Senior Editor to help provide high quality resources for community college students at any point during their scholastic journey.",
             "major": "Drexel - Biomedical Engineering",
             "tutor": 0
         }
