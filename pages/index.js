@@ -70,6 +70,7 @@ function Home() {
   const shortcutUCApp = "shortcut-uc.png";
   const shortcutCommonApp = "shortcut-common.png";
   const shortcutMyCoalition = "shortcut-coalition.png";
+  const shortcutCCCApply = "shortcut-cccapply.png";
 
   const [directory, setDirectory] = useState({
     'posts': [],
@@ -156,7 +157,7 @@ function Home() {
               <QuickButton title="Common App" link="https://www.commonapp.org/" img={url + shortcutCommonApp} />
               <QuickButton title="MyCoalition" link="https://mycoalition.org" img={url + shortcutMyCoalition} />
               <QuickButton title="Assist.org" link="https://www.assist.org" img={url + shortcutAssist} />
-              <QuickButton title="Assist.org" link="https://www.assist.org" img={url + shortcutAssist} />
+              <QuickButton title="CCCApply" link="https://home.cccapply.org/en/" img={url + shortcutCCCApply} />
               <QuickButton title="Assist.org" link="https://www.assist.org" img={url + shortcutAssist} />
             </div>
           </div>
